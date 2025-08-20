@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+    <title>业余无线电操作资格模拟考试</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/exam.css" />
+
+    <script src="js/qdb.js"></script>
+    <script src="js/qmgr.js"></script>
+    <script>
+
+        class ExamManager {
+
+            #Q = new QuestionsManager();
+            mode = '';
+            questions = [];
+            currentQuestion = null;
+
+            standard = undefined;
+            #EXAM_STANDARD = {
+                "a": {
+                    single: 32,
+                    multi: 8,
+                    time: 40,
+                    pass: 30
+                },
+                "b": {
+                    single: 45,
+                    multi: 15,
+                    time: 60,
+                    pass: 45
+                },
+                "c": {
+                    single: 70,
+                    multi: 20,
+                    time: 90,
+                    pass: 70
+                }
+            };
+
+            async init(mode, startId) {
+
+                if (!mode) { return false; }
+
+                // 拿到当前学习的所有题目副本
+                await this.#Q.init();
+                let qs = this.#Q.Questions.slice();
+
+                // 过滤题目
+                if (mode.startsWith('group-')) {
+                    mode = mode.substring(6); // single, multi, picture
+                }
+                switch (mode) {
+                    case 'single':
+                        qs = qs.filter(q => q.answer.length === 1);
+                        break;
+                    case 'multi':
+                        qs = qs.filter(q => q.answer.length > 1);
+                        break;
+                    case 'star':
+                        qs = qs.filter(q => q.star);
+                        break;
+                    case 'wrong':
+                        qs = qs.filter(q => q.state === 2);
+                        break;
+                    case 'picture':
+                        qs = qs.filter(q => q.file);
+                        break;
+                }
+                this.mode = mode;
+
+                //exam要注意根据等级 随机选择n条单选和m条多选
+                if (mode == 'exam' && this.#EXAM_STANDARD[this.#Q.currentLevel]) {
+                    this.standard = Object.assign({}, this.#EXAM_STANDARD[this.#Q.currentLevel]);
+                }
+
+                // 生成本次题目列表
+                let index = 0;
+                for (let i = qs.length - 1; i >= 0; i--) {
+                    if (mode === 'random' || mode === 'exam') {
+                        index = Math.floor(Math.random() * qs.length);
+                    }
+
+                    //取出这一题放到本次的题目列表中,并从总题库中删除
+                    const q = qs[index];
+
+                    //如果有考试标准,则判断该题目是否符合
+                    if (this.standard) {
+                        const isMulti = q.answer.length > 1;
+                        if (isMulti) {
+                            if (this.standard.multi <= 0) {
+                                continue;
+                            }
+                            this.standard.multi--;
+                        } else {
+                            if (this.standard.single <= 0) {
+                                continue;
+                            }
+                            this.standard.single--;
+                        }
+
+                        // 满足题目数量了,把当前题也放进去,然后退出循环
+                        if (this.standard.multi <= 0 && this.standard.single <= 0) {
+                            this.questions.push(q);
+                            qs.splice(index, 1);
+                            break;
+                        }
+                    }
+
+                    this.questions.push(q);
+                    qs.splice(index, 1);
+                }
+
+                // exam模式要按单选多选顺序排序
+                if (mode === 'exam') {
+                    this.questions.sort((a, b) => {
+                        return Math.min(a.answer.length, 2) - Math.min(b.answer.length, 2);
+                    });
+                }
+
+                // 重排index和选项答案,并找到当前题目
+                if (mode === 'random' || mode == 'exam') {
+                    startId = undefined;
+                }
+                this.questions.forEach((q, i) => {
+                    q.index = i;
+                    q.readed = false;
+                    this.randomQuestionOptions(q);
+                    if (q.id === startId) {
+                        this.currentQuestion = q;
+                    }
+                    if (mode === 'study') {
+                        q.choices = q.answer.split('');
+                    }
+                })
+                if (!this.currentQuestion) {
+                    this.currentQuestion = this.questions[0];
+                }
+
+                //console.log(this.questions);
+                return this.questions.length > 0;
+            }
+
+            get Length() { return this.questions.length; }
+
+            async setStar(star) {
+                await this.#Q.setStar(this.currentQuestion?.id, star);
+                this.currentQuestion.star = star;
+            }
+
+            randomQuestionOptions(q) {
+                let options = {
+                    A: q.A,
+                    B: q.B,
+                    C: q.C,
+                    D: q.D
+                };
+
+                let items = Object.keys(options);
+                let relation = {};
+                for (let i = items.length - 1; i >= 0; i--) {
+                    let index = Math.floor(Math.random() * items.length);
+                    const newKey = String.fromCharCode(('A'.charCodeAt(0) + i));
+                    relation[newKey] = items[index];
+                    items.splice(index, 1);
+                }
+
+                let newAnswers = [];
+                for (const key in relation) {
+                    let realKey = relation[key];
+                    q[key] = options[realKey];
+                    if (q.answer.includes(realKey)) {
+                        newAnswers.push(key);
+                    }
+                }
+
+                q.answer = newAnswers.sort().join('');
+            }
+
+            next() {
+                if (this.currentQuestion.index < this.Length - 1) {
+                    this.currentQuestion = this.questions[this.currentQuestion.index + 1];
+                    return true;
+                }
+                return false;
+            }
+
+            prev() {
+                if (this.currentQuestion.index > 0) {
+                    this.currentQuestion = this.questions[this.currentQuestion.index - 1];
+                    return true;
+                }
+                return false;
+            }
+
+            setCurrentById(id) {
+                const q = this.questions.find(q => q.id == id);
+                if (q) {
+                    this.currentQuestion = q;
+                    return true;
+                }
+                return false;
+            }
+
+            setCurrentByIndex(index) {
+                const q = this.questions[index];
+                if (q) {
+                    this.currentQuestion = q;
+                    return true;
+                }
+                return false;
+            }
+
+            async markState(state, q = undefined) {
+                if (!q) {
+                    q = this.currentQuestion;
+                }
+                q.state = state;
+                await this.#Q.setState(q.id, state);
+            }
+
+            markLastQuestion() {
+                if (this.mode !== 'random' && this.mode !== 'exam' && this.mode !== 'study') {
+                    localStorage.setItem('q_last_id', this.currentQuestion.id);
+                }
+            }
+
+            markLastStudyQuestion() {
+                if (this.mode === 'study') {
+                    localStorage.setItem('q_last_study_id', this.currentQuestion.id);
+                }
+            }
+
+            getLastId(mode = undefined) {
+                if (!mode) { mode = this.mode; }
+                return localStorage.getItem(mode === 'study' ? 'q_last_study_id' : 'q_last_id');
+            }
+
+        };
+
+        const E = new ExamManager();
+        var timerId = null;
+        var usedTime = 0;
+
+        function initUI() {
+
+            if (E.mode == 'exam') {
+                $('#btnAnswer').hide();
+            } else {
+                $('#btnSubmit').hide();
+            }
+
+            if (E.mode == 'study') {
+                $('.option-items').addClass('study-mode');
+                $('.question-confirm').addClass('study-mode');
+                $('#btnAnswer').hide();
+            }
+
+            buildExamInfo();
+            updateQuestion();
+        }
+
+        function buildExamInfo() {
+
+            const examPanel = $('#examPanel');
+            examPanel.empty();
+
+            if (E.mode === 'study') {
+                examPanel.append(
+                    `<div class="card-header">学习模式</div>
+                     <div class="card-body">
+                        <p>题目编号：<span id="questionId">1</span></p>
+                        <p>本次学习时间：<span id="time">00:00</span></p>
+                        <p>本次已学习题目数量：<span id="readCount">1</span></p>
+                        <hr />
+                        <div class="question-grid" id="questionIcons">
+                        </div>
+                    </div>`
+                );
+                timerId = startTimer(false, 0);
+            } else if (E.mode === 'exam') {
+                examPanel.append(
+                    `<div class="card-header">模拟考试</div>
+                     <div class="card-body">
+                        <p>题目编号：<span id="questionId">1</span></p>
+                        <p>考试时间：<span id="time">00:00</span></p>
+                        <p>答题进度：<span id="practiseCount">0</span> / 
+                            <span id="questionCount">${E.questions.length}</span></p>
+                        <hr />
+                        <div class="question-grid" id="questionIcons">
+                        </div>
+                    </div>`
+                );
+                timerId = startTimer(true, E.standard?.time * 60, (tid) => { console.log("时间到"); submitExam(); });
+            } else {
+                examPanel.append(
+                    `<div class="card-header">练习模式</div>
+                     <div class="card-body">
+                        <p>题目编号：<span id="questionId">1</span></p>
+                        <p>本次练习时间：<span id="time">00:00</span></p>
+                        <p>练习进度：<span id="practiseCount">0</span> / 
+                            <span id="questionCount">${E.questions.length}</span></p>
+                        <p>本次已练习题目数量：<span id="thisTimePractiseCount">0</span></p>
+                        <p>本次练习正确率：<span id="accuracy">0.0%</span></p>
+                        <hr />
+                        <div class="question-grid" id="questionIcons">
+                        </div>
+                    </div>`
+                );
+                timerId = startTimer(false, 0);
+            }
+
+            //生成题目列表
+            const grid = $("#questionIcons");
+            if (grid.length !== 0) {
+
+                for (let i = 0; i < E.questions.length; i++) {
+                    const q = E.questions[i];
+                    const state =
+                        q.state === 0 || E.mode === 'exam' ? "not-studied" :
+                            q.state === 1 ? "studied" :
+                                q.state === 2 ? "wrong" : '';
+                    const icon = $(`<div class="question-icon ${state}" data-id="${q.id}">${i + 1}</div>`);
+                    grid.append(icon);
+                }
+
+                grid.find('.question-icon').on('click', function () {
+                    E.setCurrentById($(this).data('id'));
+                    updateQuestion();
+                });
+            }
+
+            updateExamPanel();
+        }
+
+        function formatTime(sec) {
+            const min = Math.floor(sec / 60);
+            sec = sec % 60;
+            return `${min < 10 ? '0' : ''}${min}:${sec < 10 ? '0' : ''}${sec}`;
+        }
+
+        function startTimer(countdown, totalTime, onFinish) {
+
+            const timerSpan = $('#time');
+            if (timerSpan.length == 0) { return undefined; }
+            let time = 0;
+            let timerId = null;
+            function _countdown() {
+                time++;
+                const t = totalTime - time;
+                if (t < 0) {
+                    clearInterval(timerId);
+                    if (onFinish) { onFinish(timerId); }
+                    return;
+                }
+                usedTime = time;
+                timerSpan.text(formatTime(t));
+            }
+            function _timer() {
+                time++;
+                timerSpan.text(formatTime(time));
+            }
+            timerId = setInterval(countdown ? _countdown : _timer, 1000);
+            return timerId;
+        }
+
+        function updateExamPanel() {
+            const q = E.currentQuestion;
+            $('#questionId').text(q.id);
+            if (E.mode === 'study') {
+                $('#readCount').text(E.questions.filter(q => q.readed).length);
+            }
+            else if (E.mode !== 'exam') {
+                const this_p = E.questions.filter(q => (q.choices ?? []).length != 0).length;
+                const this_w = E.questions.filter(q => (q.choices ?? []).length != 0 && q.state == 2).length;
+                const pcount = E.questions.filter(q => q.state != 0).length;
+                const wcount = E.questions.filter(q => q.state == 2).length;
+                $('#thisTimePractiseCount').text(this_p);
+                $('#practiseCount').text(pcount);
+                $('#wrongCount').text(wcount);
+                if (this_p === 0) {
+                    $('#accuracy').text('0.0%');
+                } else {
+                    $('#accuracy').text(((1 - this_w / this_p) * 100).toFixed(1) + '%');
+                }
+            } else {
+                const this_p = E.questions.filter(q => (q.choices ?? []).length != 0).length;
+                $('#practiseCount').text(this_p);
+            }
+
+            $('#questionIcons div.question-icon').removeClass('current')
+            const icon = $(`#questionIcons div.question-icon[data-id='${q.id}']`);
+            if (E.mode !== 'exam') {
+                const state =
+                    q.state === 0 ? "not-studied" :
+                        q.state === 1 ? "studied" :
+                            q.state === 2 ? "wrong" : '';
+                icon.removeClass('not-studied studied wrong').addClass(state).addClass('current');
+            } else {
+                const state = !q.choices?.length ? 'not-studied' : 'studied';
+                icon.removeClass('not-studied studied wrong').addClass(state).addClass('current');
+            }
+            //icon[0]?.scrollIntoView();
+
+        }
+
+        function saveCurrentChoice() {
+            const inputs = $('.option-item input');
+            const choices = [];
+
+            inputs.each(function () {
+                if ($(this).prop('checked')) {
+                    choices.push($(this).val());
+                }
+            });
+
+            E.currentQuestion.choices = choices;
+        }
+
+        function loadCurrentChoice() {
+            const inputs = $('.option-item input');
+            inputs.each(function () {
+                $(this).prop('checked', E.currentQuestion?.choices?.includes($(this).val()) ?? false);
+            });
+        }
+
+        function updateQuestion() {
+            const q = E.currentQuestion;
+            //console.log(q);
+
+            const isMulti = q.answer.length > 1;
+            $('#questionIndex').text(q.index + 1);
+            $('#questionText').text(q.question);
+            $('.option-item input').attr('type', isMulti ? 'checkbox' : 'radio');
+            const items = $('.option-item');
+            const choose = 'ABCD'.split('');
+            items.each((idx, item) => {
+                const c = choose[idx];
+                $(item).find('label').text(`${c}. ${q[c]}`);
+            });
+            setQuestionPic(q?.file);
+
+            loadCurrentChoice();
+            showAnswer(E.mode === 'study');
+            const btnConfirm = $('#btnConfirm');
+            if (E.mode !== 'exam' && isMulti) {
+                updateConfirmButtonState();
+                btnConfirm.show();
+            } else {
+                btnConfirm.hide();
+            }
+
+            if (!q.readed) {
+                q.readed = true;
+            }
+            updateExamPanel();
+
+            $('#btnPrev').attr('disabled', q?.index === 0);
+            $('#btnNext').attr('disabled', q?.index == E.Length - 1);
+            updateStar(q?.star);
+
+            if (E.mode === 'study') {
+                E.markLastStudyQuestion();
+            }
+
+            $('.app-container')[0]?.scrollIntoView();
+        }
+
+        function setQuestionPic(file) {
+            const answerItems = $('.option-items');
+            const picLoading = $('#questionPicLoading');
+            const pic = $('#questionPic');
+            pic.hide();
+            if (file) {
+                answerItems.removeClass('col-md-12').addClass('col-md-8');
+                picLoading.show();
+                pic.attr('src', `img/${file}`);
+            } else {
+                answerItems.removeClass('col-md-8').addClass('col-md-12');
+            }
+        }
+
+        function showAnswer(show = true) {
+            const q = E.currentQuestion;
+
+            const options = $('.option-item');
+            options.removeClass('opt-correct opt-wrong');
+
+            if (!show) {
+                $('#answerContent').hide();
+            }
+            else {
+                $('#answerItem').text(q.answer);
+                $('#answerDescription').text(q?.answerDescription);
+                $('#answerContent').show();
+
+                //高亮对应选项
+                const answer = q.answer.split('');
+                options.each((idx, opt) => {
+                    const input = $(opt).find('input');
+                    if (input.is(':checked')) {
+                        if (answer.includes(input.val())) {
+                            $(opt).addClass('opt-correct');
+                        }
+                        else {
+                            $(opt).addClass('opt-wrong');
+                        }
+                    } else if (answer.includes(input.val())) {
+                        $(opt).addClass('opt-correct');
+                    }
+                });
+            }
+        }
+
+        function updateStar(star) {
+            $('#btnStar').data('star', star);
+            $('#btnStar i.fa').removeClass('fa-star-o fa-star').addClass(star ? 'fa-star' : 'fa-star-o');
+        }
+
+        function updateConfirmButtonState() {
+            const inputs = $('.option-items .option-item input[type]');
+            $('#btnConfirm').prop('disabled', inputs.length == 0 || inputs.filter(':checked').length == 0);
+        }
+
+        function confirmAnswer() {
+
+            // 生成答案
+            const inputs = $('.option-items .option-item input[type]');
+            let choices = [];
+            inputs.each((idx, input) => {
+                if ($(input).prop('checked')) {
+                    choices.push($(input).val());
+                }
+            });
+            const answer = choices.join('');
+
+            //记录状态
+            if (answer !== E.currentQuestion.answer) {
+                E.markState(2);
+            } else {
+                if (E.currentQuestion.state == 0 || E.mode === 'wrong') {
+                    E.markState(1);
+                } else {
+                    E.currentQuestion.state = 1;
+                }
+            }
+
+            //记录最后做的题目id
+            E.markLastQuestion();
+
+            // 显示答案
+            showAnswer(true);
+            updateExamPanel();
+        }
+
+        function showExamResultDialog() {
+
+            const practiseCount = E.questions.filter(q => q.choices?.length > 0).length;
+            const correctCount = E.questions.filter(q => q.state === 1).length;
+            const wrongCount = E.questions.filter(q => q.state === 2).length;
+            const accuracy = correctCount / E.questions.length * 100;
+            const pass = correctCount >= E.standard.pass;
+
+            const html =
+                `<dialog class="result app-container">
+                    <div class="card">
+                        <div class="card-header">考试结果</div>
+                        <div class="card-body">
+                            <p>本次用时：${formatTime(usedTime)}</p>
+                            <p>答题进度：${practiseCount} / ${E.questions.length}</p>
+                            <p>正确/错误题数：${correctCount} / ${wrongCount} </p>
+                            <p>正确率：${accuracy.toFixed(1)}%</p>
+                            <p class="pass-result text-${pass ? 'success' : 'danger'} ">
+                                ${pass ? '合格' : '不合格'}
+                            </p>
+                            <hr />
+                        </div>
+                    </div>
+                </dialog>`;
+
+
+            const dialog = $(html).appendTo('body');
+
+            const icons = $('#questionIcons')
+            dialog.find('.card-body')
+                .append(icons)
+                .append('<hr />')
+                .append(`
+                    <div class='row ctrl-bar'>
+                        <button type='button' class='btn btn-primary col-5' id='btnAgain'>再来一次</button>
+                        <button type='button' class='btn btn-danger col-5' id='btnExit'>退出</button>
+                    </div>`
+                );
+
+            dialog.find('#btnAgain').click(() => {
+                location.reload();
+            });
+
+            dialog.find('#btnExit').click(() => {
+                window.location.href = 'index.html';
+            });
+
+
+            console.log(dialog);
+            dialog[0].showModal();
+
+            //dialog.on('click', function () {
+            //    dialog[0].close();
+            //    dialog.remove();
+            //});
+        }
+
+        function submitExam() {
+            if (E.mode !== 'exam') { return; }
+
+            if (timerId) {
+                clearInterval(timerId);
+            }
+
+            saveCurrentChoice();
+
+            let correctCount = 0;
+            const icons = $('#questionIcons');
+            for (let i = 0; i < E.questions.length; i++) {
+
+                const q = E.questions[i];
+                const isCorrect = q.choices?.join('') === q.answer;
+                if (isCorrect) {
+                    correctCount++;
+                }
+                E.markState(isCorrect ? 1 : 2, q);
+
+                icons.find(`.question-icon[data-id='${q.id}']`)
+                    .removeClass('not-studied studied wrong current')
+                    .addClass(isCorrect ? 'studied' : 'wrong');
+
+            }
+
+            showExamResultDialog();
+        }
+
+        $(document).ready(async function () {
+
+            const loading = $('.fullscreen-mask');
+            loading.show();
+
+            const params = new URLSearchParams(window.location.search);
+            const mode = params.get('mode');
+            const id = params.get('id') || E.getLastId(mode);
+            const done = await E.init(mode, id);
+
+            if (!done) {
+                document.location.href = 'index.html';
+                return;
+            }
+
+            // 选项点击
+            const options = $('.option-items .option-item');
+            options.on('click', function () {
+                const input = $(this).find('input[type]');
+                if (input.length > 0) {
+                    input.prop('checked', !input.prop('checked'));
+                }
+                updateConfirmButtonState();
+                saveCurrentChoice();
+
+                if (mode !== 'exam' && input.prop('checked') && E.currentQuestion.answer.length === 1) {
+                    confirmAnswer();
+                } else if (mode === 'exam') {
+                    updateExamPanel();
+                }
+            });
+
+            $('#btnConfirm').on('click', function () {
+                if (mode !== 'exam') {
+                    confirmAnswer();
+                } else {
+                    $('#btnNext').click();
+                }
+            });
+
+            const pic = $('#questionPic');
+            const picLoading = $('#questionPicLoading');
+
+            // 图片加载事件
+            pic.on('load', function () {
+                picLoading.hide();
+                pic.removeClass('error');
+                pic.show();
+            });
+            pic.on('error', function () {
+                picLoading.hide();
+                pic.addClass('error');
+                pic.show();
+            });
+
+            // 禁止图片拖动
+            pic.on('dragstart', function (e) {
+                e.preventDefault();
+            });
+            // 弹出效果
+            pic.on('click', function () {
+                if (pic.hasClass('error')) { return; }
+                const html = `<dialog>${pic[0].outerHTML}</dialog>`;
+                const dialog = $(html).appendTo('body');
+                dialog[0].showModal();
+                dialog.on('click', function () {
+                    dialog[0].close();
+                    dialog.remove();
+                });
+            });
+
+
+            $('#btnPrev').on('click', function () {
+                if (E.prev()) {
+                    updateQuestion();
+                }
+            });
+            $('#btnNext').on('click', function () {
+                if (E.next()) {
+                    updateQuestion();
+                }
+            });
+            $('#btnAnswer').on('click', function () {
+                showAnswer($('#answerContent').css('display') == 'none');
+            });
+            $('#btnStar').on('click', async function () {
+                let star = $(this).data('star');
+                star = !star;
+                await E.setStar(star);
+                updateStar(star);
+            });
+            $('#btnExit').on('click', function () {
+                if (E.mode === 'exam') {
+                    if (!confirm('您确定退出此次考试吗？')) {
+                        return;
+                    }
+                }
+                window.location.href = 'index.html';
+            });
+            $('#btnSubmit').on('click', () => {
+                if (confirm("确定交卷吗？")) {
+                    submitExam();
+                }
+            });
+
+            //初始化题目
+            initUI();
+            loading.hide();
+        });
+
+
+    </script>
+</head>
+
+<body>
+    <div class="container app-container">
+        <div class="banner-header">业余无线电操作资格模拟考试</div>
+        <div class="row">
+            <div class="col-md-8 question-area">
+                <div class="question-title">
+                    <span id="questionIndex">1</span>.
+                    <span id="questionText">题目内容</span>
+                </div>
+
+                <div class="option-area row">
+                    <ul class="option-items col-md-8">
+                        <li class="option-item">
+                            <input type="radio" name="answers" id="optA" value="A" />
+                            <label for="A">选项1</label>
+                        </li>
+                        <li class="option-item">
+                            <input type="radio" name="answers" id="optB" value="B" />
+                            <label for="optB">选项2</label>
+                        </li>
+                        <li class="option-item">
+                            <input type="radio" name="answers" id="optC" value="C" />
+                            <label for="optC">选项3</label>
+                        </li>
+                        <li class="option-item">
+                            <input type="radio" name="answers" id="optD" value="D" />
+                            <label for="optD">选项4</label>
+                        </li>
+                    </ul>
+
+                    <div class="question-pic col-md-4">
+                        <div id="questionPicLoading" class="load-container loading"
+                            style="width: 100%; height:auto; display: none;">
+                            <div class="loader" style="font-size: 5px;">加载中...</div>
+                        </div>
+                        <img alt="" id="questionPic" style="display: none;" />
+                    </div>
+
+                </div>
+                <div class="row question-confirm">
+                    <div class="col-md-9"></div>
+                    <button type="button" class="col-md-3 btn btn-primary" id="btnConfirm" style="display:none;">
+                        确 定
+                    </button>
+                </div>
+
+                <div class="row answer-content" id="answerContent" style="display: none;">
+                    <div>正确答案：<span id="answerItem">ABCD</span></div>
+                    <div>答案解析：<span id="answerDescription"></span></div>
+                </div>
+
+                <div class="exam-ctrlbar">
+                    <button type="button" id="btnPrev" class="btn btn-primary">
+                        <i class="fa fa-arrow-left"></i>
+                        <span>上一题</span>
+                    </button>
+                    <button type="button" id="btnAnswer" class="btn btn-success">
+                        <i class="fa fa-check-square-o"></i>
+                        <span>答 案</span>
+                    </button>
+                    <button type="button" id="btnStar" class="btn btn-warning">
+                        <i class="fa fa-star-o"></i>
+                        <span>标 星</span>
+                    </button>
+                    <button type="button" id="btnSubmit" class="btn btn-danger">
+                        <i class="fa fa-file-text"></i>
+                        <span>交 卷</span>
+                    </button>
+                    <button type="button" id="btnNext" class="btn btn-primary">
+                        <i class="fa fa-arrow-right"></i>
+                        <span>下一题</span>
+                    </button>
+                    <button type="button" id="btnExit" class="btn btn-danger">
+                        <i class="fa fa-close"></i>
+                        <span>退 出</span>
+                    </button>
+                </div>
+
+            </div>
+            <div class="col-md-4 exam-info">
+                <div class="card" id="examPanel"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fullscreen-mask" style="display: none;">
+        <div class="load-container loading">
+            <div class="loader">加载中...</div>
+        </div>
+    </div>
+</body>
+
+</html>

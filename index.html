@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+    <title>业余无线电操作资格模拟考试</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <script src="js/qdb.js"></script>
+    <script src="js/qmgr.js"></script>
+
+    <script>
+
+        const SERV_VERSION = "2025@alpha";
+        const Q = new QuestionsManager();
+        $(document).ready(async () => {
+
+            // 初始化管理器
+            const mask = $('.fullscreen-mask');
+            mask.show();
+            await Q.init(SERV_VERSION).finally(() => { mask.hide(); });
+            $('#examVer').text(`题库版本： ${SERV_VERSION}`);
+
+            // 初始化学习进度板块
+            $(`.level-tab[data-level="${Q.currentLevel}"]`).addClass('active');
+            updateQuestionInfo();
+
+            const tabs = $('.level-tab');
+            tabs.on('click', async function () {
+                tabs.removeClass('active');
+                $(this).addClass('active');
+
+                const level = $(this).data('level');
+                await Q.switchLevel(level, Q.onlyDiff);
+                updateQuestionInfo();
+            });
+
+            $('#onlyDifference').on('change', async function () {
+                const onlyDiff = $(this).prop('checked');
+                await Q.switchLevel(Q.currentLevel, onlyDiff);
+                updateQuestionInfo();
+            });
+
+            $('#resetProgress').on('click', async function () {
+
+                if (!confirm('确定要重置进度吗？')) {
+                    return;
+                }
+
+                await Q.resetProgress();
+                updateQuestionInfo();
+            });
+
+            // 初始化题库板块
+            const qicon_filter = $('.question-grid-card .legend-item');
+            qicon_filter.on('click', function () {
+
+                let status = undefined;
+                if ($(this).hasClass('active')) {
+                    $(this).removeClass('active');
+                } else {
+                    qicon_filter.removeClass('active');
+                    $(this).addClass('active');
+                    status = parseInt($(this).data('status'));
+                }
+
+                buildQuestionList(status);
+            });
+
+            // 初始化练习模式板块
+            $('.mode-btns .mode-card').on('click', function () {
+                let mode = $(this).data('mode');
+                let id = null;
+                if (mode) {
+                    if (mode == 'exam') {
+                        //confirm
+                        // 弹出提示,显示考试须知信息
+                    } else if (mode == 'group') {
+                        // 弹框显示题目类型选择菜单
+                        dialog[0]?.showModal();
+                        return;
+                    } else if (mode == 'study' || mode == 'sequence') {
+                        // 获取最后做过的题目id
+                        id = localStorage.getItem('q_last_id') || '';
+                    }
+                    goExam(mode, id);
+                }
+            });
+
+            // 分组练习按钮
+            const dialog = $('#groupSelectDialog');
+            dialog.on('click', (e) => {
+                if (e.target === dialog[0]) {
+                    dialog[0].close();
+                }
+            })
+            dialog.find('.btn').on('click', (e) => {
+                e.preventDefault();
+                const type = $(e.currentTarget).data('type');
+                if (type) {
+                    goExam(`group-${type}`);
+                }
+            })
+
+        });
+
+        function updateQuestionInfo() {
+            updateProgress();
+            updateGroupBtnState();
+            buildQuestionList();
+        }
+
+        function updateProgress() {
+
+            const qs = Q.Questions;
+            let qlen = qs.length;
+            let slen = 0;
+            let wlen = 0;
+            let plen = 0;
+            let starLen = 0;
+
+            for (let i = 0; i < qlen; i++) {
+                const q = qs[i];
+                if (q.state == 1) { slen++; }
+                else if (q.state == 2) { wlen++; slen++; }
+                if (q.file) { plen++; }
+                if (q.star) { starLen++; }
+            }
+
+            $('#totalCount').text(qlen);
+            $('#studiedCount').text(slen);
+            $('#starCount').text(starLen);
+            $('#wrongCount').text(wlen);
+
+            const accuracy = slen === 0 ? 0 : (1 - wlen / slen) * 100;
+            $('#accuracy').text((accuracy === 100 ? "100" : accuracy.toFixed(1)) + "%");
+
+            const progress = ((slen - slen) / qlen * 100).toFixed(1);
+            $('#studyProgress').css('width', progress + '%');
+            $('#progressLabel').text(progress + "%");
+
+            $('#onlyDifference').prop('checked', Q.onlyDiff).attr('disabled', Q.currentLevel === 'all' || Q.currentLevel === 'a');
+
+            ///////////////////
+
+            $('#btnWrong').attr('disabled', wlen == 0);
+            $('#btnPicture').attr('disabled', plen == 0);
+            $('#btnStar').attr('disabled', starLen == 0);
+
+        }
+
+        function buildQuestionList(status) {
+            let icons = $('#questionIcons');
+            icons.empty();
+
+            const qs = Q.Questions;
+            let count = 0;
+            for (let i = 0; i < qs.length; i++) {
+                const q = qs[i];
+
+                if (status != undefined && q.state != status) {
+                    continue;
+                }
+
+                let icon = $(`<div class="question-icon" data-id='${q.id}'>${i + 1}</div>`);
+                icons.append(icon);
+                count++;
+
+                if (q.state == 0) {
+                    icon.addClass('not-studied');
+                } else if (q.state == 1) {
+                    icon.addClass('studied');
+                } else if (q.state == 2) {
+                    icon.addClass('wrong');
+                }
+
+                if (q.star) {
+                    icon.addClass('star');
+                }
+
+                icon.on('click', function () {
+                    goExam('question', $(this).data('id'));
+                });
+            }
+
+            if (count == 0) {
+                icons.append('<div class="question-grid-none">暂无题目</div>');
+            }
+
+        }
+
+        function updateGroupBtnState() {
+            $('#btnGroupSingle').attr('disabled', Q.Questions.filter(q => q.answer.length === 1).length === 0);
+            $('#btnGroupMulti').attr('disabled', Q.Questions.filter(q => q.answer.length > 1).length === 0);
+            $('#btnGroupSingle').attr('disabled', Q.Questions.filter(q => q.file).length === 0);
+        }
+
+        function goExam(mode, id) {
+            let url = `exam.html?mode=${mode}`;
+            if (mode === 'question' && id) {
+                url += `&id=${id}`;
+            }
+            console.log(url);
+            window.location.href = url;
+        }
+
+    </script>
+
+
+</head>
+
+<body>
+    <div class="app-container container">
+        <div class="banner-header">业余无线电操作资格模拟考试</div>
+
+        <!-- 级别选择 -->
+        <div class="level-container">
+            <div class="level-tabs">
+                <div class="level-tab" data-level="a">A类</div>
+                <div class="level-tab" data-level="b">B类</div>
+                <div class="level-tab" data-level="c">C类</div>
+                <div class="level-tab" data-level="all">全部</div>
+            </div>
+        </div>
+
+        <!-- 内容区域 -->
+        <div class="container">
+
+            <!-- 学习进度板块 -->
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="section-title">学习进度</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="progress-container">
+                                <div class="progress">
+                                    <div id="studyProgress" class="progress-bar bg-success" role="progressbar"
+                                        style="width: 0%">
+                                    </div>
+                                </div>
+                                <div class="progress-label" id="progressLabel">0%</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 progress-info">
+                            <div class="row text-center">
+                                <div class="col-3">
+                                    <div class="fw-bold">总数</div>
+                                    <div id="totalCount" class="fs-6">-</div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="fw-bold">已练</div>
+                                    <div id="studiedCount" class="fs-6">-</div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="fw-bold">标星</div>
+                                    <div id="starCount" class="fs-6 text-warning">-</div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="fw-bold">错题</div>
+                                    <div id="wrongCount" class="fs-6 text-danger">-</div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="fw-bold">正确率</div>
+                                    <div id="accuracy" class="fs-6 text-success">0.0%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6 form-switch-row">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="onlyDifference" disabled>
+                                <label class="form-check-label" for="onlyDifference">
+                                    仅学习差异题目
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-md-end">
+                            <button id="resetProgress" class="btn btn-outline-danger">
+                                <i class="fa fa-warning"></i> 重置进度
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 练式板块 -->
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="section-title">模式</h5>
+
+                    <div class="mode-btns">
+                        <div class="card mode-card h-100 text-center" id="btnStudy" data-mode="study">
+                            <div class="card-body">
+                                <i class="fa fa-book fa-3x text-primary mb-3"></i>
+                                <h6 class="card-title">学习模式</h6>
+                                <p class="card-text">逐题学习，查看答案和解析</p>
+                            </div>
+                        </div>
+
+                        <div class="card mode-card h-100 text-center" id="btnSequence" data-mode="sequence">
+                            <div class="card-body">
+                                <i class="fa fa-sort-numeric-asc fa-3x text-success mb-3"></i>
+                                <h6 class="card-title">顺序练习</h6>
+                                <p class="card-text">按题库顺序练习题目</p>
+                            </div>
+                        </div>
+
+                        <div class="card mode-card h-100 text-center" id="btnRandom" data-mode="random">
+                            <div class="card-body">
+                                <i class="fa fa-random fa-3x text-info mb-3"></i>
+                                <h6 class="card-title">随机练习</h6>
+                                <p class="card-text">随机抽取题目进行练习</p>
+                            </div>
+                        </div>
+
+                        <div class="card mode-card h-100 text-center" id="btnGroup" data-mode="group">
+                            <div class="card-body">
+                                <i class="fa fa-files-o fa-3x text-secondary mb-3"></i>
+                                <h6 class="card-title">分组练习</h6>
+                                <p class="card-text">专项练习指定类型的题目</p>
+                            </div>
+                        </div>
+
+                        <div class="card mode-card h-100 text-center" id="btnWrong" data-mode="wrong">
+                            <div class="card-body">
+                                <i class="fa fa-history fa-3x text-danger mb-3"></i>
+                                <h6 class="card-title">错题回顾</h6>
+                                <p class="card-text">专门练习做错的题目</p>
+                            </div>
+                        </div>
+
+                        <div class="card mode-card h-100 text-center" id="btnStar" data-mode="star">
+                            <div class="card-body">
+                                <i class="fa fa-star fa-3x text-warning mb-3"></i>
+                                <h6 class="card-title">标星专练</h6>
+                                <p class="card-text">专门练习标星的题目</p>
+                            </div>
+                        </div>
+
+                        <div class="card mode-card h-100 text-center" id="btnExam" data-mode="exam">
+                            <div class="card-body">
+                                <i class="fa fa-trophy fa-3x text-danger mb-3"></i>
+                                <h6 class="card-title">模拟考试</h6>
+                                <p class="card-text">全真模拟考试环境</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 题本板块 -->
+            <div class="card mb-4 question-grid-card">
+                <div class="card-body">
+                    <h5 class="section-title">题本</h5>
+                    <div class="question-grid" id="questionIcons">
+                        <div class="question-grid-none">暂无题目</div>
+                    </div>
+                    <div class="mt-3 text-center">
+                        <span class="legend-item" data-status="0" id="icon-not-studied">
+                            <span class="question-icon not-studied">&nbsp;</span> 未练习
+                        </span>
+                        <span class="legend-item" data-status="1" id="icon-studied">
+                            <span class="question-icon studied">&nbsp;</span> 已练习
+                        </span>
+                        <span class="legend-item" data-status="2" id="icon-wrong">
+                            <span class="question-icon wrong">&nbsp;</span> 错题
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-info">
+                <span class="app-lib-ver" id="examVer">题库版本：2025_1</span>
+                <span class="app-author">作者：BA4TOG</span>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="fullscreen-mask" style="display: none;">
+        <div class="load-container loading">
+            <div class="loader">加载中...</div>
+        </div>
+    </div>
+
+    <dialog id="groupSelectDialog" class="app-container group-select">
+        <div class="card">
+            <div class="card-header">选择分组练习内容</div>
+            <ul class="card-body">
+                <li id="btnGroupSingle" class="btn btn-primary" data-type="single"><i class="fa fa-circle-o"></i>单选题
+                </li>
+                <li id="btnGroupMulti" class="btn btn-primary" data-type="multi"><i class="fa fa-check-square-o"></i>多选题
+                </li>
+                <li id="btnGroupPicture" class="btn btn-primary" data-type="picture"><i class="fa fa-photo"></i>图片题</li>
+            </ul>
+        </div>
+    </dialog>
+
+</body>
+
+</html>

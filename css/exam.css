@@ -1,0 +1,181 @@
+.app-container {
+    padding: 5px 25px;
+}
+
+.question-area {
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    color: revert;
+}
+
+.question-title {
+    font-size: 1.1em;
+    text-align: justify;
+    padding-bottom: 0.5em;
+    margin-bottom: 5px;
+}
+
+.option-area {
+    margin-bottom: 20px;
+}
+
+ul.option-items {
+    list-style: none;
+    padding: 5px;
+}
+
+.study-mode {
+    pointer-events: none;
+    cursor: default;
+    opacity: 1;
+}
+
+ul.option-items li {
+    padding: 10px;
+    vertical-align: middle;
+    border-radius: 5px;
+    transition: all 0.2s;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+ul.option-items li:hover {
+    background-color: var(--bs-gray-600)
+}
+
+.option-item.opt-correct {
+    background-color: var(--bs-success) !important;
+}
+
+.option-item.opt-wrong {
+    background-color: var(--bs-danger) !important;
+}
+
+li.option-item>* {
+    pointer-events: none;
+    margin-right: 5px;
+    cursor: pointer;
+    ;
+}
+
+li.option-item label {
+    display: inline;
+}
+
+.answer-content {
+    padding: 10px 0;
+    background-color: #198754;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.exam-info {
+    margin-bottom: 25px;
+}
+
+.question-pic {
+    padding: 5px;
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.question-pic img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.question-pic img.error {
+    width: 25px;
+    height: 25px;
+    pointer-events: none;
+}
+
+.question-confirm {
+    margin-bottom: 20px;
+}
+
+.question-confirm.study-mode {
+    display: none !important;
+}
+
+
+.exam-ctrlbar {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    margin-top: auto;
+}
+
+.exam-ctrlbar>button {
+    max-width: 200px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.exam-ctrlbar button span {
+    margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+    .exam-ctrlbar {
+        left: 15px;
+        right: 15px;
+    }
+
+    .exam-ctrlbar button {
+        padding: 5px 1px;
+    }
+
+    .exam-ctrlbar button span {
+        display: block;
+        font-size: 0.5em;
+    }
+}
+
+.exam-info .card-header {
+    font-weight: bold;
+}
+
+.question-grid {
+    grid-template-columns: repeat(5, 1fr);
+    max-height: 150px;
+}
+
+.question-grid .current {
+    border: 1px solid;
+    border-color: yellow;
+    box-sizing: content-box;
+}
+
+
+dialog.result {
+    padding: 10px;
+    border: none;
+    width: 50vw;
+    user-select: none;
+}
+
+dialog.result div.question-icon {
+    pointer-events: none;
+}
+
+dialog.result .ctrl-bar {
+    gap: 20px;
+    justify-content: center;
+}
+
+dialog.result p.pass-result {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
