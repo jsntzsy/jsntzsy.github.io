@@ -98,10 +98,10 @@
                         // 弹出提示,显示考试须知信息
                         if (standard) {
                             if (!confirm(
-                                `本次模拟考试将从题库中抽取${standard.single + standard.multi}道题\n` +
+                                `本次将从题库中抽取${standard.single + standard.multi}道题\n` +
                                 `其中单选题${standard.single}道，多选题${standard.multi}道\n` +
                                 `合格需要至少答对${standard.pass}道题目\n` +
-                                `多选题选错选多选少均不得分\n` +
+                                `多选题错选多选少选均不得分\n` +
                                 `作答时间共${standard.time}分钟\n` +
                                 `请按确定开始考试`
                             )) {
