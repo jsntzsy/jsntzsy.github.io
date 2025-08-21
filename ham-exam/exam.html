@@ -435,7 +435,7 @@
             loadCurrentChoice();
             showAnswer(E.mode === 'study');
             const btnConfirm = $('#btnConfirm');
-            if (E.mode !== 'exam' && isMulti) {
+            if (E.mode !== 'exam' && E.mode !== 'study' && isMulti) {
                 updateConfirmButtonState();
                 btnConfirm.show();
             } else {
@@ -475,6 +475,7 @@
         function showAnswer(show = true, is_answer_btn = false) {
             const q = E.currentQuestion;
 
+            const answered = q.choices?.length > 0;
             const options = $('.option-item');
             options.removeClass('opt-correct opt-wrong');
 
@@ -498,10 +499,14 @@
                             $(opt).addClass('opt-wrong');
                         }
                     } else if (answer.includes(input.val())) {
-                        if (is_answer_btn || input.attr('type') === 'radio') {
+                        if (is_answer_btn) {
                             $(opt).addClass('opt-correct');
                         } else {
-                            $(opt).addClass('opt-wrong');
+                            if (input.attr('type') === 'radio') {
+                                $(opt).addClass(answered ? 'opt-correct' : 'opt-wrong');
+                            } else {
+                                $(opt).addClass(answered ? 'opt-wrong' : 'opt-wrong');
+                            }
                         }
                     }
                 });
@@ -551,6 +556,20 @@
             updateExamPanel();
         }
 
+        function switchToStudyMode() {
+
+            $('.option-items').addClass('study-mode');
+            $('.question-confirm').addClass('study-mode');
+            $('#btnAnswer').hide();
+
+            E.mode = 'study';
+            $('#btnSubmit').hide();
+            E.setCurrentByIndex(0);
+            updateExamPanel();
+            updateQuestion();
+
+        }
+
         function showExamResultDialog() {
 
             const practiseCount = E.questions.filter(q => q.choices?.length > 0).length;
@@ -585,14 +604,21 @@
                 .append('<hr />')
                 .append(`
                     <div class='row ctrl-bar'>
-                        <button type='button' class='btn btn-warning col-3' id='btnWrongStar'>错题标星</button>
-                        <button type='button' class='btn btn-primary col-3' id='btnAgain'>再来一次</button>
-                        <button type='button' class='btn btn-danger col-3' id='btnExit'>退出</button>
+                        <button type='button' class='btn btn-info col-md-2' id='btnStudy'><i class='fa fa-search'></i> 回顾</button>
+                        <button type='button' class='btn btn-warning col-md-2' id='btnWrongStar'><i class='fa fa-star'></i> 标错</button>
+                        <button type='button' class='btn btn-primary col-md-2' id='btnAgain'><i class='fa fa-refresh'></i> 再来</button>
+                        <button type='button' class='btn btn-danger col-md-2' id='btnExit'><i class='fa fa-close'></i> 退出</button>
                     </div>`
                 );
+                    
+
+            dialog.find('#btnStudy').click(() => {
+                switchToStudyMode();
+                icons.appendTo($('#examPanel .card-body'));
+                dialog[0].close();
+            });
 
             dialog.find('#btnWrongStar').click(async () => {
-
                 let count = 0;
                 for (let i = 0; i < E.questions.length; i++) {
                     const q = E.questions[i];
@@ -601,7 +627,6 @@
                         count++;
                     }
                 }
-
                 alert(`已标星了${count}道错题`);
             });
 
@@ -612,7 +637,6 @@
             dialog.find('#btnExit').click(() => {
                 window.location.href = 'index.html';
             });
-
 
             console.log(dialog);
             dialog[0].showModal();
