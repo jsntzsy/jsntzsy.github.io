@@ -159,10 +159,17 @@ li.option-item label {
 
 
 dialog.result {
+    max-width: 500px;
     padding: 10px;
     border: none;
-    width: 50vw;
+    width: 75%;
     user-select: none;
+}
+
+dialog.result .card-header {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
 }
 
 dialog.result div.question-icon {

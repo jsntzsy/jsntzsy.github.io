@@ -1,4 +1,5 @@
 
+
 class QDB {
 
     #DB_NAME = "question_db";
@@ -116,6 +117,11 @@ class QDB {
         return this.#toPromise(request);
     }
 
+    deleteState(id) {
+        let request = this.#createTransactionStore(this.#STORE_STATE).delete(id);
+        return this.#toPromise(request);
+    }
+
     /////////////////////
 
     setStar(id, star) {
@@ -140,6 +146,14 @@ class QDB {
 
     clearStars() {
         let request = this.#createTransactionStore(this.#STORE_STAR).clear();
+        return this.#toPromise(request);
+    }
+
+    ////////////
+
+    destroyDB() {
+        this.#db.close();
+        let request = indexedDB.deleteDatabase(this.#DB_NAME);
         return this.#toPromise(request);
     }
 

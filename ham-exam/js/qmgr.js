@@ -26,6 +26,11 @@ class QuestionsManager {
 
     }
 
+    async clearCache() {
+        await this.#db.destroyDB();
+        localStorage.removeItem("q_ver");
+    }
+
     needUpdate(servVer) {
         const localVer = localStorage.getItem("q_ver");
         return localVer == null || localVer !== servVer;
@@ -110,6 +115,29 @@ class QuestionsManager {
         this.currentQuestions.forEach(q => { q.state = 0; });
         localStorage.removeItem('q_last_id');
         localStorage.removeItem('q_last_study_id');
+    }
+
+    async clearStars() {
+        await this.#db.clearStars();
+        this.currentQuestions.forEach(q => { q.star = false; });
+    }
+
+    async clearWrongStates() {
+        for (const q of this.currentQuestions) {
+            if (q.state === 2) {
+                await this.#db.deleteState(q.id);
+                q.state = 0;
+            }
+        }
+    }
+
+    async resetAll() {
+        await this.#db.destroyDB();
+        localStorage.removeItem('q_ver');
+        localStorage.removeItem('q_last_id');
+        localStorage.removeItem('q_last_study_id');
+        localStorage.removeItem('q_level');
+        localStorage.removeItem('q_onlyDiff');
     }
 
     get Questions() { return this.currentQuestions; }

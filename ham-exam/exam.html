@@ -151,11 +151,6 @@
 
             get Length() { return this.questions.length; }
 
-            async setStar(star) {
-                await this.#Q.setStar(this.currentQuestion?.id, star);
-                this.currentQuestion.star = star;
-            }
-
             randomQuestionOptions(q) {
                 let options = {
                     A: q.A,
@@ -217,6 +212,14 @@
                     return true;
                 }
                 return false;
+            }
+
+            async markStar(star, q = undefined) {
+                if (!q) {
+                    q = this.currentQuestion;
+                }
+                await this.#Q.setStar(q?.id, star);
+                q.star = star;
             }
 
             async markState(state, q = undefined) {
@@ -488,7 +491,7 @@
             }
         }
 
-        function showAnswer(show = true) {
+        function showAnswer(show = true, is_answer_btn = false) {
             const q = E.currentQuestion;
 
             const options = $('.option-item');
@@ -514,7 +517,11 @@
                             $(opt).addClass('opt-wrong');
                         }
                     } else if (answer.includes(input.val())) {
-                        $(opt).addClass('opt-correct');
+                        if (is_answer_btn || input.attr('type') === 'radio') {
+                            $(opt).addClass('opt-correct');
+                        } else {
+                            $(opt).addClass('opt-wrong');
+                        }
                     }
                 });
             }
@@ -546,7 +553,9 @@
             if (answer !== E.currentQuestion.answer) {
                 E.markState(2);
             } else {
-                if (E.currentQuestion.state == 0 || E.mode === 'wrong') {
+                if (E.mode === 'wrong') {
+                    E.markState(1);
+                } else if (E.currentQuestion.state == 0) {
                     E.markState(1);
                 } else {
                     E.currentQuestion.state = 1;
@@ -595,10 +604,25 @@
                 .append('<hr />')
                 .append(`
                     <div class='row ctrl-bar'>
-                        <button type='button' class='btn btn-primary col-5' id='btnAgain'>再来一次</button>
-                        <button type='button' class='btn btn-danger col-5' id='btnExit'>退出</button>
+                        <button type='button' class='btn btn-warning col-3' id='btnWrongStar'>错题标星</button>
+                        <button type='button' class='btn btn-primary col-3' id='btnAgain'>再来一次</button>
+                        <button type='button' class='btn btn-danger col-3' id='btnExit'>退出</button>
                     </div>`
                 );
+
+            dialog.find('#btnWrongStar').click(async () => {
+
+                let count = 0;
+                for (let i = 0; i < E.questions.length; i++) {
+                    const q = E.questions[i];
+                    if (q.state === 2 && !q.star) {
+                        await E.markStar(true, q);
+                        count++;
+                    }
+                }
+
+                alert(`已标星了${count}道错题`);
+            });
 
             dialog.find('#btnAgain').click(() => {
                 location.reload();
@@ -730,12 +754,12 @@
                 }
             });
             $('#btnAnswer').on('click', function () {
-                showAnswer($('#answerContent').css('display') == 'none');
+                showAnswer($('#answerContent').css('display') == 'none', true);
             });
             $('#btnStar').on('click', async function () {
                 let star = $(this).data('star');
                 star = !star;
-                await E.setStar(star);
+                await E.markStar(star);
                 updateStar(star);
             });
             $('#btnExit').on('click', function () {
