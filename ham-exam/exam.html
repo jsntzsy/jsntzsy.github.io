@@ -25,26 +25,6 @@
             currentQuestion = null;
 
             standard = undefined;
-            #EXAM_STANDARD = {
-                "a": {
-                    single: 32,
-                    multi: 8,
-                    time: 40,
-                    pass: 30
-                },
-                "b": {
-                    single: 45,
-                    multi: 15,
-                    time: 60,
-                    pass: 45
-                },
-                "c": {
-                    single: 70,
-                    multi: 20,
-                    time: 90,
-                    pass: 70
-                }
-            };
 
             async init(mode, startId) {
 
@@ -78,8 +58,9 @@
                 this.mode = mode;
 
                 //exam要注意根据等级 随机选择n条单选和m条多选
-                if (mode == 'exam' && this.#EXAM_STANDARD[this.#Q.currentLevel]) {
-                    this.standard = Object.assign({}, this.#EXAM_STANDARD[this.#Q.currentLevel]);
+                const standard = this.#Q.getLevelStandard(this.#Q.currentLevel);
+                if (mode == 'exam' && standard) {
+                    this.standard = Object.assign({}, standard);
                 }
 
                 // 生成本次题目列表

@@ -1,6 +1,27 @@
 
 class QuestionsManager {
 
+    EXAM_STANDARD = {
+        "a": {
+            single: 32,
+            multi: 8,
+            time: 40,
+            pass: 30
+        },
+        "b": {
+            single: 45,
+            multi: 15,
+            time: 60,
+            pass: 45
+        },
+        "c": {
+            single: 70,
+            multi: 20,
+            time: 90,
+            pass: 70
+        }
+    };
+
     #db = null;
     currentQuestions = [];
     currentLevel = "a";
@@ -138,6 +159,13 @@ class QuestionsManager {
         localStorage.removeItem('q_last_study_id');
         localStorage.removeItem('q_level');
         localStorage.removeItem('q_onlyDiff');
+    }
+
+    getLevelStandard(level = undefined) {
+        if (!level) {
+            level = this.currentLevel;
+        }
+        return this.EXAM_STANDARD[level];
     }
 
     get Questions() { return this.currentQuestions; }
