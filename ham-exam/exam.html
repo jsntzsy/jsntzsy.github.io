@@ -247,6 +247,11 @@
                 $('.question-confirm').addClass('study-mode');
                 $('#btnAnswer').hide();
             }
+            if (localStorage.getItem('q_show_memory_method') === 'true') {
+                $('#answerMemoryMethod').show();
+            } else {
+                $('#answerMemoryMethod').hide();
+            }
 
             buildExamInfo();
             updateQuestion();
@@ -261,7 +266,7 @@
                 examPanel.append(
                     `<div class="card-header">学习模式</div>
                      <div class="card-body">
-                        <p>题目编号：<span id="questionId">1</span></p>
+                        <p>题目编号：<span id="questionId"></span></p>
                         <p>本次学习时间：<span id="time">00:00</span></p>
                         <p>本次已学习题目数量：<span id="readCount">1</span></p>
                         <hr />
@@ -274,7 +279,6 @@
                 examPanel.append(
                     `<div class="card-header">模拟考试</div>
                      <div class="card-body">
-                        <p>题目编号：<span id="questionId">1</span></p>
                         <p>考试时间：<span id="time">00:00</span></p>
                         <p>答题进度：<span id="practiseCount">0</span> / 
                             <span id="questionCount">${E.questions.length}</span></p>
@@ -484,7 +488,8 @@
             }
             else {
                 $('#answerItem').text(q.answer);
-                $('#answerDescription').text(q?.answerDescription);
+                $('#answerDescription>span').text(q.description || '暂无');
+                $('#answerMemoryMethod>span').text(q.memory_method || '暂无');
                 $('#answerContent').show();
 
                 //高亮对应选项
@@ -610,7 +615,7 @@
                         <button type='button' class='btn btn-danger col-md-2' id='btnExit'><i class='fa fa-close'></i> 退出</button>
                     </div>`
                 );
-                    
+
 
             dialog.find('#btnStudy').click(() => {
                 switchToStudyMode();
@@ -837,7 +842,8 @@
 
                 <div class="row answer-content" id="answerContent" style="display: none;">
                     <div>正确答案：<span id="answerItem">ABCD</span></div>
-                    <div>答案解析：<span id="answerDescription"></span></div>
+                    <div id="answerDescription">答案解析：<span></span></div>
+                    <div id="answerMemoryMethod" style="display: none;">记忆方法：<span></span></div>
                 </div>
 
                 <div class="exam-ctrlbar">

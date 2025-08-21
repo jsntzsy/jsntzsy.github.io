@@ -48,6 +48,11 @@
                 updateQuestionInfo();
             });
 
+            $('#showMemoryMethod').on('change', async function () {
+                const showMemoryMethod = $(this).prop('checked');
+                localStorage.setItem('q_show_memory_method', showMemoryMethod);
+            });
+
             $('#resetProgress').on('click', async function () {
                 if (!confirm('确定要重置学习进度吗？')) {
                     return;
@@ -187,6 +192,7 @@
             $('#progressLabel').text(progress + "%");
 
             $('#onlyDifference').prop('checked', Q.onlyDiff).attr('disabled', Q.currentLevel === 'all' || Q.currentLevel === 'a');
+            $('#showMemoryMethod').prop('checked', localStorage.getItem('q_show_memory_method') === 'true');
 
             ///////////////////
 
@@ -317,15 +323,19 @@
                         </div>
                     </div>
                     <div class="row mt-3">
-                        <div class="col-md-4 form-switch-row">
+                        <div class="col-md-5 form-switch-row">
                             <div class="form-check form-switch">
                                 <input class="form-check-input" type="checkbox" id="onlyDifference" disabled>
                                 <label class="form-check-label" for="onlyDifference">
                                     仅学习差异题目
                                 </label>
                             </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="showMemoryMethod">
+                                <label class="form-check-label" for="showMemoryMethod">显示记忆方法</label>
+                            </div>
                         </div>
-                        <div class="col-md-8 text-md-end progress-ctrl-bar">
+                        <div class="col-md-7 text-md-end progress-ctrl-bar">
                             <button type="button" id="clearStar" class="btn btn-warning">
                                 <i class="fa fa-star"></i> 清空标星
                             </button>

@@ -70,16 +70,19 @@
 
 .form-switch-row {
     display: flex;
+    gap: 10px;
 }
 
 .form-switch {
     margin: auto 0;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 @media (max-width: 768px) {
 
     .form-switch {
+        text-wrap: nowrap;
+        overflow-x: hidden;
         margin: auto;
     }
 
