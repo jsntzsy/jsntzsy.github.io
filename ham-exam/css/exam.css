@@ -73,6 +73,13 @@ li.option-item label {
     margin-bottom: 20px;
 }
 
+.answer-content .text-tips {
+    text-align: right;
+    font-size: 0.7em;
+    opacity: 0.7;
+    margin-top: 5px;
+}
+
 .exam-info {
     margin-bottom: 25px;
 }

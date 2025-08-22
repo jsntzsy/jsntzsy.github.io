@@ -50,6 +50,11 @@
 
             $('#showMemoryMethod').on('change', async function () {
                 const showMemoryMethod = $(this).prop('checked');
+                if (showMemoryMethod) {
+                    alert(`注意：记忆方法的用途是便于快速记忆并答对题目，核心是为了更好通过考试而采取的应试方式！\n` +
+                        `记忆方式不具备规则普遍适用性，部分题目记忆方式更是有可能与现实情况不符或反直觉，请注意理性区分！\n` +
+                        `部分题目的记忆方法由AI生成，正在人工逐步完善中。`);
+                }
                 localStorage.setItem('q_show_memory_method', showMemoryMethod);
             });
 
@@ -127,7 +132,21 @@
             });
 
             // 强制重刷缓存
+            let verClickTime = [];
             $('#examVer').on('click', async () => {
+
+                //2秒内点击5次触发
+                verClickTime.push(new Date().getTime());
+                if (verClickTime.length < 5) {
+                    return;
+                }
+                const time = verClickTime.shift();
+                if (time && new Date().getTime() - time > 2000) {
+                    return;
+                }
+
+                //清空点击时间
+                verClickTime = [];
                 if (!confirm('刷新题库缓存会导致题库及学习进度等数据丢失，是否确定需要强制刷新题库？')) {
                     return;
                 }
@@ -438,7 +457,7 @@
             </div>
 
             <div class="app-info">
-                <a class="app-exam-ver" id="examVer">题库版本：2025_1</a>
+                <a class="app-exam-ver" id="examVer">题库版本：---</a>
                 <a class="app-author" href="https://jsntzsy.github.io/">作者：BA4TOG</a>
             </div>
 
