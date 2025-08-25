@@ -3707,7 +3707,7 @@
         "in_b": true,
         "in_c": false,
         "description": "RST中R=可辨度（Readability）",
-        "memory_method": "定义：RST=可辨度/强度/音调（CW）"
+        "memory_method": "常用短语：RST=可辨度/强度/音调（CW）"
     },
     {
         "id": "MC1-0266",
@@ -3735,7 +3735,7 @@
         "in_b": true,
         "in_c": true,
         "description": "呼叫前先询问“频率有人用吗？”，确认无人再呼叫",
-        "memory_method": "防打扰：先问再呼"
+        "memory_method": "先问再呼，防止打扰"
     },
     {
         "id": "MC1-0268",
@@ -3777,7 +3777,7 @@
         "in_b": true,
         "in_c": true,
         "description": "插入前思考是否影响原通信乐趣",
-        "memory_method": "礼仪核心：尊重他人通信"
+        "memory_method": "礼仪：尊重他人通信"
     },
     {
         "id": "MC1-0271",
@@ -3945,7 +3945,7 @@
         "in_b": true,
         "in_c": true,
         "description": "144MHz中继频差0.6MHz，430MHz频差5MHz",
-        "memory_method": "0.6/5，开头选最小的（不管单位）"
+        "memory_method": "0.6/5，开头选数值最小的（不管单位）"
     },
     {
         "id": "MC1-0283",
@@ -4379,7 +4379,7 @@
         "in_b": true,
         "in_c": true,
         "description": "中文位置报告：QTH（位置缩写）+地名",
-        "memory_method": "Q简语：QTH=位置。 联想记忆：提货(TH)需要地址"
+        "memory_method": "常用Q简语：QTH=位置。 联想记忆：提货(TH)需要地址"
     },
     {
         "id": "MC1-0314",
@@ -4393,7 +4393,7 @@
         "in_b": true,
         "in_c": true,
         "description": "英文位置报告：My QTH is Chengdu",
-        "memory_method": "Q简语：QTH=位置。 联想记忆：提货(TH)需要地址"
+        "memory_method": "常用Q简语：QTH=位置。 联想记忆：提货(TH)需要地址"
     },
     {
         "id": "MC1-0315",
@@ -4477,7 +4477,7 @@
         "in_b": true,
         "in_c": true,
         "description": "CW信号报告：UR RST 579 或 UR 579（RST可省略）",
-        "memory_method": "UR=your，RST可省"
+        "memory_method": "常用简语：UR=your，RST可省"
     },
     {
         "id": "MC1-0321",
@@ -4519,7 +4519,7 @@
         "in_b": true,
         "in_c": true,
         "description": "竞赛/DX通联简语：TU（谢谢）高效表意",
-        "memory_method": "TU=Thank you（谢谢）"
+        "memory_method": "常用简语：TU=Thank you（谢谢）"
     },
     {
         "id": "MC1-0324",
@@ -4757,7 +4757,7 @@
         "in_b": true,
         "in_c": true,
         "description": "QSL VIA BURO：QSL卡片通过卡片管理局寄送",
-        "memory_method": "QSL=通联卡片， 联想记忆：SL→收录，收录本次通联卡片"
+        "memory_method": "常用简语：QSL=通联卡片， 联想记忆：SL→收录，收录本次通联卡片"
     },
     {
         "id": "MC1-0341",
@@ -4771,7 +4771,7 @@
         "in_b": true,
         "in_c": true,
         "description": "结束缩语：CU（再见）、CU AGN（再会）、GB（再见）",
-        "memory_method": "CU=see you, GB=goodbye"
+        "memory_method": "常用简语：CU=see you, GB=goodbye"
     },
     {
         "id": "MC1-0342",
@@ -5093,7 +5093,7 @@
         "in_b": true,
         "in_c": true,
         "description": "请求确认：QSL?（抄收吗？）",
-        "memory_method": "QSL=confirm? 联想：SL→顺利→顺利收到"
+        "memory_method": "常用简语：QSL=confirm? 联想：SL→顺利→顺利收到"
     },
     {
         "id": "MC1-0365",
@@ -5107,7 +5107,7 @@
         "in_b": true,
         "in_c": true,
         "description": "Q简语QSL：确认抄收",
-        "memory_method": "QSL=acknowledge。 联想：SL→顺利→顺利收到"
+        "memory_method": "常用简语：QSL=acknowledge。 联想：SL→顺利→顺利收到"
     },
     {
         "id": "MC1-0366",
@@ -5219,7 +5219,7 @@
         "in_b": true,
         "in_c": true,
         "description": "询问位置：QTH?（QTH=位置）",
-        "memory_method": "QTH=location"
+        "memory_method": "常用简语：QTH=location"
     },
     {
         "id": "MC1-0374",
@@ -5233,7 +5233,7 @@
         "in_b": true,
         "in_c": true,
         "description": "结束祝福：73（最佳祝愿）",
-        "memory_method": "73=best regards"
+        "memory_method": "常用简语：73=best regards"
     },
     {
         "id": "MC1-0375",
@@ -5247,7 +5247,7 @@
         "in_b": true,
         "in_c": true,
         "description": "询问地址：UR ADR?（ADR=地址）",
-        "memory_method": "ADR=address"
+        "memory_method": "常用简语：ADR=address"
     },
     {
         "id": "MC1-0376",
@@ -5261,7 +5261,7 @@
         "in_b": true,
         "in_c": true,
         "description": "请求重复：AGN（again）",
-        "memory_method": "AGN=again"
+        "memory_method": "常用简语：AGN=again"
     },
     {
         "id": "MC1-0377",
@@ -5331,7 +5331,7 @@
         "in_b": true,
         "in_c": true,
         "description": "缩语CK：检查（check）",
-        "memory_method": "CK=check"
+        "memory_method": "常用简语：CK=check"
     },
     {
         "id": "MC1-0382",
@@ -5345,7 +5345,7 @@
         "in_b": true,
         "in_c": true,
         "description": "呼叫缩语：CQ（普遍呼叫）",
-        "memory_method": "CQ=seek you"
+        "memory_method": "常用简语：CQ=seek you"
     },
     {
         "id": "MC1-0383",
@@ -5667,7 +5667,7 @@
         "in_b": true,
         "in_c": true,
         "description": "\"OP\"是\"操作员\"（operator）的标准缩语",
-        "memory_method": "核心词：OP=操作者"
+        "memory_method": "OP=操作者"
     },
     {
         "id": "MC1-0406",
@@ -5681,7 +5681,7 @@
         "in_b": true,
         "in_c": true,
         "description": "\"PSE\"或\"PLS\"表示\"请\"（please），用于礼貌请求",
-        "memory_method": "谐音：PSE=please（PSE发音似please）"
+        "memory_method": "常用简语：PSE=please（PSE发音似please）"
     },
     {
         "id": "MC1-0407",
@@ -6367,7 +6367,7 @@
         "in_b": true,
         "in_c": true,
         "description": "FM带宽∝调制幅度×频率：大信号/高频成分拓宽带宽",
-        "memory_method": "公式：Bn=2(M+D)"
+        "memory_method": "FM：频率高、幅度大→带宽越宽（高大则宽）"
     },
     {
         "id": "MC1-0456",
@@ -6381,7 +6381,7 @@
         "in_b": true,
         "in_c": true,
         "description": "SSB带宽=调制信号带宽：信号越宽，发射越宽",
-        "memory_method": "线性关系：信号带宽=发射带宽"
+        "memory_method": "SSB：线性关系，信号带宽→发射带宽"
     },
     {
         "id": "MC1-0457",
@@ -6395,7 +6395,7 @@
         "in_b": true,
         "in_c": true,
         "description": "WPM速度=点信号数/50（每点120ms）",
-        "memory_method": "标准：点/分÷50=WPM"
+        "memory_method": "WPM关键数值：50和1.2"
     },
     {
         "id": "MC1-0458",
@@ -6409,7 +6409,7 @@
         "in_b": true,
         "in_c": true,
         "description": "WPM速度=每分钟\"PARIS\"重复次数（每词50点）",
-        "memory_method": "经典：PARIS=50点/词"
+        "memory_method": "WPM核心数值：50和1.2，PARIS=50"
     },
     {
         "id": "MC1-0459",
@@ -6423,7 +6423,7 @@
         "in_b": true,
         "in_c": true,
         "description": "莫尔斯时值：点=1t，划=3t，字符内隔=1t，字符间=3t，单词间=7t",
-        "memory_method": "口诀：1-3-1-3-7"
+        "memory_method": "口诀：13137"
     },
     {
         "id": "MC1-0460",
@@ -6451,7 +6451,7 @@
         "in_b": true,
         "in_c": true,
         "description": "带宽系数K：衰落信道K=5（抗干扰），非衰落K=3",
-        "memory_method": "环境适配：衰落严苛用K=5"
+        "memory_method": "对应：HF取5"
     },
     {
         "id": "MC1-0462",
@@ -6465,7 +6465,7 @@
         "in_b": true,
         "in_c": true,
         "description": "FM带宽公式：Bn=2(M+D)（M=最高调制频率，D=峰值频偏）",
-        "memory_method": "公式：2倍(频偏+最高频)"
+        "memory_method": "2(M+D)"
     },
     {
         "id": "MC1-0463",
@@ -6479,7 +6479,7 @@
         "in_b": true,
         "in_c": true,
         "description": "SSTV/FAX用FM调制：抗干扰强，适合慢速图像",
-        "memory_method": "适用性：FM抗噪>AM"
+        "memory_method": "SSTV和FAX都是FM调制"
     },
     {
         "id": "MC1-0464",
@@ -6493,7 +6493,7 @@
         "in_b": true,
         "in_c": true,
         "description": "SSTV传静止图像：逐行扫描，非实时视频",
-        "memory_method": "本质：静态画面传输"
+        "memory_method": "逐行扫描+静态（传输速度很慢不可能来得及传动图）"
     },
     {
         "id": "MC2-0465",
@@ -6507,7 +6507,7 @@
         "in_b": true,
         "in_c": true,
         "description": "",
-        "memory_method": ""
+        "memory_method": "DSSTV、FAX"
     },
     {
         "id": "MC1-0466",
@@ -6521,7 +6521,7 @@
         "in_b": true,
         "in_c": true,
         "description": "SSTV\"咯咯\"声=行同步信号：标识每行起始",
-        "memory_method": "功能：扫描同步基准"
+        "memory_method": "周期性→咯很多次→图片很多行→每行开头→行同步"
     },
     {
         "id": "MC1-0467",
@@ -6535,7 +6535,7 @@
         "in_b": true,
         "in_c": true,
         "description": "SSTV模式区别：分辨率/调制/扫描参数不同",
-        "memory_method": "核心差异：像素处理方式"
+        "memory_method": "选最长的"
     },
     {
         "id": "MC2-0468",
@@ -6549,7 +6549,7 @@
         "in_b": true,
         "in_c": true,
         "description": "",
-        "memory_method": ""
+        "memory_method": "排除：含有FSK的"
     },
     {
         "id": "MC1-0469",
@@ -6563,7 +6563,7 @@
         "in_b": true,
         "in_c": true,
         "description": "SSTV基带：白=2300Hz，黑=1500Hz，同步=1200Hz（FM制）",
-        "memory_method": "频率锚点：同步最低，白最高"
+        "memory_method": "选开头最大的数值（不管符号），或者选逐渐递减的绝对单位"
     },
     {
         "id": "MC1-0470",
@@ -6577,7 +6577,7 @@
         "in_b": true,
         "in_c": true,
         "description": "图像错位=帧同步失效：行频一致但帧起始不同步",
-        "memory_method": "故障：帧定时失准"
+        "memory_method": "半帧错位→不同步"
     },
     {
         "id": "MC1-0471",
@@ -6591,7 +6591,7 @@
         "in_b": true,
         "in_c": true,
         "description": "图像倾斜=行频不同步：收发扫描速率不一致",
-        "memory_method": "故障：行扫描失步"
+        "memory_method": "左右倾斜→行频不一致"
     },
     {
         "id": "MC1-0472",
@@ -6605,7 +6605,7 @@
         "in_b": true,
         "in_c": true,
         "description": "低于1.2GHz不足ATV带宽：ATV需>5MHz，低频频段紧张",
-        "memory_method": "频谱现实：低频资源拥挤"
+        "memory_method": "不足以容纳"
     },
     {
         "id": "MC1-0473",
@@ -6619,7 +6619,7 @@
         "in_b": true,
         "in_c": true,
         "description": "FM传ATV优点：抗调幅噪声（如脉冲干扰）",
-        "memory_method": "技术优势：FM抑制幅度噪声"
+        "memory_method": "FM抗幅度噪声"
     },
     {
         "id": "MC2-0474",
@@ -6633,7 +6633,7 @@
         "in_b": true,
         "in_c": true,
         "description": "",
-        "memory_method": ""
+        "memory_method": "带宽窄、低频保真"
     },
     {
         "id": "MC1-0475",
@@ -6647,7 +6647,7 @@
         "in_b": true,
         "in_c": true,
         "description": "SSB传RTTY=F2B：单边带抑载波数据",
-        "memory_method": "编码规则：F=调频，2=数字，B=电报"
+        "memory_method": "编码规则：F=调频，2=数字，B=电报 ####"
     },
     {
         "id": "MC1-0476",
@@ -6661,7 +6661,7 @@
         "in_b": true,
         "in_c": true,
         "description": "SSB传PSK31=G2B：相位调制数据",
-        "memory_method": "编码规则：G=相移调制，2=数字，B=电报"
+        "memory_method": "编码规则：G=相移调制，2=数字，B=电报 ####"
     },
     {
         "id": "MC1-0477",
@@ -6675,7 +6675,7 @@
         "in_b": true,
         "in_c": true,
         "description": "FM传RTTY=F2B：调频数据（同SSB传RTTY）",
-        "memory_method": "同0475（数据信号）"
+        "memory_method": "编码规则：F=调频，2=数字，B=电报 ####"
     },
     {
         "id": "MC3-0478",
@@ -6689,7 +6689,7 @@
         "in_b": true,
         "in_c": true,
         "description": "",
-        "memory_method": ""
+        "memory_method": "排除：频率稳定度"
     },
     {
         "id": "MC1-0479",
@@ -6703,7 +6703,7 @@
         "in_b": true,
         "in_c": true,
         "description": "必要带宽∝信息速率+噪声环境：速率越高、噪声越大，带宽越宽",
-        "memory_method": "本质：信息密度决定带宽"
+        "memory_method": "最长的"
     },
     {
         "id": "MC4-0480",
@@ -6717,7 +6717,7 @@
         "in_b": true,
         "in_c": true,
         "description": "",
-        "memory_method": ""
+        "memory_method": "全选，都是传输数据"
     },
     {
         "id": "MC1-0481",
@@ -6759,7 +6759,7 @@
         "in_b": true,
         "in_c": true,
         "description": "RTTY符号速率=50波特（0.02秒/符号），数据速率=50bps（1符号=1比特）",
-        "memory_method": "1:1关系：符号=比特"
+        "memory_method": "传输一位数据→1:1，RTTY→50bps，所以50→50"
     },
     {
         "id": "MC1-0484",
@@ -6773,7 +6773,7 @@
         "in_b": true,
         "in_c": true,
         "description": "BPSK31符号速率=31.25波特（32ms/符号），数据速率=31.25bps（1符号=1比特）",
-        "memory_method": "同0483：1:1映射"
+        "memory_method": "传输一位数据→1:1，BPSK[31]→31.25bps，所以31.25→31.25"
     },
     {
         "id": "MC1-0485",
@@ -6787,7 +6787,7 @@
         "in_b": true,
         "in_c": true,
         "description": "MFSK16符号速率=15.625波特（64ms/符号），数据速率=62.5bps（1符号=4比特，16种状态）",
-        "memory_method": "效率：4倍提升（2^4=16）"
+        "memory_method": "16种状态→传输4位数据（16=2的4次方）→1:4, MFSK[16]→15.625，所以15.625→62.5"
     },
     {
         "id": "MC1-0486",
@@ -6801,7 +6801,7 @@
         "in_b": true,
         "in_c": true,
         "description": "QPSK31符号速率=31.25波特，数据速率=62.5bps（1符号=2比特，4种相位）",
-        "memory_method": "效率：2倍提升（2^2=4）"
+        "memory_method": "传输两位数据→1:2， QPSK[31]→31.25波特，所以31.25→62.5"
     },
     {
         "id": "MC1-0487",
@@ -6829,7 +6829,7 @@
         "in_b": true,
         "in_c": true,
         "description": "前向纠错（FEC）：发送冗余数据，接收方自行纠错",
-        "memory_method": "特点：实时纠错，无需重传"
+        "memory_method": "排除法：1.排除重复足够多（效率太低了）；2.题目是前向纠错，所以排除【重传】"
     },
     {
         "id": "MC1-0489",
@@ -6843,7 +6843,7 @@
         "in_b": true,
         "in_c": true,
         "description": "自动重传（ARQ）：出错时请求重发数据块",
-        "memory_method": "特点：可靠传输，延迟较高"
+        "memory_method": "排除法：1.排除重复足够多（效率太低了）；2.题目是自动重传，排除冗余；3. 排除发送方核对"
     },
     {
         "id": "MC1-0490",
@@ -6857,7 +6857,7 @@
         "in_b": true,
         "in_c": true,
         "description": "RTTY操作：FSK音频基带+SSB射频载波",
-        "memory_method": "链路：数字调制+模拟搬频"
+        "memory_method": "FSK+SSB"
     },
     {
         "id": "MC1-0491",
@@ -6871,7 +6871,7 @@
         "in_b": true,
         "in_c": true,
         "description": "PSK31操作：PSK音频基带+SSB射频载波",
-        "memory_method": "同0490（音频+射频调制）"
+        "memory_method": "FSK+SSB"
     },
     {
         "id": "MC1-0492",
@@ -6885,7 +6885,7 @@
         "in_b": true,
         "in_c": true,
         "description": "PACKET操作：FSK音频基带+SSB射频载波（短波）",
-        "memory_method": "同0490（标准数字链路）"
+        "memory_method": "FSK+SSB"
     },
     {
         "id": "MC1-0493",
@@ -6899,7 +6899,7 @@
         "in_b": true,
         "in_c": true,
         "description": "PACKET符号速率：300/1200/9600波特（HF/VHF/卫星）",
-        "memory_method": "速率分级：低频慢，高频快"
+        "memory_method": "选前两项里出现两次的（300、1200）"
     },
     {
         "id": "MC1-0494",
@@ -6913,7 +6913,7 @@
         "in_b": true,
         "in_c": true,
         "description": "VHF PACKET多用FM：抗干扰强，设备普及",
-        "memory_method": "现实选择：FM电台易得"
+        "memory_method": "FM电台易得"
     },
     {
         "id": "MC1-0495",
@@ -6927,7 +6927,7 @@
         "in_b": true,
         "in_c": true,
         "description": "APRS核心功能：共享位置信息（如车载台自动报告）",
-        "memory_method": "本质：地理信息广播系统"
+        "memory_method": "APRS→位置"
     },
     {
         "id": "MC3-0496",
@@ -6941,7 +6941,7 @@
         "in_b": true,
         "in_c": true,
         "description": "",
-        "memory_method": ""
+        "memory_method": "排除：CW"
     },
     {
         "id": "MC1-0497",
@@ -6955,7 +6955,7 @@
         "in_b": true,
         "in_c": true,
         "description": "MFSK符号时长增加：抗突发干扰强，适合短波DX",
-        "memory_method": "优势：长符号=强抗扰"
+        "memory_method": "关键词：抗干扰"
     },
     {
         "id": "MC1-0498",
@@ -6997,7 +6997,7 @@
         "in_b": true,
         "in_c": true,
         "description": "RTTY标准设置：50波特，5数据位，无校验，1停止位",
-        "memory_method": "历史标准：电传机遗留配置"
+        "memory_method": "50,5,N,1"
     },
     {
         "id": "MC3-0501",
