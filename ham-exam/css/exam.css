@@ -73,6 +73,12 @@ li.option-item label {
     margin-bottom: 20px;
 }
 
+#answerDescription,
+#answerMemoryMethod {
+    text-align: justify;
+    font-size: 0.9em;
+}
+
 .answer-content .text-tips {
     text-align: right;
     font-size: 0.7em;
