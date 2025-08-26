@@ -8075,7 +8075,7 @@
         "in_b": false,
         "in_c": false,
         "description": "VOL：接收音频音量控制",
-        "memory_method": "关键词：音量。"
+        "memory_method": "关键词：音量"
     },
     {
         "id": "MC1-0578",
@@ -8621,7 +8621,7 @@
         "in_b": true,
         "in_c": true,
         "description": "PROC是发射机语音压缩功能，提升弱语音包络",
-        "memory_method": "关键词：压缩。缩写：PROC=语音压缩"
+        "memory_method": "关键词：压缩。PROC=语音压缩"
     },
     {
         "id": "MC1-0617",
@@ -10544,7 +10544,7 @@
         "in_b": true,
         "in_c": true,
         "description": "近距通联用低架天线/低频段",
-        "memory_method": "近距低架低频"
+        "memory_method": "排除：1米"
     },
     {
         "id": "MC1-0754",
@@ -10558,7 +10558,7 @@
         "in_b": true,
         "in_c": true,
         "description": "天调匹配天线阻抗至发射机需求",
-        "memory_method": "阻抗变换匹配"
+        "memory_method": "天馈阻抗→负载阻抗"
     },
     {
         "id": "MC1-0755",
@@ -10572,7 +10572,7 @@
         "in_b": true,
         "in_c": true,
         "description": "天调补偿失配保功率输出",
-        "memory_method": "保功率非提效"
+        "memory_method": "关键词：补偿失配"
     },
     {
         "id": "MC1-0756",
@@ -10586,7 +10586,7 @@
         "in_b": true,
         "in_c": true,
         "description": "天调近天线减少馈线损耗",
-        "memory_method": "天调近天线"
+        "memory_method": "天天猪魁首"
     },
     {
         "id": "MC1-0757",
@@ -10601,7 +10601,7 @@
         "in_b": true,
         "in_c": true,
         "description": "天调越近天线效率越高",
-        "memory_method": "近端天调效高"
+        "memory_method": "顺序：1234"
     },
     {
         "id": "MC1-0758",
@@ -10615,7 +10615,7 @@
         "in_b": true,
         "in_c": true,
         "description": "e.i.r.p.=馈入功率×天线绝对增益",
-        "memory_method": "eirp=功率×Gi"
+        "memory_method": "关键词：Gi"
     },
     {
         "id": "MC1-0759",
@@ -10629,7 +10629,7 @@
         "in_b": true,
         "in_c": true,
         "description": "3.85dBd=5.15dBi，e.i.r.p.=10W×10^(5.15/10)≈40W",
-        "memory_method": "dBi=dBd+2.15，功率乘倍数"
+        "memory_method": "40w"
     },
     {
         "id": "MC1-0760",
@@ -10643,7 +10643,7 @@
         "in_b": true,
         "in_c": true,
         "description": "e.r.p.=10W×10^(5.15-2.15)/10=20W",
-        "memory_method": "erp=eirp/1.64"
+        "memory_method": "20W"
     },
     {
         "id": "MC3-0761",
@@ -10657,7 +10657,7 @@
         "in_b": true,
         "in_c": true,
         "description": "同轴/平行馈线/波导为常见传输线",
-        "memory_method": "同轴平行波导"
+        "memory_method": "排除：波纹软管"
     },
     {
         "id": "MC2-0762",
@@ -10671,7 +10671,7 @@
         "in_b": true,
         "in_c": true,
         "description": "外内径比大/介电常数小则阻抗高",
-        "memory_method": "径比大介电小→阻抗高"
+        "memory_method": "关键词：内径、介电常数；或者：外导体、绝缘介质"
     },
     {
         "id": "MC1-0763",
@@ -10685,7 +10685,7 @@
         "in_b": true,
         "in_c": true,
         "description": "端接匹配负载时始端阻抗恒为特性阻抗",
-        "memory_method": "匹配负载恒阻"
+        "memory_method": "电阻→无关"
     },
     {
         "id": "MC1-0764",
@@ -10699,7 +10699,7 @@
         "in_b": true,
         "in_c": true,
         "description": "末端开路：1/4波长偶数倍阻抗→∞",
-        "memory_method": "开路偶倍阻抗∞"
+        "memory_method": "开路→偶大奇小"
     },
     {
         "id": "MC1-0765",
@@ -10713,7 +10713,7 @@
         "in_b": true,
         "in_c": true,
         "description": "末端短路：1/4波长奇数倍阻抗→∞",
-        "memory_method": "短路奇倍阻抗∞"
+        "memory_method": "短路→奇大偶小"
     },
     {
         "id": "MC1-0766",
@@ -10727,7 +10727,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电缆长度=测量波长时读数准确",
-        "memory_method": "等波长测准"
+        "memory_method": "关键词：等于"
     },
     {
         "id": "MC2-0767",
@@ -10741,7 +10741,7 @@
         "in_b": true,
         "in_c": true,
         "description": "高频位移电流强，辐射能量多",
-        "memory_method": "高频辐能强"
+        "memory_method": "关键词：一定场强、开放系统"
     },
     {
         "id": "MC1-0768",
@@ -10755,7 +10755,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电磁波=电场+磁场",
-        "memory_method": "电场磁场组"
+        "memory_method": "电磁波→电磁场"
     },
     {
         "id": "MC1-0769",
@@ -10797,7 +10797,7 @@
         "in_b": true,
         "in_c": true,
         "description": "波长λ(m)=300/f(MHz)",
-        "memory_method": "公式：300除频"
+        "memory_method": "300做分子"
     },
     {
         "id": "MC3-0772",
@@ -10811,7 +10811,7 @@
         "in_b": true,
         "in_c": true,
         "description": "频率f=1/T，波长λ=c/f",
-        "memory_method": "fT倒数，λc除频"
+        "memory_method": "排除：没必要"
     },
     {
         "id": "MC1-0773",
@@ -10825,7 +10825,7 @@
         "in_b": true,
         "in_c": true,
         "description": "路径损耗∝距离²×频率²",
-        "memory_method": "损比距²频²"
+        "memory_method": "双平方"
     },
     {
         "id": "MC2-0774",
@@ -10839,7 +10839,7 @@
         "in_b": true,
         "in_c": true,
         "description": "距离/频率增N倍，损耗增N²倍",
-        "memory_method": "距频倍，损方倍"
+        "memory_method": "关键词：N^2"
     },
     {
         "id": "MC1-0775",
@@ -10853,7 +10853,7 @@
         "in_b": true,
         "in_c": true,
         "description": "距500km损耗增14dB，功率-129.6dBm",
-        "memory_method": "损公算dB差"
+        "memory_method": "500km→-129.6"
     },
     {
         "id": "MC1-0776",
@@ -10867,7 +10867,7 @@
         "in_b": true,
         "in_c": true,
         "description": "距1000km损耗增20dB，功率-135.6dBm",
-        "memory_method": "倍距损升6dB"
+        "memory_method": "1000km→-135.6"
     },
     {
         "id": "MC1-0777",
@@ -10881,7 +10881,7 @@
         "in_b": true,
         "in_c": true,
         "description": "435MHz比145MHz损增9.5dB，功率-125.1dBm",
-        "memory_method": "频高损升"
+        "memory_method": "435MHz→-125.1"
     },
     {
         "id": "MC1-0778",
@@ -10895,7 +10895,7 @@
         "in_b": true,
         "in_c": true,
         "description": "功率降1/4（-6dB），信号-121.6dBm",
-        "memory_method": "功降6dB，S降1级"
+        "memory_method": "0.25W→-121.6"
     },
     {
         "id": "MC1-0779",
@@ -10909,7 +10909,7 @@
         "in_b": true,
         "in_c": true,
         "description": "距500km信号降14dB≈2.3级，S≈5.7",
-        "memory_method": "损14dB≈S5.7"
+        "memory_method": "500km→略低S6"
     },
     {
         "id": "MC1-0780",
@@ -10923,7 +10923,7 @@
         "in_b": true,
         "in_c": true,
         "description": "距1000km信号降20dB≈3.3级，S≈4.7",
-        "memory_method": "损20dB≈S4.7"
+        "memory_method": "1000km→略低S5"
     },
     {
         "id": "MC1-0781",
@@ -10937,7 +10937,7 @@
         "in_b": true,
         "in_c": true,
         "description": "435MHz损比145MHz高9.5dB，S≈6.5",
-        "memory_method": "频高损升，S降1.5"
+        "memory_method": "435MHz→略高S6"
     },
     {
         "id": "MC1-0782",
@@ -10951,7 +10951,7 @@
         "in_b": true,
         "in_c": true,
         "description": "功降6dB，S降1级至S7",
-        "memory_method": "功降1级S降1"
+        "memory_method": "功率→S7"
     },
     {
         "id": "MC1-0783",
@@ -10965,7 +10965,7 @@
         "in_b": true,
         "in_c": true,
         "description": "100W→25W（降6dB），S8→S7",
-        "memory_method": "功降6dB，S降1"
+        "memory_method": "功率→S7"
     },
     {
         "id": "MC1-0784",
@@ -10979,7 +10979,7 @@
         "in_b": true,
         "in_c": true,
         "description": "80W→5W（降12dB），S8→S6",
-        "memory_method": "功降12dB，S降2"
+        "memory_method": "QRP→S6"
     },
     {
         "id": "MC2-0785",
@@ -10993,7 +10993,7 @@
         "in_b": true,
         "in_c": true,
         "description": "波阻抗Z=E/H，远场趋常数",
-        "memory_method": "远场E/H定"
+        "memory_method": "排除：馈线"
     },
     {
         "id": "MC1-0786",
@@ -11007,7 +11007,7 @@
         "in_b": true,
         "in_c": true,
         "description": "远区场（＞10λ）强度∝1/距离²",
-        "memory_method": "远场反比距方"
+        "memory_method": "关键词：10倍"
     },
     {
         "id": "MC1-0787",
@@ -11021,7 +11021,7 @@
         "in_b": true,
         "in_c": true,
         "description": "远场区测量（＞10λ）避免近场干扰",
-        "memory_method": "测场强，远场准"
+        "memory_method": "关键词：10个"
     },
     {
         "id": "MC1-0788",
@@ -11036,7 +11036,7 @@
         "in_b": true,
         "in_c": true,
         "description": "增益dBd=10log(Po/P)",
-        "memory_method": "比较功率算dBd"
+        "memory_method": "关键词：Po/P"
     },
     {
         "id": "MC1-0789",
@@ -11051,7 +11051,7 @@
         "in_b": true,
         "in_c": true,
         "description": "增益dBi=10log(Po/P)+2.15",
-        "memory_method": "dBd转dBi加2.15"
+        "memory_method": "关键词：Po/P"
     },
     {
         "id": "MC1-0790",
@@ -11065,7 +11065,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电波分地面/天波/空间/散射波",
-        "memory_method": "四类传播型"
+        "memory_method": "地面波开头，地天空散"
     },
     {
         "id": "MC1-0791",
@@ -11079,7 +11079,7 @@
         "in_b": true,
         "in_c": true,
         "description": "地波衰减∝频率×距离/电导率",
-        "memory_method": "频距导率定衰减"
+        "memory_method": "关键词：电导率"
     },
     {
         "id": "MC1-0792",
@@ -11093,7 +11093,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电离层反射实现全球通信",
-        "memory_method": "电离层全球传"
+        "memory_method": ""
     },
     {
         "id": "MC1-0793",
@@ -11107,7 +11107,7 @@
         "in_b": true,
         "in_c": true,
         "description": "静寂区=天地波均未覆盖的越距区",
-        "memory_method": "静寂=越距区"
+        "memory_method": "关键词：都未能覆盖。都没覆盖所以静寂"
     },
     {
         "id": "MC1-0794",
@@ -11121,7 +11121,7 @@
         "in_b": true,
         "in_c": true,
         "description": "衰减=功率减，衰落=幅度时变",
-        "memory_method": "衰减稳减，衰落起伏"
+        "memory_method": "衰减→稳减，衰落→起伏"
     },
     {
         "id": "MC2-0795",
@@ -11135,7 +11135,7 @@
         "in_b": true,
         "in_c": true,
         "description": "反射后极化/频率成分随机变化",
-        "memory_method": "极化频分成随机"
+        "memory_method": "关键词：随机改变"
     },
     {
         "id": "MC1-0796",
@@ -11149,7 +11149,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电离层选择性衰落致谱峰起伏",
-        "memory_method": "选择衰落谱峰抖"
+        "memory_method": "关键词：选择性衰落"
     },
     {
         "id": "MC1-0797",
@@ -11163,7 +11163,7 @@
         "in_b": true,
         "in_c": true,
         "description": "天波极化随机变化，无固定最佳极化",
-        "memory_method": "天波极化随机"
+        "memory_method": "关键词：随机改变"
     },
     {
         "id": "MC1-0798",
@@ -11177,7 +11177,7 @@
         "in_b": true,
         "in_c": true,
         "description": "天波极化随机致效果不确定",
-        "memory_method": "效果随机变"
+        "memory_method": "关键词：随机变化"
     },
     {
         "id": "MC3-0799",
@@ -11191,7 +11191,7 @@
         "in_b": true,
         "in_c": true,
         "description": "日耀/地磁/季节/昼夜/频率距影响传播",
-        "memory_method": "日磁季夜频距因"
+        "memory_method": "排除：气温"
     },
     {
         "id": "MC2-0800",
@@ -11205,7 +11205,7 @@
         "in_b": true,
         "in_c": true,
         "description": "MUF=两点天波最高可用频，昼高夜低",
-        "memory_method": "MUF昼高夜低"
+        "memory_method": "关键词：最高频率、夜间"
     },
     {
         "id": "MC1-0801",
@@ -11219,7 +11219,7 @@
         "in_b": true,
         "in_c": true,
         "description": "MUF为最高可用频率，实际工作频率需略低于MUF（如20MHz选18MHz）",
-        "memory_method": "策略：工作频≈0.85-0.9×MUF"
+        "memory_method": "选择低于并最接近MUF的18MHz"
     },
     {
         "id": "MC1-0802",
@@ -11233,7 +11233,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电离层高度排序：F2（300km）> F1（200km）> E（100km）> D（60km）",
-        "memory_method": "口诀：F2高F1中，E层低D贴地"
+        "memory_method": "口诀：21ED"
     },
     {
         "id": "MC1-0803",
@@ -11247,7 +11247,7 @@
         "in_b": true,
         "in_c": true,
         "description": "离子密度排序：F2最密 > F1 > E > D最疏",
-        "memory_method": "关联：高度越高电离越强（F2电离最强）"
+        "memory_method": "口诀：21ED"
     },
     {
         "id": "MC2-0804",
@@ -11261,7 +11261,7 @@
         "in_b": true,
         "in_c": true,
         "description": "F2/F1/E层反射电波，D层吸收电波（不反射）",
-        "memory_method": "关键：D层只吸不反"
+        "memory_method": "口诀：21E反D不反"
     },
     {
         "id": "MC1-0805",
@@ -11289,7 +11289,7 @@
         "in_b": true,
         "in_c": true,
         "description": "灰线区电离层渐变稳定，支持多跳反射路径",
-        "memory_method": "原理：电离层渐变减少衰减"
+        "memory_method": "关键词：多跳"
     },
     {
         "id": "MC1-0807",
@@ -11303,7 +11303,7 @@
         "in_b": true,
         "in_c": true,
         "description": "长路径=短路径的反方向（地球大圆对面）",
-        "memory_method": "记忆：长=短的反向"
+        "memory_method": "长=短的反向"
     },
     {
         "id": "MC4-0808",
@@ -11317,7 +11317,7 @@
         "in_b": true,
         "in_c": true,
         "description": "传播预测四要素：太阳黑子（活动）、地磁指数（扰动）、位置（距离）、时间（昼夜/季节）",
-        "memory_method": "口诀：日磁位时定传播"
+        "memory_method": "全选。口诀：日磁位时 定传播"
     },
     {
         "id": "MC1-0809",
@@ -11331,7 +11331,7 @@
         "in_b": true,
         "in_c": true,
         "description": "太阳通量范围：50（低）~300（高），单位10⁻²²W/m²/Hz",
-        "memory_method": "极值：50最低，300最高"
+        "memory_method": "最高值选最高的"
     },
     {
         "id": "MC1-0810",
@@ -11345,7 +11345,7 @@
         "in_b": true,
         "in_c": true,
         "description": "K指数=地磁扰动程度，范围0（静）~9（强扰）",
-        "memory_method": "范围：0至9整数值"
+        "memory_method": "最小到最大"
     },
     {
         "id": "MC1-0811",
@@ -11359,7 +11359,7 @@
         "in_b": true,
         "in_c": true,
         "description": "太阳黑子周期≈11.2年，各周期活跃度不同",
-        "memory_method": "常识：11年周期，活动峰谷交替"
+        "memory_method": "关键词：11.2，有差别"
     },
     {
         "id": "MC1-0812",
@@ -11373,7 +11373,7 @@
         "in_b": true,
         "in_c": true,
         "description": "SSN大=太阳活跃=电离层密度高=利于HF远距通信",
-        "memory_method": "正相关：SSN↑ → 传播↑"
+        "memory_method": "SSN大→传播好"
     },
     {
         "id": "MC1-0813",
@@ -11387,7 +11387,7 @@
         "in_b": true,
         "in_c": true,
         "description": "太阳耀斑→D层吸收增强→低频信号衰减更严重",
-        "memory_method": "低频更易被吸收"
+        "memory_method": "关键词：低频。低频更易被吸收"
     },
     {
         "id": "MC1-0814",
@@ -11401,7 +11401,7 @@
         "in_b": true,
         "in_c": true,
         "description": "F107=太阳10.7cm射电辐射通量，反映电离层状态",
-        "memory_method": "缩写：F107=太阳射电流量"
+        "memory_method": "关键词：通量指数"
     },
     {
         "id": "MC1-0815",
@@ -11415,7 +11415,7 @@
         "in_b": true,
         "in_c": true,
         "description": "F107增大→电离层密度↑→利于F层反射DX信号",
-        "memory_method": "正相关：F107↑ → 传播↑"
+        "memory_method": "F107大→传播好"
     },
     {
         "id": "MC1-0816",
@@ -11429,7 +11429,7 @@
         "in_b": true,
         "in_c": true,
         "description": "122GHz频段大气吸收强（氧气/水汽共振），不适卫星通信",
-        "memory_method": "原理：60/120/183GHz为吸收峰"
+        "memory_method": "选数值个数最多的。"
     },
     {
         "id": "MC1-0817",
@@ -11443,7 +11443,7 @@
         "in_b": true,
         "in_c": true,
         "description": "毫米波（EHF）受雨衰最严重（波长≈雨滴尺寸）",
-        "memory_method": "雨衰排序：毫米波 > 厘米波 > 米波"
+        "memory_method": "雨滴尺寸→毫米。雨衰排序：毫米波 > 厘米波 > 米波"
     },
     {
         "id": "MC1-0818",
@@ -11457,7 +11457,7 @@
         "in_b": true,
         "in_c": true,
         "description": "植被吸收∝频率（高频衰减更大）",
-        "memory_method": "规律：频率↑ → 植被吸收↑"
+        "memory_method": "频率高→吸收多"
     },
     {
         "id": "MC1-0819",
@@ -11485,7 +11485,7 @@
         "in_b": true,
         "in_c": true,
         "description": "调制器=用基带信号控制载波参数（幅度/频率/相位）",
-        "memory_method": "核心功能：基带→载波调制"
+        "memory_method": "频、幅、相"
     },
     {
         "id": "MC4-0821",
@@ -11499,7 +11499,7 @@
         "in_b": true,
         "in_c": true,
         "description": "接收机四要素：抗干扰（抑噪）、增益（放大）、低噪声（灵敏度）、低失真（保真）",
-        "memory_method": "性能核心：抗扰增益低噪真"
+        "memory_method": "全选。性能核心：抗扰增益低噪真"
     },
     {
         "id": "MC1-0822",
@@ -11513,7 +11513,7 @@
         "in_b": true,
         "in_c": true,
         "description": "解调器=从已调信号提取原始基带信号",
-        "memory_method": "功能：射频→基带还原"
+        "memory_method": "解调：射频→原始"
     },
     {
         "id": "MC1-0823",
@@ -11527,7 +11527,7 @@
         "in_b": true,
         "in_c": true,
         "description": "解调器核心指标：还原原始信号保真度",
-        "memory_method": "目标：高保真解调"
+        "memory_method": "忠实还原。目标：高保真解调"
     },
     {
         "id": "MC1-0824",
@@ -11541,7 +11541,7 @@
         "in_b": true,
         "in_c": true,
         "description": "CTCSS亚音频=67-250.3Hz（带内低频单音）",
-        "memory_method": "范围：67Hz起，250Hz止"
+        "memory_method": "选后面的值最小的"
     },
     {
         "id": "MC1-0825",
@@ -11555,7 +11555,7 @@
         "in_b": true,
         "in_c": true,
         "description": "矩形系数=滤波器边沿陡峭度（60dB带宽/6dB带宽）",
-        "memory_method": "定义：矩系=60dB/6dB带宽比"
+        "memory_method": "关键词：斜坡"
     },
     {
         "id": "MC1-0826",
@@ -11569,7 +11569,7 @@
         "in_b": true,
         "in_c": true,
         "description": "矩形系数小（3.8<5）→边沿陡→邻道抑制强",
-        "memory_method": "结论：矩系小→抗邻频优"
+        "memory_method": "关键词：邻近、A比B强"
     },
     {
         "id": "MC1-0827",
@@ -11583,7 +11583,7 @@
         "in_b": true,
         "in_c": true,
         "description": "前置放大器=抑制接收机内部噪声（置于前端）",
-        "memory_method": "作用：抑制第一级噪声"
+        "memory_method": "关键词：内部"
     },
     {
         "id": "MC1-0828",
@@ -11597,7 +11597,7 @@
         "in_b": true,
         "in_c": true,
         "description": "FM接收声强与信号强度无关（限幅器切顶）",
-        "memory_method": "特性：FM声强恒稳"
+        "memory_method": "选最长的"
     },
     {
         "id": "MC1-0829",
@@ -11611,7 +11611,7 @@
         "in_b": true,
         "in_c": true,
         "description": "NFM收WFM=可听但失真（频偏过大）",
-        "memory_method": "现象：窄收宽→失真"
+        "memory_method": "窄收宽：非线性失真"
     },
     {
         "id": "MC1-0830",
@@ -11625,7 +11625,7 @@
         "in_b": true,
         "in_c": true,
         "description": "WFM收NFM=声小（频偏不足）",
-        "memory_method": "现象：宽收窄→声弱"
+        "memory_method": "宽收窄：声音小"
     },
     {
         "id": "MC1-0831",
@@ -11639,7 +11639,7 @@
         "in_b": true,
         "in_c": true,
         "description": "FM噪声=随机相位变化经鉴频产生",
-        "memory_method": "成因：相位抖动→鉴频噪声"
+        "memory_method": "选最长的。或者：没有关系"
     },
     {
         "id": "MC1-0832",
@@ -11653,7 +11653,7 @@
         "in_b": true,
         "in_c": true,
         "description": "FM解调=鉴频器（频率→电压）",
-        "memory_method": "器件：鉴频器解调FM"
+        "memory_method": "FM解调：鉴频"
     },
     {
         "id": "MC1-0833",
@@ -11667,7 +11667,7 @@
         "in_b": true,
         "in_c": true,
         "description": "鉴频=FM解调过程",
-        "memory_method": "定义：鉴频≡解调FM"
+        "memory_method": "鉴频：解调FM"
     },
     {
         "id": "MC1-0834",
@@ -11681,7 +11681,7 @@
         "in_b": true,
         "in_c": true,
         "description": "AM解调=检波器（包络检测）",
-        "memory_method": "器件：检波器解调AM"
+        "memory_method": "解调AM：检波"
     },
     {
         "id": "MC1-0835",
@@ -11695,7 +11695,7 @@
         "in_b": true,
         "in_c": true,
         "description": "检波=AM解调过程",
-        "memory_method": "定义：检波≡解调AM"
+        "memory_method": "检波：解调AM"
     },
     {
         "id": "MC2-0836",
@@ -11709,7 +11709,7 @@
         "in_b": true,
         "in_c": true,
         "description": "AGC=自动增益控制防过载；数据通信可关闭（防压制弱信号）",
-        "memory_method": "AGC功能：稳幅防堵，数据关AGC"
+        "memory_method": "关键词：增益、FSK/PSK"
     },
     {
         "id": "MC1-0837",
@@ -11723,7 +11723,7 @@
         "in_b": true,
         "in_c": true,
         "description": "DC接收机=直接变换（射频直解调，无中频）",
-        "memory_method": "DC=无变频直解调"
+        "memory_method": "关键词：直接变换"
     },
     {
         "id": "MC1-0838",
@@ -11737,7 +11737,7 @@
         "in_b": true,
         "in_c": true,
         "description": "混频器=频率变换（射频→中频）",
-        "memory_method": "核心：射频变频"
+        "memory_method": "混频：频率交换"
     },
     {
         "id": "MC1-0839",
@@ -11751,7 +11751,7 @@
         "in_b": true,
         "in_c": true,
         "description": "上变频=输出中频＞输入射频；下变频=中频＜射频",
-        "memory_method": "定义：上变高中低"
+        "memory_method": "中频开头（前后都可以）"
     },
     {
         "id": "MC1-0840",
@@ -11765,7 +11765,7 @@
         "in_b": true,
         "in_c": true,
         "description": "中频滤波器抑制邻近频道干扰",
-        "memory_method": "作用：滤除邻频干扰"
+        "memory_method": "关键词：邻近"
     },
     {
         "id": "MC1-0841",
@@ -11779,7 +11779,7 @@
         "in_b": true,
         "in_c": true,
         "description": "抑制镜频=预选滤波器（置于混频前）",
-        "memory_method": "位置：镜频抑在变频前"
+        "memory_method": "关键词：之前"
     },
     {
         "id": "MC1-0842",
@@ -11793,7 +11793,7 @@
         "in_b": true,
         "in_c": true,
         "description": "镜频=本振±中频（例：145MHz本振+45.05中频→镜频235.1/54.9MHz）",
-        "memory_method": "计算：镜频=本振±中频"
+        "memory_method": "全部数值里选最大的"
     },
     {
         "id": "MC1-0843",
@@ -11806,8 +11806,8 @@
         "in_a": true,
         "in_b": true,
         "in_c": true,
-        "description": "同0842原理：145MHz本振+47.25中频→镜频239.5/50.5MHz",
-        "memory_method": "同上"
+        "description": "镜频=本振±中频。145MHz本振+47.25中频→镜频239.5/50.5MHz",
+        "memory_method": "全部数值里选最大的"
     },
     {
         "id": "MC1-0844",
@@ -11816,12 +11816,12 @@
         "A": "340.50MHz或529.50MHz",
         "B": "387.75MHz或482.25MHz",
         "C": "47.25MHz或94.50MHz",
-        "D": "141.70MHz或.236.25MHz",
+        "D": "141.70MHz或236.25MHz",
         "in_a": true,
         "in_b": true,
         "in_c": true,
-        "description": "435MHz本振+47.25中频→镜频529.5/340.5MHz",
-        "memory_method": "同上"
+        "description": "镜频=本振±中频。435MHz本振+47.25中频→镜频529.5/340.5MHz",
+        "memory_method": "全部数值里选最大的"
     },
     {
         "id": "MC1-0845",
@@ -11835,7 +11835,7 @@
         "in_b": true,
         "in_c": true,
         "description": "435MHz本振+58.525中频→镜频552.05/317.95MHz",
-        "memory_method": "同上"
+        "memory_method": "全部数值里选最大的"
     },
     {
         "id": "MC1-0846",
@@ -11849,7 +11849,7 @@
         "in_b": true,
         "in_c": true,
         "description": "发射效率=射频输出功率/电源输入功率",
-        "memory_method": "定义：η=P_out/P_in"
+        "memory_method": "信号功率/消耗功率"
     },
     {
         "id": "MC1-0847",
@@ -11863,7 +11863,7 @@
         "in_b": true,
         "in_c": true,
         "description": "损耗能量→主要变热量，少量变杂散",
-        "memory_method": "损耗去向：热耗为主"
+        "memory_method": "关键词：大部分→热量"
     },
     {
         "id": "MC1-0848",
@@ -11877,7 +11877,7 @@
         "in_b": true,
         "in_c": true,
         "description": "13.8V供电时电流≈0.091×N安（N=射频功率瓦）",
-        "memory_method": "公式：I≈N/13.8/0.8（效率80%）"
+        "memory_method": "0.091"
     },
     {
         "id": "MC1-0849",
@@ -11891,7 +11891,7 @@
         "in_b": true,
         "in_c": true,
         "description": "220V供电时电流≈0.0057×N安",
-        "memory_method": "公式：I≈N/220/0.8"
+        "memory_method": "0.0057"
     },
     {
         "id": "MC1-0850",
@@ -11905,7 +11905,7 @@
         "in_b": true,
         "in_c": true,
         "description": "耗电量≈N×10秒/3.6e6（千瓦时）",
-        "memory_method": "计算：kW·h=功率×时间/3600"
+        "memory_method": "0.0000035"
     },
     {
         "id": "MC1-0851",
@@ -11919,7 +11919,7 @@
         "in_b": true,
         "in_c": true,
         "description": "载波功率=无调制时馈入天线的平均功率",
-        "memory_method": "定义：载波≡无调制功率"
+        "memory_method": "载波：无调制功率"
     },
     {
         "id": "MC1-0852",
@@ -11947,7 +11947,7 @@
         "in_b": true,
         "in_c": true,
         "description": "必要带宽：SSB=3kHz, CW=400Hz, FM=12.5kHz, ATV>5MHz",
-        "memory_method": "口诀：话3k报400，调频12.5k视5M"
+        "memory_method": "3000开头、5Mhz结尾"
     },
     {
         "id": "MC1-0854",
@@ -11961,7 +11961,7 @@
         "in_b": true,
         "in_c": true,
         "description": "低速CW（25WPM）带宽≤200Hz",
-        "memory_method": "低速CW带窄"
+        "memory_method": "CW：200"
     },
     {
         "id": "MC1-0855",
@@ -11975,7 +11975,7 @@
         "in_b": true,
         "in_c": true,
         "description": "RTTY（50波特）带宽≈450Hz（频偏170Hz）",
-        "memory_method": "RTTY带宽=2×频偏+波特率"
+        "memory_method": "RTTY+170：450"
     },
     {
         "id": "MC1-0856",
@@ -11989,7 +11989,7 @@
         "in_b": true,
         "in_c": true,
         "description": "SSB话音混合RTTY带宽≈2700Hz（话音主占）",
-        "memory_method": "混合信号≈话音带宽"
+        "memory_method": "RTTY+70：2700"
     },
     {
         "id": "MC1-0857",
@@ -12003,7 +12003,7 @@
         "in_b": true,
         "in_c": true,
         "description": "FM话音带宽≈12.5kHz（标准信道间隔）",
-        "memory_method": "FM带宽固定"
+        "memory_method": "FM：12.5"
     },
     {
         "id": "MC1-0858",
@@ -12017,7 +12017,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余带宽受限（如SSB≤3kHz），不可扩至广播级",
-        "memory_method": "原则：带宽合规不超限"
+        "memory_method": "关键词：放弃"
     },
     {
         "id": "MC1-0859",
@@ -12031,7 +12031,7 @@
         "in_b": true,
         "in_c": true,
         "description": "中频选择性=抑制邻近频道干扰能力",
-        "memory_method": "指标：中选抑邻频"
+        "memory_method": "关键词：选择性"
     },
     {
         "id": "MC1-0860",
@@ -12045,7 +12045,7 @@
         "in_b": true,
         "in_c": true,
         "description": "选择性=信道带宽+矩形系数（抗邻频）",
-        "memory_method": "组成：带宽+矩系"
+        "memory_method": "抗拒+近→矩形系数"
     },
     {
         "id": "MC1-0861",
@@ -12059,7 +12059,7 @@
         "in_b": true,
         "in_c": true,
         "description": "SSB频响均匀度=带内波动+信道带宽",
-        "memory_method": "指标：带内波动定平坦度"
+        "memory_method": "SSB→波动"
     },
     {
         "id": "MC1-0862",
@@ -12073,7 +12073,7 @@
         "in_b": true,
         "in_c": true,
         "description": "抗远距强干扰=前端带宽（预选滤波器抑带外）",
-        "memory_method": "位置：前端滤波抑远扰"
+        "memory_method": "抗拒+远：前端带宽"
     },
     {
         "id": "MC1-0863",
@@ -12087,7 +12087,7 @@
         "in_b": true,
         "in_c": true,
         "description": "抗二倍中频干扰=镜像抑制比",
-        "memory_method": "指标：镜抑比"
+        "memory_method": "抗拒+两倍：抑制比"
     },
     {
         "id": "MC1-0864",
@@ -12101,7 +12101,7 @@
         "in_b": true,
         "in_c": true,
         "description": "灵敏度数值小→接收弱信号能力强",
-        "memory_method": "反比：灵敏值小→性能优"
+        "memory_method": "灵敏度小→接收能力强"
     },
     {
         "id": "MC1-0865",
@@ -12115,7 +12115,7 @@
         "in_b": true,
         "in_c": true,
         "description": "灵敏度=最小可辨信号功率（dBm/dBμW）",
-        "memory_method": "单位：功率dB值"
+        "memory_method": "排除单位是dB的"
     },
     {
         "id": "MC1-0866",
@@ -12129,7 +12129,7 @@
         "in_b": true,
         "in_c": true,
         "description": "灵敏度=最小可辨电动势（μV/dBμV）",
-        "memory_method": "单位：电压dB值"
+        "memory_method": "关键词：【最小】【电动势】"
     },
     {
         "id": "MC1-0867",
@@ -12157,7 +12157,7 @@
         "in_b": true,
         "in_c": true,
         "description": "灵敏度需明确测试标准（如信噪比），否则不可比",
-        "memory_method": "原则：无标准不比较"
+        "memory_method": "关键词：无法比较"
     },
     {
         "id": "MC1-0869",
@@ -12170,8 +12170,8 @@
         "in_a": true,
         "in_b": true,
         "in_c": true,
-        "description": "端口测1μV→灵敏度=2μV（电动势=2×端口电压）",
-        "memory_method": "匹配时：电动势=2×端口压"
+        "description": "",
+        "memory_method": ""
     },
     {
         "id": "MC1-0870",
@@ -12184,8 +12184,8 @@
         "in_a": true,
         "in_b": true,
         "in_c": true,
-        "description": "1μV电动势→-113dBm（P=V²/R）",
-        "memory_method": "计算：1μV=-113dBm（50Ω）"
+        "description": "",
+        "memory_method": ""
     },
     {
         "id": "MC1-0871",
@@ -12198,8 +12198,8 @@
         "in_a": true,
         "in_b": true,
         "in_c": true,
-        "description": "1μV电动势=0dBμV",
-        "memory_method": "定义：dBμV=20log(V/1μV)"
+        "description": "",
+        "memory_method": ""
     },
     {
         "id": "MC1-0872",
@@ -12212,8 +12212,8 @@
         "in_a": true,
         "in_b": true,
         "in_c": true,
-        "description": "0.5μV端口压→灵敏度=1μV（电动势）",
-        "memory_method": "同上：电动势=2×端口压"
+        "description": "",
+        "memory_method": ""
     },
     {
         "id": "MC1-0873",
@@ -12226,8 +12226,8 @@
         "in_a": true,
         "in_b": true,
         "in_c": true,
-        "description": "0.5μV电动势→-119dBm",
-        "memory_method": "计算：0.5μV=-119dBm"
+        "description": "",
+        "memory_method": ""
     },
     {
         "id": "MC1-0874",
@@ -12240,8 +12240,8 @@
         "in_a": true,
         "in_b": true,
         "in_c": true,
-        "description": "0.5μV电动势=-6dBμV",
-        "memory_method": "计算：20log(0.5)≈-6dB"
+        "description": "",
+        "memory_method": ""
     },
     {
         "id": "MC1-0875",
@@ -12254,8 +12254,8 @@
         "in_a": true,
         "in_b": true,
         "in_c": true,
-        "description": "2μV灵敏度→-107dBm（P=V²/R）",
-        "memory_method": "2μV=-107dBm"
+        "description": "",
+        "memory_method": ""
     },
     {
         "id": "MC1-0876",
@@ -12268,8 +12268,8 @@
         "in_a": true,
         "in_b": true,
         "in_c": true,
-        "description": "1μV灵敏度→-113dBm",
-        "memory_method": "1μV=-113dBm"
+        "description": "",
+        "memory_method": ""
     },
     {
         "id": "MC1-0877",
@@ -12283,7 +12283,7 @@
         "in_b": true,
         "in_c": true,
         "description": "制约灵敏度=接收机内部噪声（热噪声+器件噪声）",
-        "memory_method": "瓶颈：内噪限灵敏"
+        "memory_method": "关键词：机内"
     },
     {
         "id": "MC1-0878",
@@ -12297,7 +12297,7 @@
         "in_b": true,
         "in_c": true,
         "description": "信噪比SNR=信号功率/噪声功率",
-        "memory_method": "定义：SNR=S/N"
+        "memory_method": "信号功率/噪声功率"
     },
     {
         "id": "MC1-0879",
@@ -12311,7 +12311,7 @@
         "in_b": true,
         "in_c": true,
         "description": "噪声系数Fn=(S/N)_in/(S/N)_out（>1）",
-        "memory_method": "定义：Fn=输入SNR/输出SNR"
+        "memory_method": "选带英文的。定义：Fn=输入SNR/输出SNR"
     },
     {
         "id": "MC1-0880",
@@ -12325,7 +12325,7 @@
         "in_b": true,
         "in_c": true,
         "description": "静噪灵敏度=使静噪退出所需最小射频电平",
-        "memory_method": "阈值：静噪启动/退出点"
+        "memory_method": "关键词：退出"
     },
     {
         "id": "MC1-0881",
@@ -12339,7 +12339,7 @@
         "in_b": true,
         "in_c": true,
         "description": "Fn>1，越接近1越好（理想接收机Fn=1）",
-        "memory_method": "目标：Fn→1"
+        "memory_method": "Fn：大于1、接近1"
     },
     {
         "id": "MC1-0882",
@@ -12353,7 +12353,7 @@
         "in_b": true,
         "in_c": true,
         "description": "噪声指数NF=10log(Fn)（dB）",
-        "memory_method": "换算：NF(dB)=10lg(Fn)"
+        "memory_method": "选带英文的"
     },
     {
         "id": "MC1-0883",
@@ -12367,7 +12367,7 @@
         "in_b": true,
         "in_c": true,
         "description": "NF>0dB，越接近0dB越好",
-        "memory_method": "目标：NF→0dB"
+        "memory_method": "NF：大于0、接近0"
     },
     {
         "id": "MC1-0884",
@@ -12381,7 +12381,7 @@
         "in_b": true,
         "in_c": true,
         "description": "噪声温度Te=产生相同噪声功率的电阻温度",
-        "memory_method": "定义：Te=等效噪温(K)"
+        "memory_method": "选最长的"
     },
     {
         "id": "MC1-0885",
@@ -12395,7 +12395,7 @@
         "in_b": true,
         "in_c": true,
         "description": "理想接收机：Fn=1, NF=0dB, Te=0K",
-        "memory_method": "理想值：1, 0dB, 0K"
+        "memory_method": "理想情况：Fn=1, NF=0, Te=0"
     },
     {
         "id": "MC1-0886",
@@ -12409,7 +12409,7 @@
         "in_b": true,
         "in_c": true,
         "description": "内噪=输入热噪时：Fn=2, NF=3dB, Te=290K",
-        "memory_method": "典型：内噪=热噪→Fn=2"
+        "memory_method": "温度选290K（其他温度太低了）"
     },
     {
         "id": "MC3-0887",
@@ -12423,7 +12423,7 @@
         "in_b": true,
         "in_c": true,
         "description": "SDR优势：量化噪声低、精度高、参数稳定（少漂移）",
-        "memory_method": "SDR三优：低噪精稳"
+        "memory_method": "排除：时延"
     },
     {
         "id": "MC3-0888",
@@ -12437,7 +12437,7 @@
         "in_b": true,
         "in_c": true,
         "description": "频谱显示器用途：观信号分布、察传播状况、快速搜台",
-        "memory_method": "功能：看信号/传播/搜频"
+        "memory_method": "排除：音色"
     },
     {
         "id": "MC1-0889",
@@ -12451,7 +12451,7 @@
         "in_b": true,
         "in_c": true,
         "description": "SDR编解码=软件实现（非硬件模块）",
-        "memory_method": "本质：软件定义功能"
+        "memory_method": "关键词：PC"
     },
     {
         "id": "MC1-0890",
@@ -12465,7 +12465,7 @@
         "in_b": true,
         "in_c": true,
         "description": "SDR滤波灵活=数字滤波器可编程调节",
-        "memory_method": "优势：数字滤波可重构"
+        "memory_method": "关键词：无需。或排除：SDR"
     },
     {
         "id": "MC1-0891",
@@ -12521,7 +12521,7 @@
         "in_b": true,
         "in_c": true,
         "description": "144MHz测向发射带宽≤6kHz（A2A调制）",
-        "memory_method": "规范：测向带宽窄"
+        "memory_method": "选数字最小的（不看单位）"
     },
     {
         "id": "MC1-0895",
@@ -12549,7 +12549,7 @@
         "in_b": true,
         "in_c": true,
         "description": "磁棒天线：小巧但近场受电容感应影响方向性",
-        "memory_method": "替代方案：磁棒便但近场差"
+        "memory_method": "关键词：并且、小巧"
     },
     {
         "id": "MC2-0897",
@@ -12563,7 +12563,7 @@
         "in_b": true,
         "in_c": true,
         "description": "二单元八木：轻便，近场用零点定位（不依赖高增益）",
-        "memory_method": "策略：轻便+零点定位"
+        "memory_method": "关键词：轻便、零点"
     },
     {
         "id": "MC2-0898",
