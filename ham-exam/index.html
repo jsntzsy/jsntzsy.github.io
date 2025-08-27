@@ -28,7 +28,7 @@
             const mask = $('.fullscreen-mask');
             mask.show();
             await Q.init(SERV_VERSION).finally(() => { mask.hide(); });
-            $('#examVer').text(`题库版本： ${SERV_VERSION}`);
+            $('#examVer').text(SERV_VERSION);
 
             // 初始化学习进度板块
             $(`.level-tab[data-level="${Q.currentLevel}"]`).addClass('active');
@@ -459,8 +459,22 @@
             </div>
 
             <div class="app-info">
-                <a class="app-exam-ver" id="examVer">题库版本：---</a>
-                <a class="app-author" href="https://jsntzsy.github.io/">作者：BA4TOG</a>
+                <span class="app-lib-ver">
+                    题库版本：
+                    <a class="app-exam-ver" id="examVer">---</a>
+                </span>
+                <span class="app-view-count">
+                    累计访问量：
+                    <span id="busuanzi_site_uv">0</span>人/<span id="busuanzi_site_pv">0</span>次
+                    <script defer src="https://busuanzi.9420.ltd/js"></script>
+                </span>
+                <span class="app-author">
+                    作者：<a class="app-author" href="https://jsntzsy.github.io/" target="_blank">BA4TOG</a>
+                </span>
+                <span class="app-collaborationists">
+                    友情协助：
+                    <a class="app-collaborationist" href="https://www.xsot.cn" target="_blank">BA4RBX</a>
+                </span>
             </div>
 
         </div>

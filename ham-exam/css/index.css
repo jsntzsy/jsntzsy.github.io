@@ -188,16 +188,18 @@
     text-align: right;
 }
 
-.app-info>* {
-    margin-left: 10px;
+.app-info>span {
     margin-right: 10px;
+}
+
+.app-info a {
     color: unset;
     cursor: pointer;
     transition: all 0.2s;
     text-decoration: none;
 }
 
-.app-info>a:hover {
+.app-info a:hover {
     color: var(--bs-primary);
 }
 
