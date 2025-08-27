@@ -12395,7 +12395,7 @@
         "in_b": true,
         "in_c": true,
         "description": "理想接收机：Fn=1, NF=0dB, Te=0K",
-        "memory_method": "理想情况：Fn=1, NF=0, Te=0"
+        "memory_method": "理想情况：Fn=1, NF=0, Te=0。记忆：1 0 0"
     },
     {
         "id": "MC1-0886",
@@ -12479,7 +12479,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余测向（ARDF）适合比赛/定位干扰源",
-        "memory_method": "应用：测向赛+QRM定位"
+        "memory_method": "定位→测向"
     },
     {
         "id": "MC1-0892",
@@ -12493,7 +12493,7 @@
         "in_b": true,
         "in_c": true,
         "description": "ARDF必备：定向天线+接收机",
-        "memory_method": "设备：定向天线是核心"
+        "memory_method": "定向天线是测向核心"
     },
     {
         "id": "MC1-0893",
@@ -12507,7 +12507,7 @@
         "in_b": true,
         "in_c": true,
         "description": "隐蔽台=合法业余电台，需审批",
-        "memory_method": "性质：隐蔽台需许可"
+        "memory_method": "隐蔽台需批准"
     },
     {
         "id": "MC1-0894",
@@ -12577,7 +12577,7 @@
         "in_b": true,
         "in_c": true,
         "description": "HB9CV天线：双驱八木，轻便高效，适合移动测向",
-        "memory_method": "特点：双驱轻便高效"
+        "memory_method": "关键词：双驱、便携"
     },
     {
         "id": "MC1-0899",
@@ -12591,7 +12591,7 @@
         "in_b": true,
         "in_c": true,
         "description": "双音交替=RTTY（频移键控）",
-        "memory_method": "特征：双音跳变"
+        "memory_method": "双音跳变→RTTY"
     },
     {
         "id": "MC2-0900",
@@ -12605,7 +12605,7 @@
         "in_b": true,
         "in_c": true,
         "description": "单音颤动=PSK31（相位键控）",
-        "memory_method": "特征：单音相位抖"
+        "memory_method": "单音相抖→PSK"
     },
     {
         "id": "MC1-0901",
@@ -12619,7 +12619,7 @@
         "in_b": true,
         "in_c": true,
         "description": "SSTV/FAX信号因慢扫描调制产生周期性音调变化和同步脉冲声（“笃笃”声）",
-        "memory_method": "特征：音调周期变，伴同步脉冲声"
+        "memory_method": "周期嘟嘟声→SSTV"
     },
     {
         "id": "MC1-0902",
@@ -12633,7 +12633,7 @@
         "in_b": true,
         "in_c": true,
         "description": "CW频谱为单频点启闭，表现为垂直线闪动（启闭键控）",
-        "memory_method": "频谱：单垂线闪烁"
+        "memory_method": "CW→单闪动垂线"
     },
     {
         "id": "MC1-0903",
@@ -12647,7 +12647,7 @@
         "in_b": true,
         "in_c": true,
         "description": "RTTY频谱为两个交替频点（频移键控），表现为双垂线闪动",
-        "memory_method": "频谱：双垂线交替闪"
+        "memory_method": "RTTY→双闪动垂线"
     },
     {
         "id": "MC1-0904",
@@ -12661,7 +12661,7 @@
         "in_b": true,
         "in_c": true,
         "description": "SSB频谱为语音边带非对称分布，随语音动态变化",
-        "memory_method": "频谱：非对称语音带"
+        "memory_method": "SSB→非对称垂线"
     },
     {
         "id": "MC1-0905",
@@ -12675,7 +12675,7 @@
         "in_b": true,
         "in_c": true,
         "description": "AM频谱含固定载波（中心垂线）及对称边带（语音调制）",
-        "memory_method": "频谱：载波+对称边带"
+        "memory_method": "AM→固定垂线+左右对称垂线"
     },
     {
         "id": "MC1-0906",
@@ -12689,7 +12689,7 @@
         "in_b": true,
         "in_c": true,
         "description": "FM频谱为中心载波幅度随调制变化，两侧对称边带",
-        "memory_method": "频谱：变幅载波+对称边带"
+        "memory_method": "FM→变化垂线+左右对称垂线"
     },
     {
         "id": "MC1-0907",
@@ -12703,7 +12703,7 @@
         "in_b": true,
         "in_c": true,
         "description": "PSK31频谱为窄带单峰（相位键控，能量集中）",
-        "memory_method": "频谱：窄单峰"
+        "memory_method": "PSK→单窄峰"
     },
     {
         "id": "MC1-0908",
@@ -12717,7 +12717,7 @@
         "in_b": true,
         "in_c": true,
         "description": "AMSAT=美国业余卫星组织，非营利性志愿者机构",
-        "memory_method": "定义：美非营利卫星组织"
+        "memory_method": "选最长的"
     },
     {
         "id": "MC1-0909",
@@ -12731,7 +12731,7 @@
         "in_b": true,
         "in_c": true,
         "description": "OSCAR=“Orbiting Satellite Carrying Amateur Radio”缩写",
-        "memory_method": "词源：业余无线电轨道卫星"
+        "memory_method": "关键词：缩写"
     },
     {
         "id": "MC1-0910",
@@ -12745,7 +12745,7 @@
         "in_b": true,
         "in_c": true,
         "description": "中国首星：2009年XW-1（HO-68），V/U(J)模式",
-        "memory_method": "记忆：09希望星，HO68 VUJ"
+        "memory_method": "记忆年份：2009"
     },
     {
         "id": "MC1-0911",
@@ -12759,7 +12759,7 @@
         "in_b": true,
         "in_c": true,
         "description": "EME最佳时机=月亮近地点（路径损耗最小）",
-        "memory_method": "策略：近地月损耗低"
+        "memory_method": "关键词：月球近地点"
     },
     {
         "id": "MC1-0912",
@@ -12773,7 +12773,7 @@
         "in_b": true,
         "in_c": true,
         "description": "前置放大器近天线安装+冷却降噪（减少馈线损耗和热噪声）",
-        "memory_method": "原则：近天线+冷却抑噪"
+        "memory_method": "关键词：靠近天线、冷却"
     },
     {
         "id": "MC1-0913",
@@ -12787,7 +12787,7 @@
         "in_b": true,
         "in_c": true,
         "description": "VHF/UHF背景噪声低，前置近天线可提升信噪比；HF背景噪声高，效果不显著",
-        "memory_method": "原理：高频噪低需前置，低频噪高差异小"
+        "memory_method": "选最长的。"
     },
     {
         "id": "MC1-0914",
@@ -12801,7 +12801,7 @@
         "in_b": true,
         "in_c": true,
         "description": "6米波段（50MHz）最适合流星余迹散射（电离高度匹配）",
-        "memory_method": "波段：50MHz散射佳"
+        "memory_method": "波段：6米（50MHz）散射佳"
     },
     {
         "id": "MC1-0915",
@@ -12815,7 +12815,7 @@
         "in_b": true,
         "in_c": true,
         "description": "FT4等数字模式适合散射通信（抗衰落、高速解码）",
-        "memory_method": "模式：数字抗衰落"
+        "memory_method": "FT4（数字抗衰落）"
     },
     {
         "id": "MC2-0916",
@@ -12829,7 +12829,7 @@
         "in_b": true,
         "in_c": false,
         "description": "导体特征：含自由电子/离子，金属（银铜铝）导电优",
-        "memory_method": "定义：自由载流子，金属导电极"
+        "memory_method": "自由电子产生电流，金属导电性能优良"
     },
     {
         "id": "MC3-0917",
@@ -12843,7 +12843,7 @@
         "in_b": true,
         "in_c": false,
         "description": "导体包括：电离气体、电解质溶液、石墨（云母绝缘体）",
-        "memory_method": "实例：霓虹气/溶液/石墨导"
+        "memory_method": "排除：云母是导体。它是绝缘体"
     },
     {
         "id": "MC4-0918",
@@ -12857,7 +12857,7 @@
         "in_b": true,
         "in_c": false,
         "description": "绝缘体特征：束缚电荷、击穿现象、温升绝缘降",
-        "memory_method": "特性：束缚电荷，高温易击穿"
+        "memory_method": "全选"
     },
     {
         "id": "MC3-0919",
@@ -12871,7 +12871,7 @@
         "in_b": true,
         "in_c": false,
         "description": "绝缘材料：工程塑料、酚醛树脂、二氧化硅（二氧化锡导电）",
-        "memory_method": "材料：塑酚硅绝缘，锡导除外"
+        "memory_method": "排除：二氧化锡。它是导体。"
     },
     {
         "id": "MC3-0920",
@@ -12885,7 +12885,7 @@
         "in_b": true,
         "in_c": false,
         "description": "击穿现象：电容短路/极板电弧/氖灯发光（非卤钨灯）",
-        "memory_method": "表现：短路/电弧/气体发光"
+        "memory_method": "排除：卤钨灯。其靠热辐射发光。"
     },
     {
         "id": "MC1-0921",
@@ -12899,7 +12899,7 @@
         "in_b": true,
         "in_c": false,
         "description": "积灰受潮→介质损耗（绝缘体物理性质变化）",
-        "memory_method": "故障：污潮致介质损"
+        "memory_method": "积灰受潮→介质损耗"
     },
     {
         "id": "MC4-0922",
@@ -12913,7 +12913,7 @@
         "in_b": true,
         "in_c": false,
         "description": "半导体特性：导电可控、P/N型、PN结单向导电",
-        "memory_method": "核心：导电可控，PN结单向"
+        "memory_method": "全选"
     },
     {
         "id": "MC3-0923",
@@ -12927,7 +12927,7 @@
         "in_b": true,
         "in_c": false,
         "description": "半导体器件：双极管/GaN管/LDMOS管（电真空管非半导体）",
-        "memory_method": "器件：硅锗化合物制管"
+        "memory_method": "排除：真空管。它不是半导体"
     },
     {
         "id": "MC3-0924",
@@ -12941,7 +12941,7 @@
         "in_b": true,
         "in_c": true,
         "description": "静电现象：风刮天线高压、雷云蓄能、接收QRN",
-        "memory_method": "关联：风雷噪皆静电"
+        "memory_method": "排除：射频能量。它不是静电"
     },
     {
         "id": "MC2-0925",
@@ -12955,7 +12955,7 @@
         "in_b": true,
         "in_c": true,
         "description": "静电场中导体：等势体、内部场强零、曲率小处电荷聚集",
-        "memory_method": "特性：等势内场零，曲小电荷聚"
+        "memory_method": "等势内场零，曲小电荷聚"
     },
     {
         "id": "MC2-0926",
@@ -12969,7 +12969,7 @@
         "in_b": true,
         "in_c": true,
         "description": "直流电：电源分正负，电池供直流（脉动直流含交流成分）",
-        "memory_method": "定义：方向恒不变，电池是典型"
+        "memory_method": "方向恒不变，电池是典型"
     },
     {
         "id": "MC1-0927",
@@ -12983,7 +12983,7 @@
         "in_b": true,
         "in_c": true,
         "description": "交流电：极性交替，无正负极（火线零线不可混用）",
-        "memory_method": "定义：极性交替变，无正负极"
+        "memory_method": "极性交替变，正负不区分"
     },
     {
         "id": "MC1-0928",
@@ -12997,7 +12997,7 @@
         "in_b": true,
         "in_c": true,
         "description": "交流电极性变化次数=频率（Hz）",
-        "memory_method": "术语：极性变次即频率"
+        "memory_method": "每秒改变次数→频率"
     },
     {
         "id": "MC1-0929",
@@ -13011,7 +13011,7 @@
         "in_b": true,
         "in_c": true,
         "description": "波长λ=光速c/频率f（f↑→λ↓）",
-        "memory_method": "公式：λ=3e8/f（m）"
+        "memory_method": "频率越高，波长越短。公式：λ=C/f"
     },
     {
         "id": "MC1-0930",
@@ -13025,7 +13025,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电动势=能量转电能能力（如电池化学能→电能）",
-        "memory_method": "定义：转能能力"
+        "memory_method": "电动势：【转化】为电能的【能力】"
     },
     {
         "id": "MC1-0931",
@@ -13039,7 +13039,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电压=驱动电子流动的“压力”",
-        "memory_method": "定义：电子驱动力"
+        "memory_method": "电压：驱动电子流动的【力量】"
     },
     {
         "id": "MC1-0932",
@@ -13053,7 +13053,7 @@
         "in_b": true,
         "in_c": true,
         "description": "峰值=从零算起的最大值（非有效值）",
-        "memory_method": "定义：零点起最大"
+        "memory_method": "交流电峰值：【零点】算起的【最大值】"
     },
     {
         "id": "MC1-0933",
@@ -13067,7 +13067,7 @@
         "in_b": true,
         "in_c": true,
         "description": "峰峰值=负峰到正峰差值",
-        "memory_method": "定义：负正峰间差"
+        "memory_method": "交流电峰峰值：负半到正半的【差值】"
     },
     {
         "id": "MC1-0934",
@@ -13081,7 +13081,7 @@
         "in_b": true,
         "in_c": true,
         "description": "有效值=同电阻热效应等效的直流电压值",
-        "memory_method": "定义：热效等效直压"
+        "memory_method": "交流电有效值：热效等效【直流电压】"
     },
     {
         "id": "MC1-0935",
@@ -13095,7 +13095,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电流=单位时间电子数量（库仑/秒）",
-        "memory_method": "定义：单位时电荷量"
+        "memory_method": "电流：【单位时间】流过的电子数量"
     },
     {
         "id": "MC1-0936",
@@ -13109,7 +13109,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电阻=阻碍电流能力",
-        "memory_method": "定义：阻流能力"
+        "memory_method": "电阻：阻碍通过的【能力】"
     },
     {
         "id": "MC1-0937",
@@ -13123,7 +13123,7 @@
         "in_b": true,
         "in_c": true,
         "description": "功率=单位时间做功（焦耳/秒）",
-        "memory_method": "定义：单位时做功"
+        "memory_method": "功率：单位时间【做的功】"
     },
     {
         "id": "MC2-0938",
@@ -13137,7 +13137,7 @@
         "in_b": true,
         "in_c": true,
         "description": "欧姆定律：I=U/R（电流与压正比，与阻反比）",
-        "memory_method": "公式：I=U/R"
+        "memory_method": "口诀：U正R反。公式：I=U/R"
     },
     {
         "id": "MC1-0939",
@@ -13151,7 +13151,7 @@
         "in_b": true,
         "in_c": true,
         "description": "无阻电流不存在（所有电流受电阻阻碍）",
-        "memory_method": "真理：电流必有阻"
+        "memory_method": "不存在！有流必有阻"
     },
     {
         "id": "MC1-0940",
@@ -13165,7 +13165,7 @@
         "in_b": true,
         "in_c": true,
         "description": "阻抗=交流总阻碍（含电阻/感抗/容抗）",
-        "memory_method": "定义：交流总阻碍"
+        "memory_method": "阻抗：交流电流【阻碍】"
     },
     {
         "id": "MC1-0941",
@@ -13179,7 +13179,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电动势单位：伏特（V）",
-        "memory_method": "单位：伏"
+        "memory_method": "常识。单位：伏（同电压）"
     },
     {
         "id": "MC1-0942",
@@ -13193,7 +13193,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电压单位：伏特（V）",
-        "memory_method": "单位：伏"
+        "memory_method": "常识。单位：伏"
     },
     {
         "id": "MC1-0943",
@@ -13207,7 +13207,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电流单位：安培（A）",
-        "memory_method": "单位：安"
+        "memory_method": "常识。单位：安"
     },
     {
         "id": "MC1-0944",
@@ -13221,7 +13221,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电阻单位：欧姆（Ω）",
-        "memory_method": "单位：欧"
+        "memory_method": "常识。单位：欧"
     },
     {
         "id": "MC1-0945",
@@ -13235,7 +13235,7 @@
         "in_b": true,
         "in_c": true,
         "description": "阻抗单位：欧姆（Ω）",
-        "memory_method": "单位：欧"
+        "memory_method": "常识。单位：欧（同电阻）"
     },
     {
         "id": "MC1-0946",
@@ -13249,7 +13249,7 @@
         "in_b": true,
         "in_c": true,
         "description": "功率单位：瓦特（W）",
-        "memory_method": "单位：瓦"
+        "memory_method": "常识。单位：瓦"
     },
     {
         "id": "MC1-0947",
@@ -13263,7 +13263,7 @@
         "in_b": true,
         "in_c": true,
         "description": "频率单位：赫兹（Hz）",
-        "memory_method": "单位：赫"
+        "memory_method": "常识。单位：赫"
     },
     {
         "id": "MC1-0948",
@@ -13277,7 +13277,7 @@
         "in_b": true,
         "in_c": true,
         "description": "词头k：10³（千）",
-        "memory_method": "换算：k=千=10³"
+        "memory_method": "规律：大写和k为正，其他小写为负；正数为kMGT依次+3。换算：k=千=10³"
     },
     {
         "id": "MC1-0949",
@@ -13291,7 +13291,7 @@
         "in_b": true,
         "in_c": true,
         "description": "词头m：10⁻³（毫）",
-        "memory_method": "换算：m=毫=10⁻³"
+        "memory_method": "规律：大写和k为正，其他小写为负；负数为mμnp依次-3。换算：m=毫=10⁻³"
     },
     {
         "id": "MC1-0950",
@@ -13305,7 +13305,7 @@
         "in_b": true,
         "in_c": true,
         "description": "词头M：10⁶（兆）",
-        "memory_method": "换算：M=兆=10⁶"
+        "memory_method": "规律：大写和k为正，其他小写为负；正数为kMGT依次+3。换算：M=兆=10⁶"
     },
     {
         "id": "MC1-0951",
@@ -13319,7 +13319,7 @@
         "in_b": true,
         "in_c": true,
         "description": "词头μ：10⁻⁶（微）",
-        "memory_method": "换算：μ=微=10⁻⁶"
+        "memory_method": "规律：大写和k为正，其他小写为负；负数为mμnp依次-3。换算：μ=微=10⁻⁶"
     },
     {
         "id": "MC1-0952",
@@ -13333,7 +13333,7 @@
         "in_b": true,
         "in_c": true,
         "description": "词头G：10⁹（吉）",
-        "memory_method": "换算：G=吉=10⁹"
+        "memory_method": "规律：大写和k为正，其他小写为负；正数为kMGT依次+3。换算：G=吉=10⁹"
     },
     {
         "id": "MC1-0953",
@@ -13347,7 +13347,7 @@
         "in_b": true,
         "in_c": true,
         "description": "词头n：10⁻⁹（纳）",
-        "memory_method": "换算：n=纳=10⁻⁹"
+        "memory_method": "规律：大写和k为正，其他小写为负；负数为mμnp依次-3。换算：n=纳=10⁻⁹"
     },
     {
         "id": "MC1-0954",
@@ -13361,7 +13361,7 @@
         "in_b": true,
         "in_c": true,
         "description": "词头T：10¹²（太）",
-        "memory_method": "换算：T=太=10¹²"
+        "memory_method": "规律：大写和k为正，其他小写为负；正数为kMGT依次+3。换算：T=太=10¹²"
     },
     {
         "id": "MC1-0955",
@@ -13375,7 +13375,7 @@
         "in_b": true,
         "in_c": true,
         "description": "词头p：10⁻¹²（皮）",
-        "memory_method": "换算：p=皮=10⁻¹²"
+        "memory_method": "规律：大写和k为正，其他小写为负；负数为mμnp依次-3。换算：p=皮=10⁻¹²"
     },
     {
         "id": "MC1-0956",
@@ -13389,7 +13389,7 @@
         "in_b": true,
         "in_c": true,
         "description": "RF=射频（Radio Frequency）",
-        "memory_method": "术语：RF即射频"
+        "memory_method": "射频：RF"
     },
     {
         "id": "MC1-0957",
@@ -13403,7 +13403,7 @@
         "in_b": true,
         "in_c": true,
         "description": "音频范围：16Hz-20kHz（人耳可闻）",
-        "memory_method": "范围：16-20kHz"
+        "memory_method": "16Hz（注意单位）"
     },
     {
         "id": "MC1-0958",
@@ -13417,7 +13417,7 @@
         "in_b": true,
         "in_c": true,
         "description": "接口阻抗：无线电50Ω、电视75Ω、音频600Ω",
-        "memory_method": "标准：无50视75音600"
+        "memory_method": "5 7 6"
     },
     {
         "id": "MC1-0959",
@@ -13431,7 +13431,7 @@
         "in_b": true,
         "in_c": true,
         "description": "1,805,000Hz=1.805MHz（进制转换）",
-        "memory_method": "换算：k=千倍，M=百万倍"
+        "memory_method": "1805000移动小数点到1.805 共左移6位 → 10^+6 → M"
     },
     {
         "id": "MC1-0960",
@@ -13445,7 +13445,7 @@
         "in_b": true,
         "in_c": true,
         "description": "2430MHz=2.43GHz（进制转换）",
-        "memory_method": "换算：G=十亿倍"
+        "memory_method": "2430移动小数点到2.43 左移3位 → 10^+3,但原来是M(10^6) → 10^+9 → G"
     },
     {
         "id": "MC1-0961",
@@ -13459,7 +13459,7 @@
         "in_b": true,
         "in_c": true,
         "description": "P=U²/R=13.8²/1≈190W",
-        "memory_method": "计算：P=U²/R"
+        "memory_method": "看单位：瓦。计算：P=U²/R"
     },
     {
         "id": "MC1-0962",
@@ -13473,7 +13473,7 @@
         "in_b": true,
         "in_c": true,
         "description": "5W=10log(5000)=37dBm（1mW基准）",
-        "memory_method": "公式：dBm=10log(P/1mW)"
+        "memory_method": "出现86选86，否则选数值最大的。公式：dBm=10log(P/1mW)"
     },
     {
         "id": "MC1-0963",
@@ -13487,7 +13487,7 @@
         "in_b": true,
         "in_c": true,
         "description": "0.25W=54dBμ（1μW基准）",
-        "memory_method": "公式：dBμ=10log(P/1μW)"
+        "memory_method": "出现86选86，否则选数值最大的。公式：dBμ=10log(P/1μW)"
     },
     {
         "id": "MC1-0964",
@@ -13501,7 +13501,7 @@
         "in_b": true,
         "in_c": true,
         "description": "0.4kW=400W=86dBμ",
-        "memory_method": "计算：dBμ=10log(4e8)=86"
+        "memory_method": "出现86选86，否则选数值最大的。计算：dBμ=10log(4e8)=86"
     },
     {
         "id": "MC4-0965",
@@ -13515,7 +13515,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电源=能量转电能装置（电池化学能、直流电源转换、变压器变压）",
-        "memory_method": "定义：转能供电装置"
+        "memory_method": "全选"
     },
     {
         "id": "MC1-0966",
@@ -13557,7 +13557,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电源类型：开关电源（高效）、线性电源（低噪）、蓄电池（便携）",
-        "memory_method": "种类：开关/线性/电池"
+        "memory_method": "排除：标准电池"
     },
     {
         "id": "MC3-0969",
@@ -13571,7 +13571,7 @@
         "in_b": true,
         "in_c": true,
         "description": "可充电电池：锂离子/钠离子/铅酸（碱性干电池不可充）",
-        "memory_method": "可充：锂/钠/铅酸"
+        "memory_method": "排除：碱性干电池"
     },
     {
         "id": "MC1-0970",
@@ -13585,7 +13585,7 @@
         "in_b": true,
         "in_c": true,
         "description": "汽车发动后，并联蓄电池充电（车辆发电机供电）",
-        "memory_method": "方法：车发并联充"
+        "memory_method": "车发并联充"
     },
     {
         "id": "MC1-0971",
@@ -13599,7 +13599,7 @@
         "in_b": true,
         "in_c": true,
         "description": "供电时长=电池安时数(Ah)÷设备平均电流(A)",
-        "memory_method": "公式：时=安时÷电流"
+        "memory_method": "时长=安时÷电流"
     },
     {
         "id": "MC1-0972",
@@ -13613,7 +13613,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电源内阻→输出电压降（U_实际=U_空载-I×r）",
-        "memory_method": "影响：内阻压降"
+        "memory_method": "内阻降压"
     },
     {
         "id": "MC1-0973",
@@ -13627,7 +13627,7 @@
         "in_b": true,
         "in_c": true,
         "description": "反并二极管：利用单向导电性，反接时短路烧熔丝保护",
-        "memory_method": "保护：反接短路断熔丝"
+        "memory_method": "【接反】→短路→断熔丝"
     },
     {
         "id": "MC2-0974",
@@ -13641,7 +13641,7 @@
         "in_b": true,
         "in_c": true,
         "description": "复位按钮：过流/反接保护开关（非温控/压控）",
-        "memory_method": "功能：过流反接保护"
+        "memory_method": "排除：超过数字"
     },
     {
         "id": "MC1-0975",
@@ -13655,7 +13655,7 @@
         "in_b": true,
         "in_c": true,
         "description": "万用表功能：测电压/电流/电阻",
-        "memory_method": "三测：压流阻"
+        "memory_method": "压流阻"
     },
     {
         "id": "MC1-0976",
@@ -13669,7 +13669,7 @@
         "in_b": true,
         "in_c": true,
         "description": "交流电压档读数=有效值（RMS）",
-        "memory_method": "测量：交流读有效值"
+        "memory_method": "交流读有效值"
     },
     {
         "id": "MC1-0977",
@@ -13683,7 +13683,7 @@
         "in_b": true,
         "in_c": true,
         "description": "直流电压档测交流=零（仅响应直流分量）",
-        "memory_method": "特性：直流档无视交流"
+        "memory_method": "直流档无视交流"
     },
     {
         "id": "MC1-0978",
@@ -13697,7 +13697,7 @@
         "in_b": true,
         "in_c": true,
         "description": "测电流：串联入电路",
-        "memory_method": "接法：电流必串联"
+        "memory_method": "电流必串联"
     },
     {
         "id": "MC1-0979",
@@ -13711,7 +13711,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电流档测电压=烧表（低阻过流损坏）",
-        "memory_method": "禁忌：流档勿测压"
+        "memory_method": "流档勿测压"
     },
     {
         "id": "MC1-0980",
@@ -13725,7 +13725,7 @@
         "in_b": true,
         "in_c": true,
         "description": "测电阻：电路必须断电（防误测带电电路）",
-        "memory_method": "前提：断电测阻"
+        "memory_method": "断电测阻"
     },
     {
         "id": "MC1-0981",
@@ -13739,7 +13739,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电池失效判断：端电压显著低于标称值（如1.5V干电<1.2V）",
-        "memory_method": "方法：电压骤降即失效"
+        "memory_method": "电压骤降即失效"
     },
     {
         "id": "MC1-0982",
@@ -13753,7 +13753,7 @@
         "in_b": true,
         "in_c": true,
         "description": "接地天线阻值0Ω：正常（电感线圈直流通路）",
-        "memory_method": "正常：电感通直流"
+        "memory_method": "电感通直流"
     },
     {
         "id": "MC1-0983",
@@ -13767,7 +13767,7 @@
         "in_b": true,
         "in_c": true,
         "description": "接地天线阻值∞：正常（无直流通路）",
-        "memory_method": "正常：无直流通路"
+        "memory_method": "无直流通路"
     },
     {
         "id": "MC1-0984",
@@ -13781,7 +13781,7 @@
         "in_b": true,
         "in_c": true,
         "description": "偶极天线中心馈点阻值∞：正常（直流开路）",
-        "memory_method": "特性：偶极直流开"
+        "memory_method": "偶极直流开"
     },
     {
         "id": "MC1-0985",
@@ -13795,7 +13795,7 @@
         "in_b": true,
         "in_c": true,
         "description": "终端开路同轴电缆阻值∞：正常（理想绝缘）",
-        "memory_method": "特性：开路阻无穷"
+        "memory_method": "开路阻无穷"
     },
     {
         "id": "MC1-0986",
@@ -13809,7 +13809,7 @@
         "in_b": true,
         "in_c": true,
         "description": "终端短路同轴电缆阻值0Ω：正常（直流短路）",
-        "memory_method": "特性：短路阻零"
+        "memory_method": "短路阻零"
     },
     {
         "id": "MC1-0987",
@@ -13823,7 +13823,7 @@
         "in_b": true,
         "in_c": true,
         "description": "焊接材料：松香芯焊锡丝（酸性芯腐蚀器件）",
-        "memory_method": "选材：松香芯防腐蚀"
+        "memory_method": "松香芯防腐蚀"
     },
     {
         "id": "MC1-0988",
@@ -13837,7 +13837,7 @@
         "in_b": true,
         "in_c": true,
         "description": "功率公式：P=U²/R（电压定）",
-        "memory_method": "公式：P=U²/R"
+        "memory_method": "公式：I=U/R ； P=U²/R"
     },
     {
         "id": "MC1-0989",
@@ -13851,7 +13851,7 @@
         "in_b": true,
         "in_c": true,
         "description": "功率公式：P=I²R（电流定）",
-        "memory_method": "公式：P=I²R"
+        "memory_method": "公式：U=IR ； P=I²R"
     },
     {
         "id": "MC1-0990",
@@ -13865,7 +13865,7 @@
         "in_b": true,
         "in_c": true,
         "description": "功率公式：P=UI（电压电流定）",
-        "memory_method": "公式：P=UI"
+        "memory_method": "公式：R=U/I ； P=UI"
     },
     {
         "id": "MC1-0991",
@@ -13879,7 +13879,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电阻公式：R=U²/P，电流I=P/U（功率电压定）",
-        "memory_method": "公式：R=U²/P, I=P/U"
+        "memory_method": "公式：R=U²/P ; I=P/U"
     },
     {
         "id": "MC1-0992",
@@ -13893,7 +13893,7 @@
         "in_b": true,
         "in_c": true,
         "description": "并联电路：电压同，电流比I1/I2=R2/R1=1/N，功率比P1/P2=1/N",
-        "memory_method": "规律：并联压同，流反阻比"
+        "memory_method": "并联：压同流功反。串联：流同压功倍。并联压同，流反阻比"
     },
     {
         "id": "MC1-0993",
@@ -13907,7 +13907,7 @@
         "in_b": true,
         "in_c": true,
         "description": "并联电路：电压同，功率比P1/P2=R2/R1=1/N",
-        "memory_method": "推论：并联功反阻比"
+        "memory_method": "并联：压同流功反。串联：流同压功倍。并联功反阻比"
     },
     {
         "id": "MC1-0994",
@@ -13921,7 +13921,7 @@
         "in_b": true,
         "in_c": true,
         "description": "串联电路：电流同，功率比P1/P2=R1/R2=N",
-        "memory_method": "规律：串联流同，功正阻比"
+        "memory_method": "串联：流同压功倍。并联：压同流功反。串联流同，功正阻比"
     },
     {
         "id": "MC1-0995",
@@ -13935,7 +13935,7 @@
         "in_b": true,
         "in_c": true,
         "description": "串联电路：电压比U1/U2=R1/R2=N，功率比P1/P2=N",
-        "memory_method": "推论：串联压正阻比，功正阻比"
+        "memory_method": "串联：流同压功倍。并联：压同流功反。串联压正阻比，功正阻比"
     },
     {
         "id": "MC1-0996",
@@ -13949,7 +13949,7 @@
         "in_b": true,
         "in_c": true,
         "description": "同压设备：功率比P_A/P_B=N → 电流比I_A/I_B=N",
-        "memory_method": "关系：功正比则流正比"
+        "memory_method": "压同功倍则流倍"
     },
     {
         "id": "MC1-0997",
@@ -13963,7 +13963,7 @@
         "in_b": true,
         "in_c": true,
         "description": "同压设备：电流比I_A/I_B=N → 功率比P_A/P_B=N",
-        "memory_method": "关系：流正比则功正比"
+        "memory_method": "压同流倍则功倍"
     },
     {
         "id": "MC1-0998",
@@ -13977,7 +13977,7 @@
         "in_b": true,
         "in_c": true,
         "description": "N电阻串联：电流减至1/N，单电阻功率减至1/N²",
-        "memory_method": "串联影响：流减功平方减"
+        "memory_method": "串联：压流反功反方减少"
     },
     {
         "id": "MC1-0999",
@@ -13991,7 +13991,7 @@
         "in_b": true,
         "in_c": true,
         "description": "N电阻串联：单电阻电压减至1/N，功率减至1/N²",
-        "memory_method": "串联影响：压减功平方减"
+        "memory_method": "串联：压流反功反方减少"
     },
     {
         "id": "MC1-1000",
@@ -14005,7 +14005,7 @@
         "in_b": true,
         "in_c": true,
         "description": "N电阻并联：单电阻电流不变，总功率增至N倍",
-        "memory_method": "并联影响：流不变总功倍"
+        "memory_method": "并联：单不变总功倍"
     },
     {
         "id": "MC1-1001",
@@ -14019,13 +14019,13 @@
         "in_b": true,
         "in_c": true,
         "description": "并联电路：电压不变，总功率=单电阻功率×N（P=U²/R，电阻数增N倍）",
-        "memory_method": "记忆：并联压不变，总功N倍增"
+        "memory_method": "并联：单不变总功倍"
     },
     {
         "id": "MC1-1002",
         "question": "对于一个电阻负载，若将其两端的电压提高n%，则：（“x＾m”表示“x的m次方”）",
         "answer": "A",
-        "A": "耗电量增加到原来的",
+        "A": "耗电量增加到原来的 [（100+n）/100]＾2",
         "B": "耗电量增加到原来的（100+n）/100",
         "C": "耗电量比原来增加n%",
         "D": "耗电量比原来增加（n%）＾2",
@@ -14033,13 +14033,13 @@
         "in_b": true,
         "in_c": true,
         "description": "P∝U²，电压升n%→P变为(1+n%)²倍（如n=10，P变1.21倍）",
-        "memory_method": "公式：P新=(1+n%)²×P原"
+        "memory_method": "选带中括号的。公式：P新=(1+n%)²×P原"
     },
     {
         "id": "MC1-1003",
         "question": "对于一个电阻负载，若将其两端的电压降低n%，则：（“x＾m”表示“x的m次方”）",
         "answer": "A",
-        "A": "耗电量减少到原来的",
+        "A": "耗电量减少到原来的的 [（100-n）/100]＾2",
         "B": "耗电量减少到原来的（100-n）/100",
         "C": "耗电量比原来减少n%",
         "D": "耗电量比原来减少（n%）＾2",
@@ -14047,7 +14047,7 @@
         "in_b": true,
         "in_c": true,
         "description": "P∝U²，电压降n%→P变为(1-n%)²倍（如n=10，P变0.81倍）",
-        "memory_method": "公式：P新=(1-n%)²×P原"
+        "memory_method": "选带中括号的。公式：P新=(1-n%)²×P原"
     },
     {
         "id": "MC1-1004",
@@ -14061,7 +14061,7 @@
         "in_b": true,
         "in_c": true,
         "description": "正弦波峰峰值Vpp=100V→有效值Vrms=Vpp/(2√2)≈35.4V",
-        "memory_method": "计算：Vrms=Vpp/2.828"
+        "memory_method": "峰峰、有效→35.4（1/3左右）。计算：Vrms=Vpp/2.828"
     },
     {
         "id": "MC1-1005",
@@ -14075,7 +14075,7 @@
         "in_b": true,
         "in_c": true,
         "description": "正弦波峰值Vp=100V→有效值Vrms=Vp/√2≈70.7V",
-        "memory_method": "计算：Vrms=Vp/1.414"
+        "memory_method": "峰+有效→70.4（2/3左右）。计算：Vrms=Vp/1.414"
     },
     {
         "id": "MC1-1006",
@@ -14089,7 +14089,7 @@
         "in_b": true,
         "in_c": true,
         "description": "方波（-50V至50V）：有效值=幅度绝对值=50V（对称波形）",
-        "memory_method": "特性：方波有效值=峰峰值/2"
+        "memory_method": "方波、有效值 → 50 （峰峰/2）"
     },
     {
         "id": "MC1-1007",
@@ -14103,7 +14103,7 @@
         "in_b": true,
         "in_c": true,
         "description": "方波（0V至100V）：有效值=√(均值平方)=√(50²)=50V（占空比50%）",
-        "memory_method": "计算：有效值=幅度×√占空比"
+        "memory_method": "方波、有效值 → 50 （峰峰/2）"
     },
     {
         "id": "MC1-1008",
@@ -14117,7 +14117,7 @@
         "in_b": true,
         "in_c": true,
         "description": "三角波（-50V至50V）：有效值=Vp/√3≈28.86V≈25V（取近似）",
-        "memory_method": "特性：三角波有效值=Vp/√3"
+        "memory_method": "三角波、-50v、有效值 → 25（Vp/√3）"
     },
     {
         "id": "MC1-1009",
@@ -14131,7 +14131,7 @@
         "in_b": true,
         "in_c": true,
         "description": "三角波（0V至100V）：有效值=幅度/√3≈57.7V≈50V（取近似）",
-        "memory_method": "计算：Vrms=Vpp/(2√3)"
+        "memory_method": "三角波、0v、有效值 → 50v （Vrms=Vpp/(2√3)）"
     },
     {
         "id": "MC1-1010",
@@ -14145,7 +14145,7 @@
         "in_b": true,
         "in_c": true,
         "description": "正弦交流平均值=0（对称波形）",
-        "memory_method": "特性：对称交流均值为0"
+        "memory_method": "交流：0v"
     },
     {
         "id": "MC1-1011",
@@ -14159,7 +14159,7 @@
         "in_b": true,
         "in_c": true,
         "description": "同上，正弦交流平均值恒为0",
-        "memory_method": "记忆：正弦波平均归零"
+        "memory_method": "交流：0v"
     },
     {
         "id": "MC1-1012",
@@ -14173,7 +14173,7 @@
         "in_b": true,
         "in_c": true,
         "description": "对称方波（-50V至50V）平均值=0",
-        "memory_method": "特性：对称波形均值为0"
+        "memory_method": "方波、-50、平均值：0v"
     },
     {
         "id": "MC1-1013",
@@ -14187,7 +14187,7 @@
         "in_b": true,
         "in_c": true,
         "description": "方波（0V至100V）平均值=50V（占空比50%）",
-        "memory_method": "计算：均值=(高+低)/2"
+        "memory_method": "方波、0、平均值：50v"
     },
     {
         "id": "MC1-1014",
@@ -14201,7 +14201,7 @@
         "in_b": true,
         "in_c": true,
         "description": "对称三角波平均值=0",
-        "memory_method": "同1010，对称即零均"
+        "memory_method": "三角波、-50、平均值：0v"
     },
     {
         "id": "MC1-1015",
@@ -14215,7 +14215,7 @@
         "in_b": true,
         "in_c": true,
         "description": "三角波（0V至100V）平均值=50V",
-        "memory_method": "计算：均值=(最小+最大)/2"
+        "memory_method": "三角波、0、平均值：50v"
     },
     {
         "id": "MC1-1016",
@@ -14229,7 +14229,7 @@
         "in_b": true,
         "in_c": true,
         "description": "蓄电池120V（直流）→P=U²/R；交流峰值120V→有效值84.8V→P∝U²→直流功率/交流功率≈2倍",
-        "memory_method": "计算：直流/交流=(120/84.8)²≈2"
+        "memory_method": "峰值电压→2倍。直流/交流=(120/84.8)²≈2"
     },
     {
         "id": "MC1-1017",
@@ -14243,7 +14243,7 @@
         "in_b": true,
         "in_c": true,
         "description": "直流120V与交流有效值120V→P相同（P=U²/R）",
-        "memory_method": "关键：有效值相同则热效同"
+        "memory_method": "有效值电压→相同"
     },
     {
         "id": "MC1-1018",
@@ -14257,7 +14257,7 @@
         "in_b": true,
         "in_c": true,
         "description": "半波整流后交流有效值≈84.8V→直流功率/整流后功率≈2倍（同1016）",
-        "memory_method": "半波整流：有效值=原有效值×0.707"
+        "memory_method": "有效值电压+串联二极管→2倍。半波整流：有效值=原有效值×0.707"
     },
     {
         "id": "MC1-1019",
@@ -14271,7 +14271,7 @@
         "in_b": true,
         "in_c": true,
         "description": "全波整流+电容滤波→输出≈交流峰值120V→与直流120V功率相近",
-        "memory_method": "特性：滤波后电压≈峰值"
+        "memory_method": "峰值电压+全波整流 → 相同。滤波后电压≈峰值"
     },
     {
         "id": "MC1-1020",
@@ -14285,7 +14285,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电阻发热仅取决于有效值电压，与频率无关",
-        "memory_method": "原理：热效∝有效值²"
+        "memory_method": "交流电+方波 → 相同"
     },
     {
         "id": "MC1-1021",
@@ -14299,7 +14299,7 @@
         "in_b": false,
         "in_c": true,
         "description": "电场储能元件=电容",
-        "memory_method": "本质：电容储电场能"
+        "memory_method": "电容储电场能"
     },
     {
         "id": "MC1-1022",
@@ -14313,7 +14313,7 @@
         "in_b": false,
         "in_c": true,
         "description": "电容电流I=2πfCU→与电压U、电容量C均成正比",
-        "memory_method": "公式：I∝f·C·U"
+        "memory_method": "电容：压正容正。公式：I∝f·C·U"
     },
     {
         "id": "MC1-1023",
@@ -14327,7 +14327,7 @@
         "in_b": false,
         "in_c": true,
         "description": "容抗Xc=1/(2πfC)，f↑N倍→Xc↓至1/N",
-        "memory_method": "规律：容抗反比频率"
+        "memory_method": "频率N倍→容抗1/N。容抗反比"
     },
     {
         "id": "MC1-1024",
@@ -14341,7 +14341,7 @@
         "in_b": false,
         "in_c": true,
         "description": "磁场储能元件=电感",
-        "memory_method": "本质：电感储磁场能"
+        "memory_method": "电感储磁场能"
     },
     {
         "id": "MC1-1025",
@@ -14355,7 +14355,7 @@
         "in_b": false,
         "in_c": true,
         "description": "电感电流I=U/(2πfL)→与U成正比，与L成反比（f固定）",
-        "memory_method": "公式：I∝U/(f·L)"
+        "memory_method": "电感：压正感反。公式：I∝U/(f·L)"
     },
     {
         "id": "MC1-1026",
@@ -14369,7 +14369,7 @@
         "in_b": false,
         "in_c": true,
         "description": "感抗XL=2πfL，f↑N倍→XL↑至N倍",
-        "memory_method": "规律：感抗正比频率"
+        "memory_method": "频率N倍→感抗N倍。感抗正比"
     },
     {
         "id": "MC4-1027",
@@ -14383,7 +14383,7 @@
         "in_b": false,
         "in_c": true,
         "description": "相位差：同相（0°/360°）、反相（180°）、正交（90°），电抗元件致移相，干涉叠加原理",
-        "memory_method": "核心：0同180反，90正交，电抗移相"
+        "memory_method": "全选"
     },
     {
         "id": "MC1-1028",
@@ -14425,7 +14425,7 @@
         "in_b": false,
         "in_c": true,
         "description": "相位差90°→合成电压=√2倍，相位45°",
-        "memory_method": "矢量合成：垂直矢量和"
+        "memory_method": "关键词：1.41。矢量合成：垂直矢量和"
     },
     {
         "id": "MC1-1031",
@@ -14439,7 +14439,7 @@
         "in_b": false,
         "in_c": true,
         "description": "电容电流超前电压90°",
-        "memory_method": "相位：电容流超压90°"
+        "memory_method": "电容问流相→超前90"
     },
     {
         "id": "MC1-1032",
@@ -14453,7 +14453,7 @@
         "in_b": false,
         "in_c": true,
         "description": "电容电压滞后电流90°",
-        "memory_method": "相位：电容压滞流90°"
+        "memory_method": "电容问压相→落后90"
     },
     {
         "id": "MC1-1033",
@@ -14467,7 +14467,7 @@
         "in_b": false,
         "in_c": true,
         "description": "电感电流滞后电压90°",
-        "memory_method": "相位：电感流滞压90°"
+        "memory_method": "电感问流相→落后90"
     },
     {
         "id": "MC1-1034",
@@ -14481,7 +14481,7 @@
         "in_b": false,
         "in_c": true,
         "description": "电感电压超前电流90°",
-        "memory_method": "相位：电感压超流90°"
+        "memory_method": "电感问压相：超前90"
     },
     {
         "id": "MC1-1035",
@@ -14495,7 +14495,7 @@
         "in_b": false,
         "in_c": true,
         "description": "RC充电：电容电压从0指数升至U",
-        "memory_method": "暂态：电容充电渐升"
+        "memory_method": "阻容串联接电压，问容压：逐渐增（不突跳）"
     },
     {
         "id": "MC1-1036",
@@ -14509,7 +14509,7 @@
         "in_b": false,
         "in_c": true,
         "description": "时间常数τ=RC，τ时刻电容电压≈63%U",
-        "memory_method": "关键点：τ时达63%"
+        "memory_method": ""
     },
     {
         "id": "MC1-1037",
@@ -14523,7 +14523,7 @@
         "in_b": false,
         "in_c": true,
         "description": "RC充电：电阻电压从U指数降至0",
-        "memory_method": "暂态：电阻压降渐消"
+        "memory_method": "阻容串联接电压，问阻压：突跳+逐渐减"
     },
     {
         "id": "MC1-1038",
@@ -14537,7 +14537,7 @@
         "in_b": false,
         "in_c": true,
         "description": "τ时刻电阻电压≈37%U（100%-63%）",
-        "memory_method": "计算：电阻压=U-电容压"
+        "memory_method": ""
     },
     {
         "id": "MC1-1039",
@@ -14551,7 +14551,7 @@
         "in_b": false,
         "in_c": true,
         "description": "RC充电电流：从U/R突跳后指数降至0",
-        "memory_method": "暂态：电流初大后衰"
+        "memory_method": "阻容串联接电压，问阻流：突跳+逐渐减"
     },
     {
         "id": "MC1-1040",
@@ -14565,7 +14565,7 @@
         "in_b": false,
         "in_c": true,
         "description": "电容电流与电阻电流相同（串联）",
-        "memory_method": "串联电流处处等"
+        "memory_method": "阻容串联不动作，问容流：突跳+逐渐减"
     },
     {
         "id": "MC1-1041",
@@ -14579,7 +14579,7 @@
         "in_b": false,
         "in_c": true,
         "description": "RC放电：电容电压从U指数降至0",
-        "memory_method": "暂态：电容放电渐消"
+        "memory_method": "阻容并联断电源，问容压：逐渐减"
     },
     {
         "id": "MC1-1042",
@@ -14593,7 +14593,7 @@
         "in_b": false,
         "in_c": true,
         "description": "电阻电压等于电容电压（并联）",
-        "memory_method": "并联电压处处等"
+        "memory_method": "阻容并联断电源，问阻压：逐渐减"
     },
     {
         "id": "MC1-1043",
@@ -14607,7 +14607,7 @@
         "in_b": false,
         "in_c": true,
         "description": "RC放电电流：从U/R指数降至0",
-        "memory_method": "暂态：放电流渐衰"
+        "memory_method": "阻容并联断电源，问阻流：逐渐减（不突跳）"
     },
     {
         "id": "MC1-1044",
@@ -14621,7 +14621,7 @@
         "in_b": false,
         "in_c": true,
         "description": "电容放电电流路径：经电阻→电流方向与充电相反",
-        "memory_method": "方向：放电流反向"
+        "memory_method": "阻容并联断电源，问容流：突跳+逐渐减"
     },
     {
         "id": "MC1-1045",
@@ -14635,7 +14635,7 @@
         "in_b": false,
         "in_c": true,
         "description": "RL充电：电感电压从U突跳后指数降至0",
-        "memory_method": "暂态：电感压初大后衰"
+        "memory_method": "阻感串联接电压，问感压：突跳+逐渐减"
     },
     {
         "id": "MC1-1046",
@@ -14649,7 +14649,7 @@
         "in_b": false,
         "in_c": true,
         "description": "τ=L/R，τ时刻电感电压≈37%U",
-        "memory_method": "关键点：τ时剩37%"
+        "memory_method": ""
     },
     {
         "id": "MC1-1047",
@@ -14663,7 +14663,7 @@
         "in_b": false,
         "in_c": true,
         "description": "RL充电：电阻电压从0指数升至U",
-        "memory_method": "暂态：电阻压渐升"
+        "memory_method": ""
     },
     {
         "id": "MC1-1048",
@@ -14677,7 +14677,7 @@
         "in_b": false,
         "in_c": true,
         "description": "同1047，电阻电压指数升",
-        "memory_method": "记忆：电感压衰，电阻压升"
+        "memory_method": "阻感串联接电压，问阻压：逐渐增"
     },
     {
         "id": "MC1-1049",
@@ -14691,7 +14691,7 @@
         "in_b": false,
         "in_c": true,
         "description": "RL充电电流：从0指数升至U/R",
-        "memory_method": "暂态：电流渐增至稳"
+        "memory_method": "阻感串联接电压，问阻流：逐渐增"
     },
     {
         "id": "MC1-1050",
@@ -14705,7 +14705,7 @@
         "in_b": false,
         "in_c": true,
         "description": "电感电流与电阻电流相同（串联）",
-        "memory_method": "串联电流同"
+        "memory_method": "阻感串联接电压，问感流：逐渐增"
     },
     {
         "id": "MC1-1051",
@@ -14719,7 +14719,7 @@
         "in_b": false,
         "in_c": true,
         "description": "RL放电：电感电压从I·R指数降至0",
-        "memory_method": "暂态：电感压渐消"
+        "memory_method": "阻感串联断电源，问感压：逐渐减"
     },
     {
         "id": "MC1-1052",
@@ -14733,7 +14733,7 @@
         "in_b": false,
         "in_c": true,
         "description": "谐振=感抗容抗抵消，电抗为0",
-        "memory_method": "定义：电抗抵消即谐振"
+        "memory_method": "电抗抵消即谐振"
     },
     {
         "id": "MC1-1053",
@@ -14761,7 +14761,7 @@
         "in_b": false,
         "in_c": true,
         "description": "串联谐振：谐振时阻抗最小（纯阻），f>f0感性，f<f0容性，直流断路",
-        "memory_method": "特性：最小阻，高感低容，直流通断"
+        "memory_method": "全选。特性：最小阻，高感低容，直流通断"
     },
     {
         "id": "MC4-1055",
@@ -14775,7 +14775,7 @@
         "in_b": false,
         "in_c": true,
         "description": "并联谐振：谐振时阻抗最大，f>f0容性，f<f0感性，直流短路",
-        "memory_method": "特性：最大阻，高容低感，直流通短"
+        "memory_method": "全选。特性：最大阻，高容低感，直流通短"
     },
     {
         "id": "MC2-1056",
@@ -14803,7 +14803,7 @@
         "in_b": false,
         "in_c": true,
         "description": "Q值高→谐振曲线尖锐，选择性好，通带窄",
-        "memory_method": "影响：Q高选锐带窄"
+        "memory_method": "关键词：越尖锐"
     },
     {
         "id": "MC1-1058",
@@ -14817,7 +14817,7 @@
         "in_b": false,
         "in_c": true,
         "description": "通带宽度=3dB衰减点间频率间隔",
-        "memory_method": "定义：3dB带宽"
+        "memory_method": "关键词：3dB"
     },
     {
         "id": "MC1-1059",
@@ -14831,8 +14831,8 @@
         "in_a": false,
         "in_b": true,
         "in_c": true,
-        "description": "符号：接地（三横递减）",
-        "memory_method": "识别：三横递减地"
+        "description": "符号：接地（⊥或三横递减）",
+        "memory_method": "垂直于地面，接地"
     },
     {
         "id": "MC1-1060",
@@ -14846,8 +14846,8 @@
         "in_a": false,
         "in_b": true,
         "in_c": true,
-        "description": "符号：天线（T形）",
-        "memory_method": "识别：T形天线"
+        "description": "符号：天线（T或Y形）",
+        "memory_method": "Y型接到天，天线"
     },
     {
         "id": "MC1-1061",
@@ -14861,8 +14861,8 @@
         "in_a": false,
         "in_b": true,
         "in_c": true,
-        "description": "符号：熔断器（矩形内波浪）",
-        "memory_method": "识别：矩形波浪熔丝"
+        "description": "符号：熔断器（矩形内横线或波浪）",
+        "memory_method": "矩形穿线，熔断器"
     },
     {
         "id": "MC1-1062",
@@ -14877,7 +14877,7 @@
         "in_b": true,
         "in_c": true,
         "description": "符号：电容（两平行线）",
-        "memory_method": "识别：两线电容"
+        "memory_method": "等长两线隔开，电容"
     },
     {
         "id": "MC1-1063",
@@ -14892,7 +14892,7 @@
         "in_b": true,
         "in_c": true,
         "description": "符号：电阻（矩形）",
-        "memory_method": "识别：矩形电阻"
+        "memory_method": "矩形无线，电阻"
     },
     {
         "id": "MC1-1064",
@@ -14907,7 +14907,7 @@
         "in_b": true,
         "in_c": true,
         "description": "符号：二极管（三角+竖线）",
-        "memory_method": "识别：三角竖线二极管"
+        "memory_method": "三角+竖线，二极管"
     },
     {
         "id": "MC1-1065",
@@ -14922,7 +14922,7 @@
         "in_b": true,
         "in_c": true,
         "description": "符号：电感（半圆弧线）",
-        "memory_method": "识别：弧线圈电感"
+        "memory_method": "半圆弧形，电感"
     },
     {
         "id": "MC1-1066",
@@ -14937,7 +14937,7 @@
         "in_b": true,
         "in_c": true,
         "description": "符号：电池（长短线组）",
-        "memory_method": "识别：长短线电池"
+        "memory_method": "长短两线隔开，电池"
     },
     {
         "id": "MC1-1067",
@@ -14952,7 +14952,7 @@
         "in_b": true,
         "in_c": true,
         "description": "符号：压电晶体（矩形内菱形）",
-        "memory_method": "识别：菱形晶振"
+        "memory_method": "两线夹矩形，晶振（压电晶体）"
     },
     {
         "id": "MC1-1068",
@@ -14967,7 +14967,7 @@
         "in_b": true,
         "in_c": true,
         "description": "符号：稳压管（二极管+竖线穿T）",
-        "memory_method": "识别：T穿竖稳压管"
+        "memory_method": "二极管多一拐，稳压二极管"
     },
     {
         "id": "MC1-1069",
@@ -14982,7 +14982,7 @@
         "in_b": true,
         "in_c": true,
         "description": "符号：发光管（二极管+双箭头）",
-        "memory_method": "识别：双箭头LED"
+        "memory_method": "二极管多箭头，发光二极管"
     },
     {
         "id": "MC1-1070",
@@ -14997,7 +14997,7 @@
         "in_b": true,
         "in_c": true,
         "description": "符号：PNP管（箭头向基极）",
-        "memory_method": "识别：箭头向基PNP"
+        "memory_method": "箭头向里（向基）PNP，可以记：里→P（同韵）"
     },
     {
         "id": "MC1-1071",
@@ -15012,7 +15012,7 @@
         "in_b": true,
         "in_c": true,
         "description": "符号：NPN管（箭头离基极）",
-        "memory_method": "识别：箭头离基NPN"
+        "memory_method": "箭头向外（离基）NPN，可以记：里→P（同韵），向外所以不是，也就是NPN了"
     },
     {
         "id": "MC1-1072",
@@ -15027,7 +15027,7 @@
         "in_b": true,
         "in_c": true,
         "description": "符号：JFET（箭头栅极）",
-        "memory_method": "识别：箭头栅JFET"
+        "memory_method": "箭头栅，结型场效应管。也可以记忆：左侧没碰到右侧，所以是绝缘；碰到的就不是绝缘，就是结型场效应管"
     },
     {
         "id": "MC1-1073",
@@ -15042,7 +15042,7 @@
         "in_b": true,
         "in_c": true,
         "description": "符号：MOSFET（直角栅极）",
-        "memory_method": "识别：直角栅MOS"
+        "memory_method": "直角栅，绝缘栅场效应管。也可以记忆：左侧没碰到右侧，所以是绝缘；碰到的就不是绝缘，就是结型场效应管"
     },
     {
         "id": "MC3-1074",
@@ -15056,7 +15056,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电阻材料：碳膜、金属膜、线绕",
-        "memory_method": "类型：碳金线绕"
+        "memory_method": "排除：阻尼电阻"
     },
     {
         "id": "MC1-1075",
@@ -15070,7 +15070,7 @@
         "in_b": true,
         "in_c": true,
         "description": "大功率电阻（如线绕）标额定耗散功率",
-        "memory_method": "应用：大功率标耗散"
+        "memory_method": "关键词：电阻。"
     },
     {
         "id": "MC1-1076",
@@ -15084,7 +15084,7 @@
         "in_b": true,
         "in_c": true,
         "description": "额定功率=正常工作最大承受功率",
-        "memory_method": "定义：最大承受功率"
+        "memory_method": "关键词：正常工作、最大功率"
     },
     {
         "id": "MC1-1077",
@@ -15098,7 +15098,7 @@
         "in_b": true,
         "in_c": true,
         "description": "SMD规格0402等=长宽尺寸（单位0.1英寸）",
-        "memory_method": "尺寸：04=0.04英寸"
+        "memory_method": "关键词：长宽"
     },
     {
         "id": "MC1-1078",
@@ -15112,7 +15112,7 @@
         "in_b": true,
         "in_c": true,
         "description": "色环：棕1橙3橙3→13×10³=13kΩ",
-        "memory_method": "口诀：棕1橙3，13千欧"
+        "memory_method": "棕开头→13K"
     },
     {
         "id": "MC1-1079",
@@ -15126,7 +15126,7 @@
         "in_b": true,
         "in_c": true,
         "description": "色环：黄4白9红2→49×10²=4.9kΩ",
-        "memory_method": "口诀：黄4白9，4.9千欧"
+        "memory_method": "黄开头→4.9K"
     },
     {
         "id": "MC1-1080",
@@ -15140,7 +15140,7 @@
         "in_b": true,
         "in_c": true,
         "description": "五环：银(误)实际棕1橙3橙3黑0→133×1=133Ω",
-        "memory_method": "纠错：五环首不银，133Ω"
+        "memory_method": "银开头→133"
     },
     {
         "id": "MC1-1081",
@@ -15154,7 +15154,7 @@
         "in_b": true,
         "in_c": true,
         "description": "印字2R7=2.7Ω",
-        "memory_method": "规则：R=小数点"
+        "memory_method": "R=小数点"
     },
     {
         "id": "MC1-1082",
@@ -15168,7 +15168,7 @@
         "in_b": true,
         "in_c": true,
         "description": "印字3802=380×10²=38.0kΩ",
-        "memory_method": "规则：四位=前三数×10^末位"
+        "memory_method": "四位=前三数×10^末位"
     },
     {
         "id": "MC2-1083",
@@ -15182,7 +15182,7 @@
         "in_b": true,
         "in_c": true,
         "description": "高耐压：选耐压产品/大封装，或串联电阻",
-        "memory_method": "策略：选高耐压/串联"
+        "memory_method": "排除：高级、并联"
     },
     {
         "id": "MC2-1084",
@@ -15196,7 +15196,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电位器功能：可调分压、可变电阻",
-        "memory_method": "用途：调压变阻"
+        "memory_method": "分压器、电阻"
     },
     {
         "id": "MC1-1085",
@@ -15210,7 +15210,7 @@
         "in_b": true,
         "in_c": true,
         "description": "音量调节=电位器（可变分压）",
-        "memory_method": "应用：电位器调音量"
+        "memory_method": "电位器调音量"
     },
     {
         "id": "MC3-1086",
@@ -15224,7 +15224,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电容材料：陶瓷、电解、有机薄膜",
-        "memory_method": "类型：陶电薄膜"
+        "memory_method": "排除：线间电容"
     },
     {
         "id": "MC1-1087",
@@ -15238,7 +15238,7 @@
         "in_b": true,
         "in_c": true,
         "description": "独石电容=多层陶瓷电容",
-        "memory_method": "本质：多层陶瓷"
+        "memory_method": "多层陶瓷"
     },
     {
         "id": "MC3-1088",
@@ -15252,7 +15252,7 @@
         "in_b": true,
         "in_c": true,
         "description": "标耐压：电解电容、钽电容、熔丝",
-        "memory_method": "器件：电解/钽/熔丝"
+        "memory_method": "排除：电感"
     },
     {
         "id": "MC4-1089",
@@ -15266,7 +15266,7 @@
         "in_b": true,
         "in_c": true,
         "description": "陶瓷电容优势：小体积、高频好、无极性、低故障",
-        "memory_method": "优点：小高无稳"
+        "memory_method": "全选"
     },
     {
         "id": "MC1-1090",
@@ -15279,8 +15279,8 @@
         "in_a": false,
         "in_b": true,
         "in_c": true,
-        "description": "电解电容默认单位μF（微法）",
-        "memory_method": "默认：电解标数即微法"
+        "description": "",
+        "memory_method": "电解质电容默认：法拉"
     },
     {
         "id": "MC1-1091",
@@ -15294,7 +15294,7 @@
         "in_b": true,
         "in_c": true,
         "description": "非电解电容>1数默认单位pF（皮法）",
-        "memory_method": "默认：大数皮法"
+        "memory_method": "非电解质电容默认：大数皮法"
     },
     {
         "id": "MC1-1092",
@@ -15350,7 +15350,7 @@
         "in_b": true,
         "in_c": true,
         "description": "非电解电容<1数默认单位μF（微法）",
-        "memory_method": "默认：小数微法"
+        "memory_method": "非电解质电容默认：小数微法"
     },
     {
         "id": "MC1-1096",
@@ -15364,7 +15364,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电容功能：隔直通交，旁路交流",
-        "memory_method": "应用：隔直通交"
+        "memory_method": "电容：隔直通交"
     },
     {
         "id": "MC1-1097",
@@ -15378,7 +15378,7 @@
         "in_b": true,
         "in_c": true,
         "description": "大小电容并联：大电容滤低频，小电容滤高频，拓展带宽",
-        "memory_method": "策略：大小容拓带宽"
+        "memory_method": "选最长的。大小容拓带宽"
     },
     {
         "id": "MC1-1098",
@@ -15392,7 +15392,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电容跨接电源滤波安全（13.8V直流）",
-        "memory_method": "安全：低压滤波可跨"
+        "memory_method": "关键词：13.8、或直流。安全：低压滤波可跨"
     },
     {
         "id": "MC2-1099",
@@ -15406,7 +15406,7 @@
         "in_b": true,
         "in_c": true,
         "description": "线圈制成：电感器、电抗器",
-        "memory_method": "器件：电感/电抗器"
+        "memory_method": "电感、电抗器"
     },
     {
         "id": "MC2-1100",
@@ -15420,7 +15420,7 @@
         "in_b": true,
         "in_c": true,
         "description": "射频电感：空芯（高频）、磁芯（中频）",
-        "memory_method": "类型：空芯磁芯"
+        "memory_method": "空芯、磁芯"
     },
     {
         "id": "MC1-1101",
@@ -15462,7 +15462,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电感跨接天线端（高频通路）安全，直流/电源端致短路风险",
-        "memory_method": "安全：电感勿跨直流源"
+        "memory_method": "关键词：天线。安全：电感勿跨直流源"
     },
     {
         "id": "MC2-1104",
@@ -15490,7 +15490,7 @@
         "in_b": true,
         "in_c": true,
         "description": "开关元件：按钮（机械）、继电器（电磁）、晶体管（电子）",
-        "memory_method": "类型：机继晶三开关"
+        "memory_method": "排除：电位器（电位器不止通断状态）"
     },
     {
         "id": "MC1-1106",
@@ -15504,7 +15504,7 @@
         "in_b": true,
         "in_c": true,
         "description": "单刀双掷=1路切换2路",
-        "memory_method": "定义：1入2选"
+        "memory_method": "一进二选一"
     },
     {
         "id": "MC1-1107",
@@ -15518,7 +15518,7 @@
         "in_b": true,
         "in_c": true,
         "description": "熔断器=过流保护",
-        "memory_method": "功能：熔断护电路"
+        "memory_method": "熔断护电路"
     },
     {
         "id": "MC3-1108",
@@ -15532,7 +15532,7 @@
         "in_b": true,
         "in_c": true,
         "description": "标额定电流：熔断器（熔断值）、开关（通流能力）、继电器（触点电流）",
-        "memory_method": "器件：熔开继标流"
+        "memory_method": "熔/开/继 标流"
     },
     {
         "id": "MC3-1109",
@@ -15546,7 +15546,7 @@
         "in_b": true,
         "in_c": true,
         "description": "选熔断器：看电压/电流/熔速；大电流装管座；管座固定便维修",
-        "memory_method": "要点：压流速三参，大流装座固位"
+        "memory_method": "排除：射频滤波器。要点：压流速三参，大流装座固位"
     },
     {
         "id": "MC3-1110",
@@ -15560,7 +15560,7 @@
         "in_b": true,
         "in_c": true,
         "description": "继电器选型：触点耐压/电流；收发切换先待机；小信号关注导通力",
-        "memory_method": "经验：触点参，切换待机，小信导通"
+        "memory_method": "排除：HF/VHF。经验：触点参，切换待机，小信导通"
     },
     {
         "id": "MC1-1111",
