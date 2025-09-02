@@ -921,7 +921,7 @@
         "in_b": true,
         "in_c": true,
         "description": "B类可设HF<15瓦或VHF/UHF≤25瓦电台",
-        "memory_method": "全选，HF15瓦，U/V25瓦"
+        "memory_method": "全选，LF/HF15瓦，U/V25瓦"
     },
     {
         "id": "MC4-0067",
@@ -2097,7 +2097,7 @@
         "in_b": true,
         "in_c": true,
         "description": "管制措施：限制或禁用业余电台+技术阻断频率（《条例》第四十九条）",
-        "memory_method": "关键词：禁止、使用、阻断（注意不是不会禁止使用）"
+        "memory_method": "关键词：禁止、使用、阻断（注意不是“不会禁止使用”）"
     },
     {
         "id": "MC2-0151",
@@ -2503,7 +2503,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余专用频段：7/14/21/28/47GHz（《频率划分规定》）",
-        "memory_method": "专用频段：7到47"
+        "memory_method": "专用频段：7到47（前四个数值为等差数列）"
     },
     {
         "id": "MC1-0180",
@@ -2601,7 +2601,7 @@
         "in_b": true,
         "in_c": true,
         "description": "40米波段范围：全球7.0-7.2MHz（ITU1/2/3区）（《划分规定》）",
-        "memory_method": "第一个结尾是7.2，中间值"
+        "memory_method": "第一个结尾是7.2，中间值；或记忆小数部分为232"
     },
     {
         "id": "MC1-0187",
@@ -2909,7 +2909,7 @@
         "in_b": true,
         "in_c": true,
         "description": "频段上限F2的实际发信频率需减信号上边带宽度，避免干扰上限以上频率",
-        "memory_method": "上限肯定最高了，所以选择【-】"
+        "memory_method": "上限肯定最高了，所以选择【-】，注意不用加倍"
     },
     {
         "id": "MC1-0209",
