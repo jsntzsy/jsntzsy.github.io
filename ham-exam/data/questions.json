@@ -7851,7 +7851,7 @@
         "in_b": true,
         "in_c": true,
         "description": "西N时区比北京晚(8+N)小时",
-        "memory_method": "西区更晚"
+        "memory_method": "西区→晚、加；西区更晚"
     },
     {
         "id": "MC1-0562",
@@ -7865,7 +7865,7 @@
         "in_b": true,
         "in_c": true,
         "description": "东N时区比北京晚(8-N)小时（N<8时更早）",
-        "memory_method": "东区可能更早"
+        "memory_method": "东区→晚、减；东区可能更早"
     },
     {
         "id": "MC1-0563",
@@ -8397,7 +8397,7 @@
         "in_b": true,
         "in_c": true,
         "description": "火花塞干扰对策：开启NB（抑制脉冲噪声）",
-        "memory_method": "功能应用：NB抗点火干扰"
+        "memory_method": "NB可以抑制脉冲噪声。功能应用：NB抗点火干扰"
     },
     {
         "id": "MC1-0601",
@@ -8411,7 +8411,7 @@
         "in_b": true,
         "in_c": true,
         "description": "MODE功能用于切换通信调制模式（如FM/SSB/CW）",
-        "memory_method": "核心：工作模式切换键"
+        "memory_method": "MODE：模式。核心：工作模式切换键"
     },
     {
         "id": "MC1-0602",
@@ -8425,7 +8425,7 @@
         "in_b": true,
         "in_c": true,
         "description": "ATT是接收机输入衰减器，强信号时接入防止前级电路过载",
-        "memory_method": "作用：衰减强信号，防过载"
+        "memory_method": "ATT（Attenuator）：衰减器。作用：衰减强信号，防过载"
     },
     {
         "id": "MC1-0603",
@@ -8439,7 +8439,7 @@
         "in_b": true,
         "in_c": true,
         "description": "AGC是接收机自动增益控制，动态调整中频增益维持输出稳定",
-        "memory_method": "功能：稳幅防阻塞"
+        "memory_method": "AGC（Automatic 【Gain】 Control）：自动增益控制。功能：稳幅防阻塞"
     },
     {
         "id": "MC1-0604",
@@ -8523,7 +8523,7 @@
         "in_b": true,
         "in_c": true,
         "description": "PRE是接收机前置放大器，微弱信号时提升灵敏度（可能降低指标）",
-        "memory_method": "关键词：放大器。功能：弱信号增益↑"
+        "memory_method": "关键词：放大器。 PRE（Preamplifier）：前置放大器。功能：弱信号增益↑"
     },
     {
         "id": "MC1-0610",
@@ -8537,7 +8537,7 @@
         "in_b": true,
         "in_c": true,
         "description": "ALC是发射机自动电平控制，限制射频输出功率防过驱动",
-        "memory_method": "关键词：电平控制。核心：防过驱保线性"
+        "memory_method": "关键词：电平控制。ALC（Automatic 【Level】 Control）：自动电平控制。核心：防过驱保线性"
     },
     {
         "id": "MC1-0611",
@@ -8621,7 +8621,7 @@
         "in_b": true,
         "in_c": true,
         "description": "PROC是发射机语音压缩功能，提升弱语音包络",
-        "memory_method": "关键词：压缩。PROC=语音压缩"
+        "memory_method": "关键词：压缩。PROC：发信语音压缩(C=Compression)"
     },
     {
         "id": "MC1-0617",
@@ -8691,7 +8691,7 @@
         "in_b": true,
         "in_c": true,
         "description": "AT/TUNE是自动天线调谐功能，优化天线阻抗匹配",
-        "memory_method": "关键词：自动天线调谐。功能：天调=阻抗匹配"
+        "memory_method": "关键词：调谐。TUNE：调谐。功能：天调=阻抗匹配"
     },
     {
         "id": "MC1-0622",
@@ -8747,7 +8747,7 @@
         "in_b": true,
         "in_c": true,
         "description": "RIT是接收增量调谐，微调接收频率（发射频率不变）",
-        "memory_method": "关键词：接收增量调谐。功能：收频微调"
+        "memory_method": "关键词：接收增量调谐。RIT（Receiver Incremental Tuning）：接收增量调谐。功能：收频微调"
     },
     {
         "id": "MC1-0626",
@@ -8761,7 +8761,7 @@
         "in_b": true,
         "in_c": true,
         "description": "XIT是发射增量调谐，微调发射频率（接收频率不变）",
-        "memory_method": "关键词：发射增量调谐。功能：发频微调"
+        "memory_method": "关键词：发射增量调谐。XIT（Transmitter Incremental Tuning）：发射增量调谐。功能：发频微调"
     },
     {
         "id": "MC1-0627",
@@ -8775,7 +8775,7 @@
         "in_b": true,
         "in_c": true,
         "description": "SPLIT是异频收发模式，收/发使用不同频率",
-        "memory_method": "关键词：异频收发。核心：收/发异频"
+        "memory_method": "关键词：异频收发。 SPLIT→分割→收发分开。 核心：收/发异频"
     },
     {
         "id": "MC2-0628",
@@ -8887,7 +8887,7 @@
         "in_b": true,
         "in_c": true,
         "description": "前置放大器装于天线与接收机间，直接放大微弱信号",
-        "memory_method": "前置放大器：天线后、接收机前"
+        "memory_method": "前置放大器：天线后、接收机前。 放大器放大的是接收到的信号，所以放在天线和接收机之间"
     },
     {
         "id": "MC1-0636",
@@ -8901,7 +8901,7 @@
         "in_b": true,
         "in_c": true,
         "description": "低通滤波器串接在发射机与天线间，抑制谐波杂散",
-        "memory_method": "低通滤波器：发信机后→天线前"
+        "memory_method": "低通滤波器：发信机后→天线前。滤除杂散【发射】，所以放在发信机和天线之间"
     },
     {
         "id": "MC1-0637",
@@ -8929,7 +8929,7 @@
         "in_b": true,
         "in_c": true,
         "description": "短截线滤波器：1/4波长短路电缆通基波阻谐波（如40米段通40m/15m，阻20m/10m）",
-        "memory_method": "关键词：1/4波长，40和15。 特性：λ/4短路=通基阻谐"
+        "memory_method": "关键词：1/4波长。 特性：λ/4短路=通基阻谐"
     },
     {
         "id": "MC1-0639",
