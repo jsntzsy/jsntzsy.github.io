@@ -63,9 +63,14 @@
     line-height: 30px;
 }
 
-.progress-ctrl-bar>button {
+.progress-ctrl-bar>button,
+.progress-ctrl-bar>div.btn-group {
     margin-left: 5px;
     font-size: 0.9em;
+}
+
+.progress-ctrl-bar .btn-group .dropdown-menu {
+    width: 100%;
 }
 
 .form-switch-row {
@@ -90,7 +95,8 @@
         text-align: center;
     }
 
-    .progress-ctrl-bar>button {
+    .progress-ctrl-bar>button,
+    .progress-ctrl-bar>div.btn-group {
         width: 80%;
         margin-top: 10px;
         margin-right: 5px;

@@ -156,5 +156,5 @@ class QDB {
         let request = indexedDB.deleteDatabase(this.#DB_NAME);
         return this.#toPromise(request);
     }
-
+    
 }

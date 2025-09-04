@@ -169,5 +169,62 @@ class QuestionsManager {
     }
 
     get Questions() { return this.currentQuestions; }
+
+    //////////////
+
+    async exportProfile(file) {
+
+        let states = await this.#db.getAllStates();
+        let stars = await this.#db.getAllStars();
+
+        let profile = {
+            version: localStorage.getItem('q_ver'),
+            lastId: localStorage.getItem('q_last_id'),
+            lastStudyId: localStorage.getItem('q_last_study_id'),
+            level: localStorage.getItem('q_level'),
+            onlyDiff: localStorage.getItem('q_onlyDiff'),
+            showMemoryMethod: localStorage.getItem('q_show_memory_method'),
+            states: states,
+            stars: stars
+        };
+
+        return JSON.stringify(profile);
+    }
+
+    async loadProfile(profile) {
+
+        profile = JSON.parse(profile);
+
+        await this.#db.clearStates();
+        await this.#db.clearStars();
+
+        for (const s of profile.states) {
+            await this.#db.setState(s.id, s.state);
+        }
+        for (const s of profile.stars) {
+            await this.#db.setStar(s.id, true);
+        }
+
+        if (profile.version) {
+            localStorage.setItem('q_ver', profile.version);
+        }
+        if (profile.lastId) {
+            localStorage.setItem('q_last_id', profile.lastId);
+        }
+        if (profile.lastStudyId) {
+            localStorage.setItem('q_last_study_id', profile.lastStudyId);
+        }
+        if (profile.level) {
+            localStorage.setItem('q_level', profile.level);
+        }
+        if (profile.onlyDiff) {
+            localStorage.setItem('q_onlyDiff', profile.onlyDiff);
+        }
+        if (profile.showMemoryMethod) {
+            localStorage.setItem('q_show_memory_method', profile.showMemoryMethod);
+        }
+
+        return true;
+    }
 }
 

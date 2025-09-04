@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/font-awesome.css" />
     <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
 
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/index.css" />
@@ -20,8 +20,9 @@
 
     <script>
 
-        const SERV_VERSION = "2025@beta";
+        const SERV_VERSION = "2025@beta1";
         const Q = new QuestionsManager();
+
         $(document).ready(async () => {
 
             // 初始化管理器
@@ -58,6 +59,44 @@
                         `部分题目的记忆方法由AI生成，正在人工逐步完善中。`);
                 }
                 localStorage.setItem('q_show_memory_method', showMemoryMethod);
+            });
+
+            $('#saveProfile').on('click', async function () {
+                const profile = await Q.exportProfile();
+                const blob = new Blob([profile], { type: 'application/json' });
+                const a = document.createElement('a');
+                a.href = URL.createObjectURL(blob);
+                a.download = 'profile.json';
+                a.click();
+                URL.revokeObjectURL(a.href);
+            });
+
+            $('#loadProfile').on('click', async function () {
+                const input = document.createElement('input');
+                input.type = 'file';
+                input.accept = 'application/json';
+                input.onchange = async function () {
+                    const file = input.files[0];
+                    if (!file) {
+                        return;
+                    }
+
+                    const reader = new FileReader();
+                    reader.onload = async function () {
+                        try {
+                            Q.loadProfile(reader.result);
+                            window.location.reload();
+                        }
+                        catch (e) {
+                            alert('进度文件加载失败！');
+                        }
+                    }
+                    reader.onerror = function () {
+                        alert('进度文件加载失败！');
+                    }
+                    reader.readAsText(file);
+                }
+                input.click();
             });
 
             $('#resetProgress').on('click', async function () {
@@ -344,7 +383,7 @@
                         </div>
                     </div>
                     <div class="row mt-3">
-                        <div class="col-md-5 form-switch-row">
+                        <div class="col-md-4 form-switch-row">
                             <div class="form-check form-switch">
                                 <input class="form-check-input" type="checkbox" id="onlyDifference" disabled>
                                 <label class="form-check-label" for="onlyDifference">
@@ -356,16 +395,37 @@
                                 <label class="form-check-label" for="showMemoryMethod">显示记忆方法</label>
                             </div>
                         </div>
-                        <div class="col-md-7 text-md-end progress-ctrl-bar">
+                        <div class="col-md-8 text-md-end progress-ctrl-bar">
                             <button type="button" id="clearStar" class="btn btn-warning">
                                 <i class="fa fa-star"></i> 清空标星
                             </button>
                             <button type="button" id="clearWrong" class="btn btn-primary">
                                 <i class="fa fa-close"></i> 清空错题
                             </button>
-                            <button type="button" id="resetProgress" class="btn btn-outline-danger">
-                                <i class="fa fa-warning"></i> 重置进度
-                            </button>
+
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-outline-danger dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-percent"></i> 进度
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" id="saveProfile">
+                                            <i class="fa fa-save"></i> 保存进度
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" id="loadProfile">
+                                            <i class="fa fa-file"></i> 加载进度
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" id="resetProgress">
+                                            <i class="fa fa-warning"> </i> 重置进度
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
