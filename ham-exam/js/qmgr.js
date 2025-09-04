@@ -184,6 +184,7 @@ class QuestionsManager {
             level: localStorage.getItem('q_level'),
             onlyDiff: localStorage.getItem('q_onlyDiff'),
             showMemoryMethod: localStorage.getItem('q_show_memory_method'),
+            host: window.location.host,
             states: states,
             stars: stars
         };

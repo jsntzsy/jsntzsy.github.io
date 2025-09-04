@@ -8929,7 +8929,7 @@
         "in_b": true,
         "in_c": true,
         "description": "短截线滤波器：1/4波长短路电缆通基波阻谐波（如40米段通40m/15m，阻20m/10m）",
-        "memory_method": "关键词：1/4波长。 特性：λ/4短路=通基阻谐"
+        "memory_method": "关键词：1/4波长。特性：λ/4短路=通基阻谐"
     },
     {
         "id": "MC1-0639",
@@ -9125,7 +9125,7 @@
         "in_b": true,
         "in_c": true,
         "description": "dBi增益以理想点源天线（各向同性）为基准",
-        "memory_method": "dBi i→点源"
+        "memory_method": "单位是dBi，i→点源"
     },
     {
         "id": "MC1-0653",
@@ -9153,7 +9153,7 @@
         "in_b": true,
         "in_c": true,
         "description": "dBd增益以半波偶极天线为基准（0dBd=2.15dBi）",
-        "memory_method": "dBd d→偶极"
+        "memory_method": "单位是dBd，d→偶极"
     },
     {
         "id": "MC1-0655",
@@ -9181,7 +9181,7 @@
         "in_b": true,
         "in_c": true,
         "description": "未注明基准的“dB增益”无参考价值（需明确dBi/dBd）",
-        "memory_method": "dB→没有第三个字母，无参考价值"
+        "memory_method": "单位是dB，没有第三个字母，所以无参考价值"
     },
     {
         "id": "MC1-0657",
