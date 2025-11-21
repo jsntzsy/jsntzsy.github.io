@@ -20,7 +20,7 @@
 
     <script>
 
-        const SERV_VERSION = "202509@BETA1";
+        const SERV_VERSION = "202509@BETA2";
         const Q = new QuestionsManager();
 
         $(document).ready(async () => {
@@ -84,7 +84,7 @@
                     const reader = new FileReader();
                     reader.onload = async function () {
                         try {
-                            Q.loadProfile(reader.result);
+                            await Q.loadProfile(reader.result);
                             window.location.reload();
                         }
                         catch (e) {
