@@ -235,7 +235,7 @@
         "in_b": true,
         "in_c": true,
         "description": "单边带发射是只传送一个边带的调幅发射",
-        "memory_method": "关键词：传送一边、调幅"
+        "memory_method": "关键词：一个边带、调幅"
     },
     {
         "id": "MC3-0018",
@@ -249,7 +249,7 @@
         "in_b": true,
         "in_c": true,
         "description": "干扰指无用能量对无线电接收有影响，会致性能下降等且无此能量后果可免",
-        "memory_method": "干扰像噪音——让通信听不清，所以【无用能量】导致【信息丢失】"
+        "memory_method": "排除：不会影响；干扰像噪音——让通信听不清，所以【无用能量】导致【信息丢失】"
     },
     {
         "id": "MC2-0019",
@@ -277,7 +277,7 @@
         "in_b": true,
         "in_c": true,
         "description": "次要业务台站不能对主要业务电台产生有害干扰，也难获其干扰保护",
-        "memory_method": "次要业务是小弟，不能干扰或要求主要业务让路，或排除【只要】"
+        "memory_method": "排除：只要；次要业务是小弟，不能干扰或要求主要业务让路"
     },
     {
         "id": "MC1-0021",
@@ -403,7 +403,7 @@
         "in_b": true,
         "in_c": false,
         "description": "设置、使用业余无线电台需确保设备有型号核准，且频率范围符合业余业务频段，自制设备需符合国家标准和管理规定。",
-        "memory_method": "全选，设备要“持证上岗”——【核准】或合规"
+        "memory_method": "全选，设备要“持证上岗”——【核准】"
     },
     {
         "id": "MC1-0030",
@@ -487,7 +487,7 @@
         "in_b": true,
         "in_c": false,
         "description": "新版《业余无线电台管理办法》施行前已取得的执照，在有效期内可按原参数使用，同时旧版办法自新办法施行之日起废止。",
-        "memory_method": "新版生效前，老执照按执照载明参数处理。"
+        "memory_method": "老办法【废止】；新版生效前，老执照按执照【载明】参数处理"
     },
     {
         "id": "MC1-0036",
@@ -739,7 +739,7 @@
         "in_b": true,
         "in_c": false,
         "description": "负责组织C类业余无线电台操作技术能力验证的是国家无线电管理机构",
-        "memory_method": "记忆：C国家管"
+        "memory_method": "C类【国家】组织"
     },
     {
         "id": "MC1-0054",
@@ -823,7 +823,7 @@
         "in_b": true,
         "in_c": true,
         "description": "A类业余无线电台允许在30 - 3000MHz频段工作，最大发射功率不大于25瓦",
-        "memory_method": "A类：【30-3000MHz】，【25瓦】"
+        "memory_method": "A类：【25瓦】"
     },
     {
         "id": "MC1-0060",
@@ -837,7 +837,7 @@
         "in_b": true,
         "in_c": true,
         "description": "取得B类证书者，30MHz上下频段分别对应特定的最大发射功率限制",
-        "memory_method": "30MHz以下15瓦，以上25瓦"
+        "memory_method": "30MHz以下【15瓦】，以上25瓦"
     },
     {
         "id": "MC1-0061",
@@ -851,7 +851,7 @@
         "in_b": true,
         "in_c": true,
         "description": "取得C类证书者，30MHz上下频段分别有不同的最大发射功率上限",
-        "memory_method": "30MHz以下1000瓦，以上25瓦"
+        "memory_method": "30MHz以下【1000瓦】，以上25瓦"
     },
     {
         "id": "MC2-0062",
@@ -879,7 +879,7 @@
         "in_b": true,
         "in_c": true,
         "description": "参加B类验证需有执照6个月以上及实际操作经验",
-        "memory_method": "排除：【年满】，跟年龄没关系"
+        "memory_method": "排除：年满，跟年龄没关系"
     },
     {
         "id": "MC2-0064",
@@ -893,7 +893,7 @@
         "in_b": true,
         "in_c": true,
         "description": "参加C类验证需有30MHz以下频段执照18个月以上及实操经验",
-        "memory_method": "取得【30MHz以下】执照【18个月以上】"
+        "memory_method": "关键词：18个月、实际操作经验"
     },
     {
         "id": "MC2-0065",
@@ -1019,7 +1019,7 @@
         "in_b": true,
         "in_c": false,
         "description": "无线电管理机构颁发业余无线电台执照时，会同时向申请人核发呼号，非其他方式核发",
-        "memory_method": "【颁发】执照时同时核发呼号"
+        "memory_method": "【颁发】执照时同时核发呼号，呼号不能自己指配"
     },
     {
         "id": "MC1-0074",
@@ -1117,7 +1117,7 @@
         "in_b": true,
         "in_c": false,
         "description": "业余无线电台呼号前缀由国际电信联盟分配，可能是字母B或BA",
-        "memory_method": "记忆：前缀单字母B，所以排除两位的，排除字母A"
+        "memory_method": "前缀单字母B，所以排除两位的，排除字母A"
     },
     {
         "id": "MC4-0081",
@@ -1145,7 +1145,7 @@
         "in_b": true,
         "in_c": false,
         "description": "业余无线电台分区编号由一位数字表示，空间业余电台分区号为1",
-        "memory_method": "排除：空间分区号为2"
+        "memory_method": "空间最高，所以分区号为1，那么排除【2】"
     },
     {
         "id": "MC3-0083",
@@ -1397,7 +1397,7 @@
         "in_b": false,
         "in_c": false,
         "description": "业余分区号为0的地区包含新疆等地",
-        "memory_method": "记忆：0区新疆西藏"
+        "memory_method": "记忆：0区新疆西藏，其他两个离太远"
     },
     {
         "id": "MC1-0101",
@@ -1439,7 +1439,7 @@
         "in_b": true,
         "in_c": true,
         "description": "我国NCDXF/IARU信标台呼号是特定的一个",
-        "memory_method": "VR开头"
+        "memory_method": "记忆：VR"
     },
     {
         "id": "MC3-0104",
@@ -1453,7 +1453,7 @@
         "in_b": true,
         "in_c": true,
         "description": "不属于空间业余无线电台的呼号前缀有特定几个",
-        "memory_method": "排除法：联想记忆BJ（北京）"
+        "memory_method": "排除：BJ（联想记忆北京）"
     },
     {
         "id": "MC1-0105",
@@ -1481,7 +1481,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余无线电台主要用于通信、技术研究和自我训练，而非个人生活通信、休闲娱乐或行车保障消遣。",
-        "memory_method": "核心三用途：通信、研究、训练。或排除：个人事务、娱乐、消遣"
+        "memory_method": "关键词：自我训练"
     },
     {
         "id": "MC1-0107",
@@ -1495,7 +1495,7 @@
         "in_b": true,
         "in_c": true,
         "description": "申请多台设备的业余无线电台，应按一个电台指配呼号，且所有设备都要核定参数载入执照",
-        "memory_method": "一人一个呼号，但是可以多台设备，都要载入执照"
+        "memory_method": "一人【一个呼号】，多台设备【均应】载入执照"
     },
     {
         "id": "MC1-0108",
@@ -1509,7 +1509,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余中继台需专人监控管理并配备遥控手段，以便在造成干扰时及时停止发射",
-        "memory_method": "【专人】监控，可以【遥控】【停止】发射"
+        "memory_method": "关键词：遥控。【专人】监控，可以【遥控】【停止】发射"
     },
     {
         "id": "MC1-0109",
@@ -1551,7 +1551,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余无线电台发射设备需依法取得核准且频段合规，自制等设备也需符合相关规定",
-        "memory_method": "【商品】要【核准】，【自制】限【业余】；或排除：不受限制、国外、即可"
+        "memory_method": "关键词：业余；或排除：不受限制、即可"
     },
     {
         "id": "MC1-0112",
@@ -1649,7 +1649,7 @@
         "in_b": true,
         "in_c": true,
         "description": "有操作技术能力但未设台者可到业余电台操作，用该台呼号，设台人担责",
-        "memory_method": "用台呼号，设台人负责"
+        "memory_method": "【设台人】负责"
     },
     {
         "id": "MC3-0119",
@@ -1691,7 +1691,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余无线电爱好者使用收信设备只能接收与业余业务相关的信号",
-        "memory_method": "【不得接收】！非业余信号不收听"
+        "memory_method": "不得接收！非业余信号不收听"
     },
     {
         "id": "MC1-0122",
@@ -1803,7 +1803,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余无线电台可用于相互通信、技术研究和自我训练等活动。",
-        "memory_method": "核心三用途：通信、研究、训练。或排除：车队、娱乐、服务"
+        "memory_method": "关键词：自我训练"
     },
     {
         "id": "MC1-0130",
@@ -1817,7 +1817,7 @@
         "in_b": true,
         "in_c": true,
         "description": "对无线电技术有兴趣且获得无线电管理机构批准设置使用业余无线电台的人符合爱好者基本条件。",
-        "memory_method": "关键字：【批准】；或排除：任何、协会"
+        "memory_method": "关键字：无线电管理机构【批准】；或排除：任何、协会"
     },
     {
         "id": "MC4-0131",
@@ -1831,7 +1831,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余无线电台禁止进行境内电波测试监测、向境外提供涉及国家安全资料、收发执照许可外信号以及传播无意接收信息等活动。",
-        "memory_method": "全选。记忆：非法电波测试、泄密、收发无关信号、利用无意信息"
+        "memory_method": "全选。听着就都不行"
     },
     {
         "id": "MC4-0132",
@@ -1845,7 +1845,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余无线电台需在规定频段收发信号，不得擅自使用频率、对依法业务造成干扰或进行违法犯罪活动。",
-        "memory_method": "全选。记忆：守频段、不擅用、不干扰、不违法"
+        "memory_method": "全选"
     },
     {
         "id": "MC3-0133",
@@ -1859,7 +1859,7 @@
         "in_b": true,
         "in_c": true,
         "description": "利用业余无线电台收听民用航空器、铁路机车、渔船海事电台通联等行为超越了业余业务频率范围规定。",
-        "memory_method": "排除：收听XXX【业余】无线电台；禁听对象：航空/铁路/海事专用频段"
+        "memory_method": "排除：收听【业余】无线电台；禁听对象：航空/铁路/海事专用频段"
     },
     {
         "id": "MC3-0134",
@@ -1873,7 +1873,7 @@
         "in_b": true,
         "in_c": true,
         "description": "未取得型号核准、超出核准频率范围或自行扩展频段的无线电发射设备，均不可作为业余无线电台设置使用。",
-        "memory_method": "关键字：未取得，但。三不选：无证、超范围、魔改机"
+        "memory_method": "排除：依法"
     },
     {
         "id": "MC4-0135",
@@ -1929,7 +1929,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余无线电台通信时应使用明语、公认的缩略语简语以及公开的技术体制和通信协议。",
-        "memory_method": "排除：自创。三标准：明语、公认术语、开放协议"
+        "memory_method": "排除：自创"
     },
     {
         "id": "MC1-0139",
@@ -2125,7 +2125,7 @@
         "in_b": true,
         "in_c": true,
         "description": "违反无线电管制命令和指令的，将由国家或地方无线电管理机构及公安机关依法进行处罚。",
-        "memory_method": "双罚制：无管罚设备，公安治安罚"
+        "memory_method": "记忆：无管+公安；或排除：协会、军区。协会没权利，军区没空管"
     },
     {
         "id": "MC3-0153",
@@ -2139,7 +2139,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余电台违反无线电管制规定的，可能面临责令改正、设备查封、电台执照吊销、治安处罚或罚款等处罚。",
-        "memory_method": "排除：罚款。阶梯处罚：改正→没收→吊销→公安处罚"
+        "memory_method": "无线电管制→排除：罚款。阶梯处罚：改正→没收→吊销→公安处罚"
     },
     {
         "id": "MC2-0154",
@@ -2405,7 +2405,7 @@
         "in_b": true,
         "in_c": false,
         "description": "国家安全工作以人民安全为宗旨、政治安全为根本、经济安全为基础、军事文化社会安全为保障。",
-        "memory_method": "记开头：人民【宗旨】，政治【根本】"
+        "memory_method": "记忆：经济基础，安全保障"
     },
     {
         "id": "MC4-0173",
@@ -2433,7 +2433,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余无线电台在共用频率上操作时，需遵守无线电管理机构规定，并先确认频率未被占用。",
-        "memory_method": "排除：【放心使用】【只要】【任意】"
+        "memory_method": "遵守频率使用规定。或排除：【放心使用】【只要】【任意】"
     },
     {
         "id": "MC1-0175",
@@ -2503,7 +2503,7 @@
         "in_b": true,
         "in_c": true,
         "description": "我国为业余业务和卫星业余业务专用的频段含7MHz、14MHz、21MHz、28MHz、47GHz",
-        "memory_method": "专用频段：7到47（前四个数值为等差数列）"
+        "memory_method": "记忆：47GHz。或前四个数值为等差数列"
     },
     {
         "id": "MC1-0180",
@@ -2517,7 +2517,7 @@
         "in_b": true,
         "in_c": true,
         "description": "我国30MHz以下频段中，业余和卫星业余业务与其他业务共用且为主业务的有1.8MHz等频段",
-        "memory_method": "30MHz以下主业：1.8到24.89"
+        "memory_method": "30MHz → 1.8到24.89"
     },
     {
         "id": "MC1-0181",
@@ -2531,7 +2531,7 @@
         "in_b": true,
         "in_c": true,
         "description": "VHF和UHF范围内，业余和卫星业余业务与其他业务共用且为主业务的频率是50MHz、144MHz",
-        "memory_method": "UV段：50、144，或排除430"
+        "memory_method": "关键值：144，或排除430"
     },
     {
         "id": "MC1-0182",
@@ -2587,7 +2587,7 @@
         "in_b": true,
         "in_c": true,
         "description": "WARC频段指的是10.1 - 10.15MHz、18.068 - 18.168MHz、24.89 - 24.99MHz这三个HF频段",
-        "memory_method": "WARC：10.1/18.068/24.89，或者记：18.068（仅有正确答案出现）"
+        "memory_method": "关键值：18.168（仅有正确答案出现）"
     },
     {
         "id": "MC1-0186",
@@ -2867,7 +2867,7 @@
         "in_b": true,
         "in_c": true,
         "description": "VHF业余无线电台在144MHz频段本地联络有需避免占用的频率",
-        "memory_method": "要单独记忆，144避免：146（最后一个最大的）"
+        "memory_method": "要单独记忆，144 → 144开头，或者146结尾（结尾最大）"
     },
     {
         "id": "MC1-0206",
@@ -2965,7 +2965,7 @@
         "in_b": true,
         "in_c": true,
         "description": "ITU《无线电规则》明确禁止所有电台发射阻尼波。",
-        "memory_method": "关键词：禁止阻尼波，挑最耳生的（被禁止了当然耳生）"
+        "memory_method": "关键词：阻尼波，挑最耳生的（被禁止了当然耳生）"
     },
     {
         "id": "MC4-0213",
@@ -3007,7 +3007,7 @@
         "in_b": true,
         "in_c": true,
         "description": "135.7 - 137.8kHz频段在无线电频谱里属于低频（长波）范围",
-        "memory_method": "频段记忆：LF=30k-300k, MF=300k-3M, HF=3M-30M, VHF=30M-300M, UHF=300M-3GHz, SHF=3GHz-30GHz, EHF=30G-300GHz"
+        "memory_method": "记忆技巧：kHz有小数点的是LF（长波），没有的是MF（中波）"
     },
     {
         "id": "MC1-0216",
@@ -3021,7 +3021,7 @@
         "in_b": true,
         "in_c": true,
         "description": "135.7 - 137.8kHz频段对应的无线电频谱英文简称是LF",
-        "memory_method": "频段记忆：LF=30k-300k, MF=300k-3M, HF=3M-30M, VHF=30M-300M, UHF=300M-3GHz, SHF=3GHz-30GHz, EHF=30G-300GHz"
+        "memory_method": "记忆技巧：kHz有小数点的是LF（长波），没有的是MF（中波）"
     },
     {
         "id": "MC1-0217",
@@ -3035,7 +3035,7 @@
         "in_b": true,
         "in_c": true,
         "description": "1800kHz - 2000kHz频段在无线电频谱中属于中频（中波）",
-        "memory_method": "频段记忆：LF=30k-300k, MF=300k-3M, HF=3M-30M, VHF=30M-300M, UHF=300M-3GHz, SHF=3GHz-30GHz, EHF=30G-300GHz"
+        "memory_method": "记忆技巧：kHz有小数点的是LF（长波），没有的是MF（中波）"
     },
     {
         "id": "MC1-0218",
@@ -3049,7 +3049,7 @@
         "in_b": true,
         "in_c": true,
         "description": "1800kHz - 2000kHz频段对应的无线电频谱英文简称是MF",
-        "memory_method": "频段记忆：LF=30k-300k, MF=300k-3M, HF=3M-30M, VHF=30M-300M, UHF=300M-3GHz, SHF=3GHz-30GHz, EHF=30G-300GHz"
+        "memory_method": "记忆技巧：kHz有小数点的是LF（长波），没有的是MF（中波）"
     },
     {
         "id": "MC1-0219",
@@ -3063,7 +3063,7 @@
         "in_b": true,
         "in_c": true,
         "description": "28MHz - 29.7MHz频段在无线电频谱里属于高频（短波）",
-        "memory_method": "频段记忆：LF=30k-300k, MF=300k-3M, HF=3M-30M, VHF=30M-300M, UHF=300M-3GHz, SHF=3GHz-30GHz, EHF=30G-300GHz"
+        "memory_method": "记忆技巧：MHz有小数点的是HF（短波），有WIFI/逗号的是UHF（特高频），都不符合的是VHF（甚高频）"
     },
     {
         "id": "MC1-0220",
@@ -3077,7 +3077,7 @@
         "in_b": true,
         "in_c": true,
         "description": "28MHz - 29.7MHz频段对应的无线电频谱英文简称是HF",
-        "memory_method": "频段记忆：LF=30k-300k, MF=300k-3M, HF=3M-30M, VHF=30M-300M, UHF=300M-3GHz, SHF=3GHz-30GHz, EHF=30G-300GHz"
+        "memory_method": "记忆技巧：MHz有小数点的是HF（短波），有WIFI/逗号的是UHF（特高频），都不符合的是VHF（甚高频）"
     },
     {
         "id": "MC1-0221",
@@ -3091,7 +3091,7 @@
         "in_b": true,
         "in_c": true,
         "description": "50MHz - 54MHz频段在无线电频谱中属于甚高频（米波）",
-        "memory_method": "频段记忆：LF=30k-300k, MF=300k-3M, HF=3M-30M, VHF=30M-300M, UHF=300M-3GHz, SHF=3GHz-30GHz, EHF=30G-300GHz"
+        "memory_method": "记忆技巧：MHz有小数点的是HF（短波），有WIFI/逗号的是UHF（特高频），都不符合的是VHF（甚高频）"
     },
     {
         "id": "MC1-0222",
@@ -3105,7 +3105,7 @@
         "in_b": true,
         "in_c": true,
         "description": "50MHz - 54MHz频段对应的无线电频谱英文简称是VHF",
-        "memory_method": "频段记忆：LF=30k-300k, MF=300k-3M, HF=3M-30M, VHF=30M-300M, UHF=300M-3GHz, SHF=3GHz-30GHz, EHF=30G-300GHz"
+        "memory_method": "记忆技巧：MHz有小数点的是HF（短波），有WIFI/逗号的是UHF（特高频），都不符合的是VHF（甚高频）"
     },
     {
         "id": "MC1-0223",
@@ -3119,7 +3119,7 @@
         "in_b": true,
         "in_c": true,
         "description": "2300 - 2450MHz频段属于特高频（分米波）频段",
-        "memory_method": "频段记忆：LF=30k-300k, MF=300k-3M, HF=3M-30M, VHF=30M-300M, UHF=300M-3GHz, SHF=3GHz-30GHz, EHF=30G-300GHz"
+        "memory_method": "记忆技巧：MHz有小数点的是HF（短波），有WIFI/逗号的是UHF（特高频），都不符合的是VHF（甚高频）"
     },
     {
         "id": "MC1-0224",
@@ -3147,7 +3147,7 @@
         "in_b": true,
         "in_c": true,
         "description": "2300 - 2450MHz频段在无线电频谱中属于UHF频段",
-        "memory_method": "频段记忆：LF=30k-300k, MF=300k-3M, HF=3M-30M, VHF=30M-300M, UHF=300M-3GHz, SHF=3GHz-30GHz, EHF=30G-300GHz"
+        "memory_method": "记忆技巧：MHz有小数点的是HF（短波），有WIFI/逗号的是UHF（特高频），都不符合的是VHF（甚高频）"
     },
     {
         "id": "MC1-0226",
@@ -3161,7 +3161,7 @@
         "in_b": true,
         "in_c": true,
         "description": "5.650 - 5.850GHz频段属于无线电频谱的超高频（厘米波）频段",
-        "memory_method": "频段记忆：LF=30k-300k, MF=300k-3M, HF=3M-30M, VHF=30M-300M, UHF=300M-3GHz, SHF=3GHz-30GHz, EHF=30G-300GHz"
+        "memory_method": "记忆技巧：GHz有小数点的是SHF（超高频），没有的是EHF（极高频）"
     },
     {
         "id": "MC1-0227",
@@ -3175,7 +3175,7 @@
         "in_b": true,
         "in_c": true,
         "description": "5.650 - 5.850GHz频段在无线电频谱中为SHF频段",
-        "memory_method": "频段记忆：LF=30k-300k, MF=300k-3M, HF=3M-30M, VHF=30M-300M, UHF=300M-3GHz, SHF=3GHz-30GHz, EHF=30G-300GHz"
+        "memory_method": "记忆技巧：GHz有小数点的是SHF（超高频），没有的是EHF（极高频）"
     },
     {
         "id": "MC1-0228",
@@ -3189,7 +3189,7 @@
         "in_b": true,
         "in_c": true,
         "description": "10 - 10.5GHz频段属于无线电频谱的超高频（厘米波）频段",
-        "memory_method": "频段记忆：LF=30k-300k, MF=300k-3M, HF=3M-30M, VHF=30M-300M, UHF=300M-3GHz, SHF=3GHz-30GHz, EHF=30G-300GHz"
+        "memory_method": "记忆技巧：GHz有小数点的是SHF（超高频），没有的是EHF（极高频）"
     },
     {
         "id": "MC1-0229",
@@ -3203,7 +3203,7 @@
         "in_b": true,
         "in_c": true,
         "description": "10 - 10.5GHz频段在无线电频谱里是SHF频段",
-        "memory_method": "频段记忆：LF=30k-300k, MF=300k-3M, HF=3M-30M, VHF=30M-300M, UHF=300M-3GHz, SHF=3GHz-30GHz, EHF=30G-300GHz"
+        "memory_method": "记忆技巧：GHz有小数点的是SHF（超高频），没有的是EHF（极高频）"
     },
     {
         "id": "MC1-0230",
@@ -3217,7 +3217,7 @@
         "in_b": true,
         "in_c": true,
         "description": "241GHz - 250GHz频段属于极高频（毫米波）频段",
-        "memory_method": "频段记忆：LF=30k-300k, MF=300k-3M, HF=3M-30M, VHF=30M-300M, UHF=300M-3GHz, SHF=3GHz-30GHz, EHF=30G-300GHz"
+        "memory_method": "记忆技巧：GHz有小数点的是SHF（超高频），没有的是EHF（极高频）"
     },
     {
         "id": "MC1-0231",
@@ -3231,7 +3231,7 @@
         "in_b": true,
         "in_c": true,
         "description": "241GHz - 250GHz频段对应的英文缩写频段是EHF",
-        "memory_method": "频段记忆：LF=30k-300k, MF=300k-3M, HF=3M-30M, VHF=30M-300M, UHF=300M-3GHz, SHF=3GHz-30GHz, EHF=30G-300GHz"
+        "memory_method": "记忆技巧：GHz有小数点的是SHF（超高频），没有的是EHF（极高频）"
     },
     {
         "id": "MC1-0232",
@@ -3273,7 +3273,7 @@
         "in_b": true,
         "in_c": true,
         "description": "ITU区域划分中，一区含欧洲等部分地区，二区是南北美洲，三区为亚洲部分和大洋洲",
-        "memory_method": "一区有欧、俄，三区有亚。或者记忆：一区最长，二区最短"
+        "memory_method": "选二区最短的"
     },
     {
         "id": "MC1-0235",
@@ -3287,7 +3287,7 @@
         "in_b": true,
         "in_c": true,
         "description": "ITU三区40米业余波段频率范围是7.000 - 7.200MHz",
-        "memory_method": "ITU三区：7.2(中间值)，不共用"
+        "memory_method": "ITU → 关键值：7.2，不共用"
     },
     {
         "id": "MC1-0236",
@@ -3385,7 +3385,7 @@
         "in_b": true,
         "in_c": true,
         "description": "435MHz至438MHz频段留给卫星业余业务，话音及其他通信方式不应占用",
-        "memory_method": "注意：430【卫星】【不应占用】→435开头或者438结尾"
+        "memory_method": "注意：430 → 435-438"
     },
     {
         "id": "MC1-0243",
@@ -3623,7 +3623,7 @@
         "in_b": true,
         "in_c": false,
         "description": "业余电台呼叫CQ意味着不针对特定对象，呼叫国内外任意业余电台",
-        "memory_method": "CQ→广泛呼叫（Seek you）"
+        "memory_method": "CQ → 广泛呼叫（Seek you）"
     },
     {
         "id": "MC1-0260",
@@ -3637,7 +3637,7 @@
         "in_b": true,
         "in_c": false,
         "description": "业余电台发起CQ呼叫，需表明自身身份以吸引回应",
-        "memory_method": "标准流程"
+        "memory_method": "CQ广泛呼叫 → CQ+自己呼号，呼号拼读"
     },
     {
         "id": "MC1-0261",
@@ -3651,7 +3651,7 @@
         "in_b": true,
         "in_c": false,
         "description": "回应CQ呼叫要明确对方和自己身份以建立联系",
-        "memory_method": "标准流程"
+        "memory_method": "回应呼叫 → 先对方再自己，呼号拼读"
     },
     {
         "id": "MC1-0262",
@@ -3665,7 +3665,7 @@
         "in_b": true,
         "in_c": false,
         "description": "业余电台想与特定人员通话，先建立通信再提出要求",
-        "memory_method": "标准流程"
+        "memory_method": "指定呼叫 → 先对方再自己，呼号拼读"
     },
     {
         "id": "MC1-0263",
@@ -3707,7 +3707,7 @@
         "in_b": true,
         "in_c": false,
         "description": "RST格式里R代表信号可辩度",
-        "memory_method": "常用短语：RST=可辨度/强度/音调（CW）"
+        "memory_method": "关键词：可辨度。常用短语：RST=可辨度/强度/音调（CW）"
     },
     {
         "id": "MC1-0266",
@@ -3720,8 +3720,8 @@
         "in_a": true,
         "in_b": true,
         "in_c": false,
-        "description": "CW和FM通联在信号强度为5且听抄顺畅时应给559和55的信号报告",
-        "memory_method": "模式差异：CW用RST三位，FM用RS两位"
+        "description": "CW用RST三位，FM用RS两位。CW和FM通联在信号强度为5且听抄顺畅时应给559和55的信号报告",
+        "memory_method": "CW三位，FM两位"
     },
     {
         "id": "MC1-0267",
@@ -3749,7 +3749,7 @@
         "in_b": true,
         "in_c": true,
         "description": "加入两个电台联络应在一方停讲时请求，获邀后对话",
-        "memory_method": "礼仪：Break请求，受邀加入"
+        "memory_method": "选最长的。结束讲话时发Break请求，受邀加入"
     },
     {
         "id": "MC1-0269",
@@ -3777,7 +3777,7 @@
         "in_b": true,
         "in_c": true,
         "description": "请求插入两个电台对话时，要考虑自身加入是否影响原交流乐趣",
-        "memory_method": "礼仪：尊重他人通信"
+        "memory_method": "关键词：乐趣"
     },
     {
         "id": "MC1-0271",
@@ -3791,7 +3791,7 @@
         "in_b": true,
         "in_c": true,
         "description": "发现业余电台操作不规范但无严重影响，宜通过非频率方式善意提醒",
-        "memory_method": "处理原则：不当面批评，私下沟通"
+        "memory_method": "不严重影响 → 善意建议"
     },
     {
         "id": "MC1-0272",
@@ -3805,7 +3805,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余电台受违法或不明电台严重干扰，应收集信息向管理机构举报",
-        "memory_method": "合法途径：举报而非对抗。【不予理睬】并【举报】"
+        "memory_method": "严重干扰 → 不理睬+举报"
     },
     {
         "id": "MC1-0273",
@@ -3819,7 +3819,7 @@
         "in_b": true,
         "in_c": true,
         "description": "与几十千米外电台交流重要内容，电话或互联网是合适选择",
-        "memory_method": "重要→怕遗漏→打电话。实用原则：重要事用可靠方式"
+        "memory_method": "重要→怕遗漏→打电话。重要事用可靠方式"
     },
     {
         "id": "MC1-0274",
@@ -3833,7 +3833,7 @@
         "in_b": true,
         "in_c": true,
         "description": "法规和惯例要求业余电台日志记录通信时间、频率、模式、对方呼号和信号报告",
-        "memory_method": "记开头三个（时间、频率、模式），核心五要素：时间、频率、模式、对方呼号、信号报告"
+        "memory_method": "【通信时间】开头，【信号报告】结尾"
     },
     {
         "id": "MC1-0275",
@@ -3847,7 +3847,7 @@
         "in_b": true,
         "in_c": true,
         "description": "法规和惯例要求业余电台日志应记载日期、时间、频率、模式、对方呼号和双方信号报告等必要内容。",
-        "memory_method": "记开头三个（DATE、TIME、FREQ），核心五要素：TIME/FREQ/MODE/CALL/RST"
+        "memory_method": "DATE、TIME、FREQ开头，RST结尾"
     },
     {
         "id": "MC4-0276",
@@ -3861,7 +3861,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余无线电台交换QSL卡可确认联络、了解设备表现、申请奖状及用于收集欣赏。",
-        "memory_method": "全选。QSL卡片四用途：确认、验证、奖状、收藏"
+        "memory_method": "全选"
     },
     {
         "id": "MC4-0277",
@@ -3875,13 +3875,13 @@
         "in_b": true,
         "in_c": true,
         "description": "QSL卡片应涵盖联络双方呼号、信号报告、联络时间、操作方式、频率、操作员签章和本台通信地址。",
-        "memory_method": "全选。QSL卡片四要素：呼号/报告/频率模式/签名地址"
+        "memory_method": "全选"
     },
     {
         "id": "MC1-0278",
         "question": "关于 QSL卡片的用法，以下说法正确的是：",
         "answer": "A",
-        "A": "如果所交换的 QSL卡片并非用作通联或收听证明，则应在通信方式一栏填写“现场交流”",
+        "A": "如果所交换的 QSL 卡片并非用作通联或收听证明，则应在通信方式一栏填写“现场交流”或“Eyeball QSO”等字样。不应赠送空白卡片",
         "B": "业余无线电爱好者的空白 QSL卡片可以用作照片或名片，适合赠送，交换或散发",
         "C": "火腿都是互相的。虽然对方没有联络自己，但是也可以发去确认联络的 QSL卡片",
         "D": "如果在联络中没有听清对方呼号，或在日志中漏填或打错了对方呼号，则在寄发 QSL卡片时可在对方呼号一栏填写对方操作员的名字",
@@ -3889,7 +3889,7 @@
         "in_b": true,
         "in_c": true,
         "description": "若QSL卡片不用于通联或收听证明，通信方式应注明为现场交流，且空白卡片可作他用，但若呼号有误，不应填写操作员名字。",
-        "memory_method": "防误用：非通联需注明，【不赠空白卡】"
+        "memory_method": "记忆：不赠送空白卡"
     },
     {
         "id": "MC1-0279",
@@ -3903,7 +3903,7 @@
         "in_b": true,
         "in_c": true,
         "description": "收到国外QSL卡片若夹带IRC，应核实联络真实性后向对方直接寄出自己的卡片。",
-        "memory_method": "义务：收IRC需回卡。我都给你把邮递费付了，你不寄卡给我有点不厚道了吧。"
+        "memory_method": "关键词：确定真实性、对方地址。我都给你把邮递费付了，你不寄卡给我有点不厚道了吧"
     },
     {
         "id": "MC1-0280",
@@ -3931,7 +3931,7 @@
         "in_b": true,
         "in_c": true,
         "description": "仅寄发收听卡片且经确认后会立即回卡的特殊无线电爱好者是短波收听者。",
-        "memory_method": "收听卡片→收听者"
+        "memory_method": "收听卡片 → 收听者"
     },
     {
         "id": "MC1-0282",
@@ -3945,7 +3945,7 @@
         "in_b": true,
         "in_c": true,
         "description": "144和430MHz频段业余中继台的上下行频差分别为0.6MHz和5MHz，提前设置可避免操作出错",
-        "memory_method": "0.6/5，开头选数值最小的（不管单位）"
+        "memory_method": "关键值：0.6/5，开头选数值最小的（不管单位）"
     },
     {
         "id": "MC1-0283",
@@ -3959,7 +3959,7 @@
         "in_b": true,
         "in_c": true,
         "description": "通过中继台呼叫业余电台，应呼叫对方呼号并报出自己的呼号",
-        "memory_method": "标准流程"
+        "memory_method": "指定呼叫 → 先对方再自己"
     },
     {
         "id": "MC1-0284",
@@ -3987,7 +3987,7 @@
         "in_b": true,
         "in_c": true,
         "description": "深空指离地球距离约等于或大于200万千米的空间",
-        "memory_method": "选最远的"
+        "memory_method": "选最远的，注意单位"
     },
     {
         "id": "MC1-0286",
@@ -4001,7 +4001,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余地球卫星轨道倾角是轨道平面与地球赤道平面在轨道升交点逆时针的夹角",
-        "memory_method": "关键词：升交点、逆时针"
+        "memory_method": "关键词：升、逆"
     },
     {
         "id": "MC1-0287",
@@ -4071,7 +4071,7 @@
         "in_b": true,
         "in_c": true,
         "description": "卫星升轨道方向是由南向北",
-        "memory_method": "升→从下往上→从南向北"
+        "memory_method": "升 → 从下往上 → 从南向北"
     },
     {
         "id": "MC1-0292",
@@ -4085,7 +4085,7 @@
         "in_b": true,
         "in_c": true,
         "description": "卫星降轨道方向是由北向南",
-        "memory_method": "降→从上往下→从北向南"
+        "memory_method": "降 → 从上往下 → 从北向南"
     },
     {
         "id": "MC1-0293",
@@ -4127,7 +4127,7 @@
         "in_b": true,
         "in_c": true,
         "description": "卫星线性转发器能转发信号且不改变其调制特征，可用于多种业余通信中继",
-        "memory_method": "关键词：不改变"
+        "memory_method": "关键词：不改变 或者 【各种】方式"
     },
     {
         "id": "MC1-0296",
@@ -4141,7 +4141,7 @@
         "in_b": true,
         "in_c": true,
         "description": "卫星下行信号周期性快衰落是因收发信天线极化失配",
-        "memory_method": "翻滚→快衰落"
+        "memory_method": "翻滚 → 快衰落"
     },
     {
         "id": "MC1-0297",
@@ -4197,7 +4197,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余电台卫星通信可通过下行信号与信标强度一致确定合适发射功率",
-        "memory_method": "关键词：大体一致"
+        "memory_method": "收发【大体一致】"
     },
     {
         "id": "MC1-0301",
@@ -4211,7 +4211,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余电台与卫星VHF/UHF频段通信，信号强度主要受自由空间衰减影响",
-        "memory_method": "关键词：衰减"
+        "memory_method": "自由空间【衰减】"
     },
     {
         "id": "MC1-0302",
@@ -4225,7 +4225,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余卫星通信中的工作方式，代表的是业余无线电转发器通信频段和调制方式",
-        "memory_method": "关键词：频段、调制方式"
+        "memory_method": "关键词：调制方式"
     },
     {
         "id": "MC1-0303",
@@ -4239,7 +4239,7 @@
         "in_b": true,
         "in_c": true,
         "description": "多普勒效应指的是收发信机相对距离变化导致接收信号频率偏移",
-        "memory_method": "关键词：频率、偏移 联想：救护车驶近笛声变尖，远离变低"
+        "memory_method": "关键词：相对距离、频率 联想：救护车驶近笛声变尖，远离变低"
     },
     {
         "id": "MC1-0304",
@@ -4253,7 +4253,7 @@
         "in_b": true,
         "in_c": true,
         "description": "地面业余电台与卫星通信时，卫星飞来信号频率偏高，飞离偏低，越远频偏越大，过顶最小",
-        "memory_method": "口诀：来高离低，越远越大，过顶最小"
+        "memory_method": "口诀：近大远小，过顶最小"
     },
     {
         "id": "MC1-0305",
@@ -4267,7 +4267,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余无线电卫星选低轨道或椭圆轨道，是因其发射成本低",
-        "memory_method": "低轨道→省钱"
+        "memory_method": "低轨道 → 省钱"
     },
     {
         "id": "MC1-0306",
@@ -4281,7 +4281,7 @@
         "in_b": true,
         "in_c": true,
         "description": "询问频率是否被占用，不能用询问是否呼叫对方并确认收到的表述",
-        "memory_method": "排除法：Calling you不是问频率空闲"
+        "memory_method": "排除法：【Calling you】不是问频率空闲"
     },
     {
         "id": "MC1-0307",
@@ -4295,7 +4295,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余电台用FM或SSB话音发起CQ呼叫，要明确报出自身呼号并表明呼叫意图",
-        "memory_method": "标准流程，使用字母解释法"
+        "memory_method": "选最长的。标准流程，使用字母解释法"
     },
     {
         "id": "MC1-0308",
@@ -4309,7 +4309,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余电台用话音发起CQ呼叫，需规范报出呼号并表明呼叫等待回应",
-        "memory_method": "标准流程，使用字母解释法"
+        "memory_method": "选最长的。标准流程，使用字母解释法"
     },
     {
         "id": "MC1-0309",
@@ -4323,7 +4323,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余电台用话音呼叫时，应多次报出对方呼号，再表明自己呼号并呼叫",
-        "memory_method": "标准流程，使用字母解释法"
+        "memory_method": "选最长的。标准流程，使用字母解释法"
     },
     {
         "id": "MC1-0310",
@@ -4337,7 +4337,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余电台用英语话音呼叫，需多次报对方呼号，说明自己并表明呼叫等待",
-        "memory_method": "标准流程，使用字母解释法"
+        "memory_method": "选最长的。标准流程，使用字母解释法"
     },
     {
         "id": "MC1-0311",
@@ -4407,7 +4407,7 @@
         "in_b": true,
         "in_c": true,
         "description": "收听SSB通联时听到的特定短句用于不同地区爱好者互致祝福并道别",
-        "memory_method": "文化彩蛋：多语言再见"
+        "memory_method": "有首歌：bella ciao → 好朋友【再见】"
     },
     {
         "id": "MC1-0316",
@@ -4491,7 +4491,7 @@
         "in_b": true,
         "in_c": true,
         "description": "CW联络收到信号报告后，可简单回应收妥并致谢。",
-        "memory_method": "标准回应：收妥+感谢+报告"
+        "memory_method": "关键词：R TKS。标准回应：收妥+感谢+报告"
     },
     {
         "id": "MC1-0322",
@@ -4505,7 +4505,7 @@
         "in_b": true,
         "in_c": true,
         "description": "CW日常通联感谢对方参与，可表达期待下次联络。",
-        "memory_method": "完整结尾：感谢+再会+73+TU"
+        "memory_method": "关键词：QSO。完整结尾：感谢+再会+73+TU"
     },
     {
         "id": "MC1-0323",
@@ -4589,7 +4589,7 @@
         "in_b": true,
         "in_c": true,
         "description": "CW通联介绍自己设备是X6200时可发此内容",
-        "memory_method": "常用简语：RIG=设备 +设备名称"
+        "memory_method": "常用简语：RIG=设备+设备名称"
     },
     {
         "id": "MC1-0329",
@@ -4603,7 +4603,7 @@
         "in_b": true,
         "in_c": true,
         "description": "询问对方电台发射功率大小可发送此内容",
-        "memory_method": "常用简语：PWR=功率"
+        "memory_method": "选最简洁的。常用简语：PWR=功率"
     },
     {
         "id": "MC1-0330",
@@ -4617,7 +4617,7 @@
         "in_b": true,
         "in_c": true,
         "description": "介绍发射功率约10瓦，应用缩语ABT搭配PWR表示功率",
-        "memory_method": "常用简语：ABT=大约， 功率 大约 10 瓦"
+        "memory_method": "常用简语：PWR=功率，ABT=大约，功率 大约 10 瓦"
     },
     {
         "id": "MC1-0331",
@@ -4631,7 +4631,7 @@
         "in_b": true,
         "in_c": true,
         "description": "介绍垂直接地天线架高50米，用缩语ANT搭配GP和高度表述",
-        "memory_method": "常用简语：ANT=天线  GP(G→ground→垂直接地) 50 米高度"
+        "memory_method": "常用简语：ANT=天线， GP(G→ground→垂直接地) 50 米高度"
     },
     {
         "id": "MC1-0332",
@@ -4645,7 +4645,7 @@
         "in_b": true,
         "in_c": true,
         "description": "在CW或文字通联中，分享晴天约25摄氏度天气可用此表述",
-        "memory_method": "常用简语：WX=天气  好 和 温度 大约 25 ℃"
+        "memory_method": "开头：WS FINE。常用简语：WX=天气， 天气 好 和 温度 大约 25 ℃"
     },
     {
         "id": "MC1-0333",
@@ -4785,7 +4785,7 @@
         "in_b": true,
         "in_c": true,
         "description": "CW会话结束时‘滴滴滴答滴答’类似‘SK’连发加横线符号表示结束当前联络",
-        "memory_method": "莫尔斯彩蛋：SK=结束（···-·-）"
+        "memory_method": "S→Stop，结束"
     },
     {
         "id": "MC1-0343",
@@ -4799,7 +4799,7 @@
         "in_b": true,
         "in_c": true,
         "description": "QRP操作对方信号不好时追问是否增加功率可发QRO？",
-        "memory_method": "QRO=增大功率， 联想记忆：R→radio， O→哦？。 哦？听不见→大点声"
+        "memory_method": "QRP是小功率，那么增大功率就是【QRO】"
     },
     {
         "id": "MC1-0344",
@@ -4813,7 +4813,7 @@
         "in_b": true,
         "in_c": true,
         "description": "通联认为QRP操作能保证可靠联络时可协商降低功率说QRP？",
-        "memory_method": "QRP=降低功率/小功率， R→radio， P→劈。把功率劈开→功率小些"
+        "memory_method": "QRP是小功率发射，联想记忆：QRP：R→radio P→劈，把电台劈开→功率小些"
     },
     {
         "id": "MC1-0345",
@@ -4827,7 +4827,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余电台低于5瓦功率通信在呼号后加QRP，QRP表示已降低发射功率",
-        "memory_method": "QRP=降低功率/小功率， R→radio， P→劈。把功率劈开→功率小些"
+        "memory_method": "QRP=降低功率/小功率，联想记忆：R→radio， P→劈。把功率劈开→功率小些"
     },
     {
         "id": "MC1-0346",
@@ -4897,7 +4897,7 @@
         "in_b": true,
         "in_c": true,
         "description": "QRT表示结束当天通联活动时关闭收发信机",
-        "memory_method": "QRT：quit transmitting（退出 发射）"
+        "memory_method": "QRT：停止发射。联想记忆：RT→Return→回车→结束了"
     },
     {
         "id": "MC1-0351",
@@ -4939,7 +4939,7 @@
         "in_b": true,
         "in_c": true,
         "description": "通联时相约对方参加业余无线电活动用此短句",
-        "memory_method": "QRV=ready（就绪）"
+        "memory_method": "QRV=接收就绪（Ready recV）"
     },
     {
         "id": "MC1-0354",
@@ -4953,7 +4953,7 @@
         "in_b": true,
         "in_c": true,
         "description": "QRV意味着准备好接收信号",
-        "memory_method": "QRV=ready（就绪）"
+        "memory_method": "QRV=接收就绪（Ready recV）"
     },
     {
         "id": "MC1-0355",
@@ -5093,7 +5093,7 @@
         "in_b": true,
         "in_c": true,
         "description": "通联中让对方确认收妥消息用此短句",
-        "memory_method": "常用简语：QSL=confirm? 联想：SL→顺利→顺利收到"
+        "memory_method": "常用简语：QSL=收妥? 联想：SL→顺利→顺利收到"
     },
     {
         "id": "MC1-0365",
@@ -5107,7 +5107,7 @@
         "in_b": true,
         "in_c": true,
         "description": "Q简语“QSL”代表确认抄收对方发送消息",
-        "memory_method": "常用简语：QSL=acknowledge。 联想：SL→顺利→顺利收到"
+        "memory_method": "常用简语：QSL=收妥? 联想：SL→顺利→顺利收到"
     },
     {
         "id": "MC1-0366",
@@ -5121,7 +5121,7 @@
         "in_b": true,
         "in_c": true,
         "description": "该简语表示当前与某个电台直接或通过他台转信的通联状态，常用于业余电台联络场景。",
-        "memory_method": "QSO=contact。 联想：SO→嗖→信息嗖的一声过去了→通联到了"
+        "memory_method": "常用简语：QSO=通联到了。 联想：SO→嗖→信息嗖的一声过去了→通联到了"
     },
     {
         "id": "MC1-0367",
@@ -5135,7 +5135,7 @@
         "in_b": true,
         "in_c": true,
         "description": "此短句用于询问对方电台能否帮助转信至指定电台。",
-        "memory_method": "QSP=转信"
+        "memory_method": "QSP=转信，SP→Send Please→请转发"
     },
     {
         "id": "MC1-0368",
@@ -5149,7 +5149,7 @@
         "in_b": true,
         "in_c": true,
         "description": "表示请求将消息转信至某个电台，常用于业余电台中转消息的操作。",
-        "memory_method": "QSP=转信"
+        "memory_method": "QSP=转信，SP→Send Please→请转发"
     },
     {
         "id": "MC1-0369",
@@ -5163,7 +5163,7 @@
         "in_b": true,
         "in_c": true,
         "description": "表示请求对方守听特定频率的FT8操作。",
-        "memory_method": "QSX=listen on。联想：SX→收信→收听信息，守听频率"
+        "memory_method": "QSX：在XX频率守听。联想：SX→收信→收听信息，守听频率"
     },
     {
         "id": "MC1-0370",
@@ -5177,7 +5177,7 @@
         "in_b": true,
         "in_c": true,
         "description": "表示告知对方正在特定频率守听FT8联络。",
-        "memory_method": "QSX=listen on。联想：SX→收信→收听信息，守听频率"
+        "memory_method": "QSX：在XX频率守听。联想：SX→收信→收听信息，守听频率"
     },
     {
         "id": "MC1-0371",
@@ -5191,7 +5191,7 @@
         "in_b": true,
         "in_c": true,
         "description": "表示协商对方改变通信频率至指定频率。",
-        "memory_method": "QSY=change freq。"
+        "memory_method": "QSY：切换到XX频率。联想：Y→移→移动频率"
     },
     {
         "id": "MC1-0372",
@@ -5205,7 +5205,7 @@
         "in_b": true,
         "in_c": true,
         "description": "表示告知对方自己将改变发射频率至指定频率。",
-        "memory_method": "QSY=change freq。"
+        "memory_method": "QSY：切换到XX频率。联想：Y→移→移动频率"
     },
     {
         "id": "MC1-0373",
@@ -5219,7 +5219,7 @@
         "in_b": true,
         "in_c": true,
         "description": "表示询问对方电台的具体位置。",
-        "memory_method": "常用简语：QTH=location（位置）"
+        "memory_method": "常用简语：QTH=位置"
     },
     {
         "id": "MC1-0374",
@@ -5261,7 +5261,7 @@
         "in_b": true,
         "in_c": true,
         "description": "让对方重复上次操作如重报呼号等可用该缩语",
-        "memory_method": "常用简语：AGN=agai（再次）"
+        "memory_method": "常用简语：AGN=again（再次）"
     },
     {
         "id": "MC1-0377",
@@ -5387,7 +5387,7 @@
         "in_b": true,
         "in_c": true,
         "description": "在CW通联中，FB常用来表示太棒了或业务精湛。",
-        "memory_method": "FB=excellent"
+        "memory_method": "FB=Fine Bisness（业务精湛）"
     },
     {
         "id": "MC1-0386",
@@ -5429,7 +5429,7 @@
         "in_b": true,
         "in_c": true,
         "description": "建立CW联络后‘下午好’有特定缩语表达",
-        "memory_method": "GA=good afternoon"
+        "memory_method": "GA=Good Afternoon"
     },
     {
         "id": "MC1-0389",
@@ -5443,7 +5443,7 @@
         "in_b": true,
         "in_c": true,
         "description": "建立CW联络后‘晚上好’有对应的缩语",
-        "memory_method": "GE=good evening"
+        "memory_method": "GE=Good Evening"
     },
     {
         "id": "MC1-0390",
@@ -5457,7 +5457,7 @@
         "in_b": true,
         "in_c": true,
         "description": "结束联络祝愿好运好成绩会用特定缩语",
-        "memory_method": "GL=good luck"
+        "memory_method": "GL=Good Luck"
     },
     {
         "id": "MC1-0391",
@@ -5485,7 +5485,7 @@
         "in_b": true,
         "in_c": true,
         "description": "建立CW联络后‘早晨好’有专门缩语",
-        "memory_method": "GM=good morning"
+        "memory_method": "GM=Good Morning"
     },
     {
         "id": "MC1-0393",
@@ -5499,7 +5499,7 @@
         "in_b": true,
         "in_c": true,
         "description": "DX电台用的‘GMT’表示特定时间概念",
-        "memory_method": "GMT=Greenwich Mean Time"
+        "memory_method": "GMT=Greenwich Mean Time（格林威治时间）"
     },
     {
         "id": "MC1-0394",
@@ -5513,7 +5513,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余无线电通信缩语‘GN’有对应的意思",
-        "memory_method": "GN=good night"
+        "memory_method": "GN=Good Night"
     },
     {
         "id": "MC1-0395",
@@ -5541,7 +5541,7 @@
         "in_b": true,
         "in_c": true,
         "description": "每年12月下旬，CW联络中的'HNY'指新年快乐",
-        "memory_method": "HNY=new year"
+        "memory_method": "HNY=Happy New Year"
     },
     {
         "id": "MC1-0397",
@@ -5583,7 +5583,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余无线电中，'HST'是快速收发报的缩语",
-        "memory_method": "HST=high speed"
+        "memory_method": "HST=High Speed Telegraphy（高速电报）"
     },
     {
         "id": "MC1-0400",
@@ -5625,7 +5625,7 @@
         "in_b": true,
         "in_c": true,
         "description": "CW通联表达非常感谢可发送'MNYTNX'或'MNI TNX'",
-        "memory_method": "关键词：MNY/MNI TNX=深度感谢"
+        "memory_method": "关键词：MNY/MNI TNX=Many Thanks（非常感谢）"
     },
     {
         "id": "MC1-0403",
@@ -5653,7 +5653,7 @@
         "in_b": true,
         "in_c": true,
         "description": "将对方比作亲密队友的“oldman”称呼，其常用缩语表示为特定字母组合。",
-        "memory_method": "文化梗：OM=无线电圈\"老铁\""
+        "memory_method": "文化梗：OM=Old Man (老铁)"
     },
     {
         "id": "MC1-0405",
@@ -5667,7 +5667,7 @@
         "in_b": true,
         "in_c": true,
         "description": "“操作员”在业余无线电中常用特定缩语来表示。",
-        "memory_method": "OP=操作者"
+        "memory_method": "OP=operator（操作者）"
     },
     {
         "id": "MC1-0406",
@@ -5709,7 +5709,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余无线电业务中，“SAE”代表一种与信封相关的特定含义。",
-        "memory_method": "关键词：地址"
+        "memory_method": "SAE → 写好地址的信封"
     },
     {
         "id": "MC1-0409",
@@ -5723,7 +5723,7 @@
         "in_b": true,
         "in_c": true,
         "description": "寄送QSL卡片时提及的“SASE”，是指一种已贴好邮票或附有邮资的信封。",
-        "memory_method": "同义词：SASE=SAE"
+        "memory_method": "SASE → 写好地址的信封并贴好邮票"
     },
     {
         "id": "MC1-0410",
@@ -5765,7 +5765,7 @@
         "in_b": true,
         "in_c": true,
         "description": "表达“谢谢”时，在业余无线电通联中常用特定缩语组合。",
-        "memory_method": "TNX=thanks（去元音）"
+        "memory_method": "TNX=thanks"
     },
     {
         "id": "MC1-0413",
@@ -5779,7 +5779,7 @@
         "in_b": true,
         "in_c": true,
         "description": "‘谢谢你’在缩语表达中常用TU来表示",
-        "memory_method": "TU=thank you（首尾字母）"
+        "memory_method": "TU=Thank You"
     },
     {
         "id": "MC1-0414",
@@ -5793,7 +5793,7 @@
         "in_b": true,
         "in_c": true,
         "description": "‘你的’或‘你是’可用缩语UR表示",
-        "memory_method": "UR=your（去元音）"
+        "memory_method": "UR=YouR"
     },
     {
         "id": "MC1-0415",
@@ -5807,7 +5807,7 @@
         "in_b": true,
         "in_c": true,
         "description": "CW通联中缩语‘WL’意思是将要",
-        "memory_method": "WL=will（W开头）"
+        "memory_method": "WL=will"
     },
     {
         "id": "MC1-0416",
@@ -5821,7 +5821,7 @@
         "in_b": true,
         "in_c": true,
         "description": "收听CW或SSB联络时，缩语‘XYL’含义是妻子",
-        "memory_method": "文化梗：XYL=无线电圈\"夫人\""
+        "memory_method": "YL表示Young Lady（未婚女性）；结婚后就称为“ex-YL（前YL）”，缩写为XYL"
     },
     {
         "id": "MC1-0417",
@@ -5835,7 +5835,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余无线电中缩语‘YL’表示女士",
-        "memory_method": "对应词：YL=女士（OM=男士）"
+        "memory_method": "对应词：YL=Young Lady（女士）"
     },
     {
         "id": "MC1-0418",
@@ -5849,7 +5849,7 @@
         "in_b": true,
         "in_c": true,
         "description": "天线振子术语‘单元’的缩语是EL、ELE或ELS",
-        "memory_method": "专业术语：EL=振子单元"
+        "memory_method": "专业术语：EL= element = 振子单元"
     },
     {
         "id": "MC1-0419",
@@ -5863,7 +5863,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余无线电通联探讨天线时，缩写DP代表偶极天线",
-        "memory_method": "缩写：DP=dipole 联想：D→double→偶数→偶极"
+        "memory_method": "联想：D→double→偶数→偶极"
     },
     {
         "id": "MC1-0420",
@@ -5877,7 +5877,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余无线电通联探讨天线时，缩写GP代表垂直接地天线",
-        "memory_method": "缩写：GP=ground plane 联想：G→ground→地面→接地"
+        "memory_method": "联想：G→ground→地面→接地"
     },
     {
         "id": "MC1-0421",
@@ -5891,7 +5891,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余无线电通联探讨天线时，缩写VER代表垂直天线",
-        "memory_method": "简写：VER=vertical 联想：VER→垂直（并且没有G）→垂直天线"
+        "memory_method": "联想：VER→垂直（并且没有G）→垂直天线"
     },
     {
         "id": "MC1-0422",
@@ -5905,7 +5905,7 @@
         "in_b": true,
         "in_c": true,
         "description": "在业余无线电通联天线探讨里，LW代表长线天线",
-        "memory_method": "直译：LW=long wire"
+        "memory_method": "LW=long wire，长线"
     },
     {
         "id": "MC1-0423",
@@ -5919,7 +5919,7 @@
         "in_b": true,
         "in_c": true,
         "description": "在业余无线电通联天线探讨中，YAGI代表八木天线",
-        "memory_method": "人名命名：YAGI=八木秀次发明"
+        "memory_method": "人名：YAGI=八木"
     },
     {
         "id": "MC1-0424",
@@ -5933,7 +5933,7 @@
         "in_b": true,
         "in_c": true,
         "description": "在业余无线电通联天线探讨时，BEAM代表定向天线",
-        "memory_method": "功能描述：BEAM=定向波束 联想：beam→光束→定向"
+        "memory_method": "BEAM=定向波束 联想：beam→光束→定向"
     },
     {
         "id": "MC1-0425",
@@ -5947,7 +5947,7 @@
         "in_b": true,
         "in_c": true,
         "description": "表示CW报的发射类别是A1A",
-        "memory_method": "编码规则：A=调幅，1=数字，A=电报 ####"
+        "memory_method": "CW：A1A，单边：J3E，调频：F3E，TV：F3F，RTTY：F2B，PSK31：G2B"
     },
     {
         "id": "MC1-0426",
@@ -5961,7 +5961,7 @@
         "in_b": true,
         "in_c": true,
         "description": "表示单边带话的发射类别是J3E",
-        "memory_method": "编码规则：J=单边带，3=模拟，E=电话 ####"
+        "memory_method": "CW：A1A，单边：J3E，调频：F3E，TV：F3F，RTTY：F2B，PSK31：G2B"
     },
     {
         "id": "MC1-0427",
@@ -5975,7 +5975,7 @@
         "in_b": true,
         "in_c": true,
         "description": "用单边带话传输SSTV信号的发射类别是F3F",
-        "memory_method": "编码规则：F=调频，3=模拟，F=视频 ####"
+        "memory_method": "CW：A1A，单边：J3E，调频：F3E，TV：F3F，RTTY：F2B，PSK31：G2B"
     },
     {
         "id": "MC1-0428",
@@ -5989,7 +5989,7 @@
         "in_b": true,
         "in_c": true,
         "description": "表示调频话的发射类别是F3E",
-        "memory_method": "编码规则：F=调频，3=模拟，E=电话 ####"
+        "memory_method": "CW：A1A，单边：J3E，调频：F3E，TV：F3F，RTTY：F2B，PSK31：G2B"
     },
     {
         "id": "MC1-0429",
@@ -6003,7 +6003,7 @@
         "in_b": true,
         "in_c": true,
         "description": "调频话传输的SSTV信号发射类别对应调频特性的一种",
-        "memory_method": "编码规则：F=调频，3=模拟，F=视频 ####"
+        "memory_method": "CW：A1A，单边：J3E，调频：F3E，TV：F3F，RTTY：F2B，PSK31：G2B"
     },
     {
         "id": "MC1-0430",
@@ -6017,7 +6017,7 @@
         "in_b": true,
         "in_c": true,
         "description": "调频ATV信号的发射类别对应调频特性的一种",
-        "memory_method": "编码规则：F=调频，3=模拟，F=视频 ####"
+        "memory_method": "CW：A1A，单边：J3E，调频：F3E，TV：F3F"
     },
     {
         "id": "MC1-0431",
@@ -6045,7 +6045,7 @@
         "in_b": true,
         "in_c": true,
         "description": "AM、FM和PM分别对应幅度、频率、相位调制",
-        "memory_method": "核心：幅度、频率、相位"
+        "memory_method": "最后一个是【相位】。核心：幅度、频率、相位"
     },
     {
         "id": "MC1-0433",
@@ -6059,7 +6059,7 @@
         "in_b": true,
         "in_c": true,
         "description": "VHF或UHF本地通联常采用的调制方式",
-        "memory_method": "本地:FM"
+        "memory_method": "本地：FM"
     },
     {
         "id": "MC1-0434",
@@ -6129,7 +6129,7 @@
         "in_b": true,
         "in_c": true,
         "description": "VHF和UHF频段SSB通联常用的边带",
-        "memory_method": "惯例：V/U段默认USB"
+        "memory_method": "10Mhz为界，以上USB，以下LSB"
     },
     {
         "id": "MC1-0439",
@@ -6143,7 +6143,7 @@
         "in_b": true,
         "in_c": true,
         "description": "在14MHz及以上HF频段进行语音通信一般选用高频段对应的边带",
-        "memory_method": "惯例：高频段USB为主"
+        "memory_method": "10Mhz为界，以上USB，以下LSB"
     },
     {
         "id": "MC1-0440",
@@ -6157,7 +6157,7 @@
         "in_b": true,
         "in_c": true,
         "description": "7MHz及以下频段语音通信选该边带是因频段特性适配",
-        "memory_method": "规避干扰：低频段LSB"
+        "memory_method": "10Mhz为界，以上USB，以下LSB"
     },
     {
         "id": "MC1-0441",
@@ -6185,7 +6185,7 @@
         "in_b": true,
         "in_c": true,
         "description": "发起SSB呼叫时保持该频率间隔可减少干扰",
-        "memory_method": "选最小的"
+        "memory_method": "SSB：2-3kHz"
     },
     {
         "id": "MC1-0443",
@@ -6269,7 +6269,7 @@
         "in_b": true,
         "in_c": true,
         "description": "调幅特点是不改变载波频率，且信号瞬时振幅与调制信号瞬时值成正比",
-        "memory_method": "AM调幅，所以与振幅有关，不调频"
+        "memory_method": "这种题：先选【不改变】，然后AM→调幅→振幅"
     },
     {
         "id": "MC4-0449",
@@ -6283,7 +6283,7 @@
         "in_b": true,
         "in_c": true,
         "description": "调幅信号按种类细分有普通调幅、抑制载波双边带调幅、抑制载波单边带调幅和残留边带调幅等不同类型",
-        "memory_method": "所有选项都带有【调幅】字眼，所以全选。"
+        "memory_method": "全选。所有选项都带有【调幅】字眼"
     },
     {
         "id": "MC1-0450",
@@ -6297,7 +6297,7 @@
         "in_b": true,
         "in_c": true,
         "description": "USB发射机调制语音信号成射频信号，从频域看是将语音信号频谱平移到载波位置",
-        "memory_method": "USB调制：平移"
+        "memory_method": "USB：平移"
     },
     {
         "id": "MC1-0451",
@@ -6311,7 +6311,7 @@
         "in_b": true,
         "in_c": true,
         "description": "LSB发射机调制语音信号成射频信号，从频域看是将语音信号频谱倒置并移动到载波位置",
-        "memory_method": "LSB调制：倒置"
+        "memory_method": "LSB：倒置"
     },
     {
         "id": "MC2-0452",
@@ -6325,7 +6325,7 @@
         "in_b": true,
         "in_c": true,
         "description": "调频不改变载波振幅，且信号瞬时频偏与调制信号瞬时值成正比",
-        "memory_method": "FM调频，所以与频偏有关，不调幅"
+        "memory_method": "这种题：先选【不改变】，然后FM→调频→频偏"
     },
     {
         "id": "MC1-0453",
@@ -6339,7 +6339,7 @@
         "in_b": true,
         "in_c": true,
         "description": "FM信号的频偏由调制信号的幅度决定",
-        "memory_method": "幅度→频偏"
+        "memory_method": "频偏 → 幅度。注意跟频率没关系"
     },
     {
         "id": "MC2-0454",
@@ -6353,7 +6353,7 @@
         "in_b": true,
         "in_c": true,
         "description": "调相特点在于不改变载波振幅，且瞬时相移和频偏与调制信号瞬时值成正比",
-        "memory_method": "PM调相，与相移有关，不调幅"
+        "memory_method": "这种题：先选【不改变】，然后PM→调相→相移"
     },
     {
         "id": "MC1-0455",
@@ -6395,7 +6395,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余无线电中莫尔斯电码WPM数是每分钟无间隙“点”个数除以50",
-        "memory_method": "WPM关键数值：50和1.2"
+        "memory_method": "关键值：50"
     },
     {
         "id": "MC1-0458",
@@ -6409,7 +6409,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余无线电里，WPM指每分钟拍发连续英文单词“PARIS”的个数",
-        "memory_method": "WPM核心数值：50和1.2，PARIS=50"
+        "memory_method": "关键词：PARIS"
     },
     {
         "id": "MC1-0459",
@@ -6437,7 +6437,7 @@
         "in_b": true,
         "in_c": true,
         "description": "已知WPM值时，计算CW信号波特率B的公式是WPM除以1.2",
-        "memory_method": "公式：B=WPM÷1.2"
+        "memory_method": "除法"
     },
     {
         "id": "MC1-0461",
@@ -6451,7 +6451,7 @@
         "in_b": true,
         "in_c": true,
         "description": "计算CW信号必要发射带宽时，HF等衰落信道K取5，非衰落信道K取3",
-        "memory_method": "关键词：HF、取5"
+        "memory_method": "HF取5，其他取3"
     },
     {
         "id": "MC1-0462",
@@ -6465,7 +6465,7 @@
         "in_b": true,
         "in_c": true,
         "description": "调频话必要带宽可通过公式Bn = 2(M + D)估算",
-        "memory_method": "公式：2(M+D)"
+        "memory_method": "括号麦当劳"
     },
     {
         "id": "MC1-0463",
@@ -6507,7 +6507,7 @@
         "in_b": true,
         "in_c": true,
         "description": "通过短波话音信道传输高分辨率电路图，可采用数字慢扫描电视或无线电传真方式",
-        "memory_method": "DSSTV、FAX"
+        "memory_method": "关键词：数字、传真。其他两种分辨率不够"
     },
     {
         "id": "MC1-0466",
@@ -6563,7 +6563,7 @@
         "in_b": true,
         "in_c": true,
         "description": "SSTV基带调频方式中，白、黑、同步电平对应不同频率",
-        "memory_method": "选开头最大的数值（不管符号），或者选逐渐递减的绝对单位"
+        "memory_method": "关键词：调频"
     },
     {
         "id": "MC1-0470",
@@ -6577,7 +6577,7 @@
         "in_b": true,
         "in_c": true,
         "description": "SSTV或ATV图像异常是因行频、帧频同步但帧扫描初始时刻不同",
-        "memory_method": "半帧错位→不同步"
+        "memory_method": "半帧错位→初始时刻不同步"
     },
     {
         "id": "MC1-0471",
@@ -6605,7 +6605,7 @@
         "in_b": true,
         "in_c": true,
         "description": "不能在低于1.2GHz业余频段进行常规ATV通信，是因ATV通信带宽需求大，低频段容纳不下",
-        "memory_method": "不足以容纳"
+        "memory_method": "低频带宽【不足以容纳】"
     },
     {
         "id": "MC1-0473",
@@ -6619,7 +6619,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余无线电用FM传输模拟ATV信号，优点是发射功率小且FM解调可去除外部调幅噪声",
-        "memory_method": "FM抗幅度噪声"
+        "memory_method": "选最长。FM抗幅度噪声"
     },
     {
         "id": "MC2-0474",
@@ -6647,7 +6647,7 @@
         "in_b": true,
         "in_c": true,
         "description": "用单边带话传输的RTTY信号的发射类别是F2B",
-        "memory_method": "编码规则：F=调频，2=数字，B=电报 ####"
+        "memory_method": "CW：A1A，单边：J3E，调频：F3E，TV：F3F，RTTY：F2B，PSK31：G2B"
     },
     {
         "id": "MC1-0476",
@@ -6661,7 +6661,7 @@
         "in_b": true,
         "in_c": true,
         "description": "单边带话传输的PSK31信号适用对应此特性的发射类别",
-        "memory_method": "编码规则：G=相移调制，2=数字，B=电报 ####"
+        "memory_method": "CW：A1A，单边：J3E，调频：F3E，TV：F3F，RTTY：F2B，PSK31：G2B"
     },
     {
         "id": "MC1-0477",
@@ -6675,7 +6675,7 @@
         "in_b": true,
         "in_c": true,
         "description": "调频话传输的RTTY信号对应此发射类别",
-        "memory_method": "编码规则：F=调频，2=数字，B=电报 ####"
+        "memory_method": "CW：A1A，单边：J3E，调频：F3E，TV：F3F，RTTY：F2B，PSK31：G2B"
     },
     {
         "id": "MC3-0478",
@@ -6745,7 +6745,7 @@
         "in_b": true,
         "in_c": true,
         "description": "RTTY采用2FSK调制方式",
-        "memory_method": "技术分类：FSK子集"
+        "memory_method": "关键词：FSK"
     },
     {
         "id": "MC1-0483",
@@ -6759,7 +6759,7 @@
         "in_b": true,
         "in_c": true,
         "description": "RTTY用两个频率传0和1，符号时长0.02秒，符号速率和数据速率由时长决定为50波特和50比特/秒",
-        "memory_method": "传输一位数据→1:1，RTTY→50bps，所以50→50"
+        "memory_method": "先确定波特率，RTTY或者0.02s→50波特，再确定比例（传输0和1→传输一位数据→1:1），所以50波特→50比特/秒"
     },
     {
         "id": "MC1-0484",
@@ -6773,7 +6773,7 @@
         "in_b": true,
         "in_c": true,
         "description": "BPSK31用副载波的两个相反相位偏移传0和1，符号时长约32毫秒，符号速率和数据速率由时长得出为31.25波特和31.25比特/秒",
-        "memory_method": "传输一位数据→1:1，BPSK[31]→31.25bps，所以31.25→31.25"
+        "memory_method": "先确定波特率，BPSK[31]→31左右的→31.25波特，再确定比例（传输0和1→传输一位数据→1:1），所以31.25波特→31.25比特/秒"
     },
     {
         "id": "MC1-0485",
@@ -6787,7 +6787,7 @@
         "in_b": true,
         "in_c": true,
         "description": "MFSK16用16个副载波传16种状态，符号时长64毫秒，对应此符号和数据速率",
-        "memory_method": "16种状态→传输4位数据（16=2的4次方）→1:4, MFSK[16]→15.625，所以15.625→62.5"
+        "memory_method": "先确定波特率，MFSK[16]→16左右的→15.625波特，再确定比例（16种状态→2的4次方→传输4位数据→1:4），所以15.625波特→62.5比特/秒"
     },
     {
         "id": "MC1-0486",
@@ -6801,7 +6801,7 @@
         "in_b": true,
         "in_c": true,
         "description": "QPSK31用载波正交反相相位传00至11，符号时长32毫秒，对应此符号和数据速率",
-        "memory_method": "传输两位数据→1:2， QPSK[31]→31.25波特，所以31.25→62.5"
+        "memory_method": "先确定波特率，QPSK[31]→31左右的→31.25波特，再确定比例（00至11→2位数据→1:2），所以31.25波特→62.5比特/秒"
     },
     {
         "id": "MC1-0487",
@@ -6815,7 +6815,7 @@
         "in_b": true,
         "in_c": true,
         "description": "PACTOR协议可支持二进制数据文件传输，其他不支持",
-        "memory_method": "协议优势：文件传输能力"
+        "memory_method": "PACTOR → Package(包) → 文件包 → 传文件"
     },
     {
         "id": "MC1-0488",
@@ -6829,7 +6829,7 @@
         "in_b": true,
         "in_c": true,
         "description": "前向纠错是发送方添加冗余校验数据与报文一同发送，接收方据此纠错",
-        "memory_method": "排除法：1.排除重复足够多（效率太低了）；2.题目是前向纠错，所以排除【重传】"
+        "memory_method": "先确定最长的两个，然后纠错→【冗余数据】"
     },
     {
         "id": "MC1-0489",
@@ -6843,7 +6843,7 @@
         "in_b": true,
         "in_c": true,
         "description": "自动重传请求是发送方依据接收端反馈或超时情况重传报文纠错",
-        "memory_method": "排除法：1.排除重复足够多（效率太低了）；2.题目是自动重传，排除冗余；3. 排除发送方核对（来回发多次更容易出错）"
+        "memory_method": "先确定最长的两个，然后重传→【重传报文】"
     },
     {
         "id": "MC1-0490",
@@ -6899,7 +6899,7 @@
         "in_b": true,
         "in_c": true,
         "description": "用于HF、VHF和卫星通信时，PACKET通信方式常用符号速率为300、1200、9600波特",
-        "memory_method": "选前两项里出现两次的（300、1200）"
+        "memory_method": "关键值：9600结尾"
     },
     {
         "id": "MC1-0494",
@@ -6969,7 +6969,7 @@
         "in_b": true,
         "in_c": true,
         "description": "RTTY在串行数据通信中属于异步方式",
-        "memory_method": "特征：字符自带同步信号"
+        "memory_method": "异步：RTTY，同步：排除RTTY"
     },
     {
         "id": "MC3-0499",
@@ -6983,7 +6983,7 @@
         "in_b": true,
         "in_c": true,
         "description": "BPSK31、APRS、FT8在串行数据通信中属于同步方式",
-        "memory_method": "0"
+        "memory_method": "异步：RTTY，同步：排除RTTY"
     },
     {
         "id": "MC1-0500",
@@ -6997,7 +6997,7 @@
         "in_b": true,
         "in_c": true,
         "description": "串行异步数字通信时RTTY常用设置包括特定波特率、数据位数、校验和停止位数",
-        "memory_method": "50,5,N,1"
+        "memory_method": "关键词：N"
     },
     {
         "id": "MC3-0501",
@@ -7011,7 +7011,7 @@
         "in_b": true,
         "in_c": true,
         "description": "除RTTY外，JT65、MFSK16、FT4也是使用移频电报技术的业余通信方式",
-        "memory_method": "FSK调制家族（JT65/MFSK16/FT4）"
+        "memory_method": "排除：SSTV"
     },
     {
         "id": "MC1-0502",
@@ -7025,7 +7025,7 @@
         "in_b": true,
         "in_c": true,
         "description": "ITA2编码在业余无线电中常被称为博多码，用于RTTY，每个码含5个二进制数据且可换态扩位",
-        "memory_method": "博多码=5位电传码，RTTY专用"
+        "memory_method": "关键词：博多码"
     },
     {
         "id": "MC1-0503",
@@ -7039,7 +7039,7 @@
         "in_b": true,
         "in_c": true,
         "description": "PSK31是一种低速率的PSK数据通信方式",
-        "memory_method": "【低速率】【PSK】，PSK31=31波特相移键控"
+        "memory_method": "关键词：低速率"
     },
     {
         "id": "MC1-0504",
@@ -7053,7 +7053,7 @@
         "in_b": true,
         "in_c": true,
         "description": "PSK31的调制方式为BPSK或QPSK",
-        "memory_method": "题目里有31，所以选选项里有【31】的"
+        "memory_method": "题目是PSK31，所以选【PSK31】的"
     },
     {
         "id": "MC1-0505",
@@ -7067,7 +7067,7 @@
         "in_b": true,
         "in_c": true,
         "description": "FT8是适用于小功率和低信噪比环境的低速率FSK数据通信方式",
-        "memory_method": "低功率、低速率，弱信号神器，8-FSK调制"
+        "memory_method": "关键词：小功率"
     },
     {
         "id": "MC1-0506",
@@ -7095,7 +7095,7 @@
         "in_b": true,
         "in_c": true,
         "description": "JT65适合QRP操作，可联络远距离电台，且发送一条消息约需50秒",
-        "memory_method": "关键词：QRP，不快。或者排除：千瓦、效率高"
+        "memory_method": "关键词：QRP，50秒/不快。或者排除：千瓦、效率高"
     },
     {
         "id": "MC2-0508",
@@ -7109,7 +7109,7 @@
         "in_b": true,
         "in_c": true,
         "description": "FT8在HF和VHF频段，小功率也易联络远距离电台，还可用于特殊通信探索",
-        "memory_method": "关键词：远距离，探索。或排除：冗余、博多码"
+        "memory_method": "排除：冗余、博多码。或者关键词：远距离，探索。"
     },
     {
         "id": "MC1-0509",
