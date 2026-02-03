@@ -7137,7 +7137,7 @@
         "in_b": true,
         "in_c": true,
         "description": "FT4消息发送快但误码率稍高，联络效率与RTTY相当且带宽更窄",
-        "memory_method": "对比FT8：速度快，误码率高"
+        "memory_method": "记忆：误码率高、带宽更窄"
     },
     {
         "id": "MC4-0511",
@@ -7151,7 +7151,7 @@
         "in_b": true,
         "in_c": true,
         "description": "准备FT8、FT4或JT65联络时，要调整好软硬件增益，用软件控制并设置好日志软件",
-        "memory_method": "全选。优化四要素：输入/输出电平、自动化、日志"
+        "memory_method": "全选"
     },
     {
         "id": "MC3-0512",
@@ -7165,7 +7165,7 @@
         "in_b": true,
         "in_c": true,
         "description": "Yaesu SystemFusion特点在于适用于业余无线电通信、可中继转发、采用C4FM调制及时分多址技术提升带宽利用率",
-        "memory_method": "排除：时分多址技术"
+        "memory_method": "Yaesu → 排除：时分多址技术"
     },
     {
         "id": "MC4-0513",
@@ -7179,7 +7179,7 @@
         "in_b": true,
         "in_c": true,
         "description": "Icom D - STAR System特点是用于业余无线电数字语音和数据传输、可通过中继台扩展通信范围、支持互联网通信及全球卫星定位和位置报告",
-        "memory_method": "全选。功能：全球互联+位置报告"
+        "memory_method": "D-STAR → 全选"
     },
     {
         "id": "MC3-0514",
@@ -7193,7 +7193,7 @@
         "in_b": true,
         "in_c": true,
         "description": "FreeDV为爱好者提供窄带宽HF数字语音方式、探索通信原理和技术的可能，且可用于研发业余无线电装备",
-        "memory_method": "排除：音色优美"
+        "memory_method": "FreeDV → 排除：音色优美"
     },
     {
         "id": "MC4-0515",
@@ -7221,7 +7221,7 @@
         "in_b": true,
         "in_c": true,
         "description": "使用DRM协议进行数字慢扫描电视通信时，单边带方式能保留基带特性，利于衰落信道差错控制",
-        "memory_method": "关键词：单边带。SSB保真度＞FM"
+        "memory_method": "关键词：单边带 或 差错控制"
     },
     {
         "id": "MC1-0517",
@@ -7235,7 +7235,7 @@
         "in_b": true,
         "in_c": true,
         "description": "FM方式发射时，射频输出功率稳定，平均发射功率约等于射频输出功率",
-        "memory_method": "对应：FM→约10。功率特性：FM载波连续，平均功率≈峰值"
+        "memory_method": "CW和SSB→低于10W，其他都约为10W"
     },
     {
         "id": "MC1-0518",
@@ -7249,7 +7249,7 @@
         "in_b": true,
         "in_c": true,
         "description": "CW方式发射时，载波输出功率稳定，平均发射功率约等于载波输出功率",
-        "memory_method": "对应：CW→低于10。功率特性：CW断续发射，平均功率＜峰值"
+        "memory_method": "CW和SSB→低于10W，其他都约为10W"
     },
     {
         "id": "MC1-0519",
@@ -7263,7 +7263,7 @@
         "in_b": true,
         "in_c": true,
         "description": "SSB方式发射时，峰值输出功率高但平均功率低，平均发射功率显著低于峰值",
-        "memory_method": "对应：SSB→低于10。功率特性：SSB随语音波动，平均功率＜峰值"
+        "memory_method": "CW和SSB→低于10W，其他都约为10W"
     },
     {
         "id": "MC1-0520",
@@ -7277,7 +7277,7 @@
         "in_b": true,
         "in_c": true,
         "description": "FT8消息以SSB方式发送，功率较稳定，平均发射功率约等于峰值输出功率",
-        "memory_method": "对应：FT8→约10。例外：数字信号连续，平均功率≈峰值"
+        "memory_method": "CW和SSB→低于10W，其他都约为10W"
     },
     {
         "id": "MC1-0521",
@@ -7291,7 +7291,7 @@
         "in_b": true,
         "in_c": true,
         "description": "SSB方式发射PSK31消息时，平均发射功率近似于峰值功率",
-        "memory_method": "对应：PSK31→约10。例外：数字信号连续，平均功率≈峰值"
+        "memory_method": "CW和SSB→低于10W，其他都约为10W"
     },
     {
         "id": "MC1-0522",
@@ -7305,7 +7305,7 @@
         "in_b": true,
         "in_c": true,
         "description": "SSB方式发射黑白图像时，平均发射功率接近峰值功率",
-        "memory_method": "对应：SSTV→约10。例外：数字信号连续，平均功率≈峰值"
+        "memory_method": "CW和SSB→低于10W，其他都约为10W"
     },
     {
         "id": "MC1-0523",
@@ -7319,7 +7319,7 @@
         "in_b": true,
         "in_c": true,
         "description": "呼叫所有DX电台应使用特定通用呼叫并报呼号",
-        "memory_method": "国际惯例：CQ DX = 呼叫远距离台"
+        "memory_method": "题目里有DX，选【CQDX】"
     },
     {
         "id": "MC1-0524",
@@ -7333,7 +7333,7 @@
         "in_b": true,
         "in_c": true,
         "description": "参加DX联络和竞赛，良好习惯是仅发必要信息",
-        "memory_method": "关键词：不发送，之外。效率优先，减少冗余"
+        "memory_method": "关键词：【之外】的任何消息"
     },
     {
         "id": "MC1-0525",
@@ -7347,7 +7347,7 @@
         "in_b": true,
         "in_c": true,
         "description": "参加DX网络通信要按规则，等安排后再联络",
-        "memory_method": "选最长的。纪律：网络=有序协作，非自由呼叫"
+        "memory_method": "选最长的"
     },
     {
         "id": "MC1-0526",
@@ -7361,7 +7361,7 @@
         "in_b": true,
         "in_c": true,
         "description": "在强噪声环境下接收微弱信号，应减少不必要呼叫，发起CQ呼叫时降低功率",
-        "memory_method": "关键词：【尽量】开头。噪声大时降低“嗓门”"
+        "memory_method": "只回答【能听到的】"
     },
     {
         "id": "MC1-0527",
@@ -7375,7 +7375,7 @@
         "in_b": true,
         "in_c": true,
         "description": "听到CW呼叫但仅听清部分呼号，回叫需用问号表示未听清前缀",
-        "memory_method": "选问号开头的。 规范：? + 已知后缀 + DE + 己呼 + K"
+        "memory_method": "选问号开头的"
     },
     {
         "id": "MC1-0528",
@@ -7389,7 +7389,7 @@
         "in_b": true,
         "in_c": true,
         "description": "听到SSB呼叫且只听清部分呼号，回叫应直接请求对方告知前缀",
-        "memory_method": "选开头是呼号的。口语化：直接询问缺失部分"
+        "memory_method": "选开头是呼号的。关键词：prefix"
     },
     {
         "id": "MC1-0529",
@@ -7403,7 +7403,7 @@
         "in_b": true,
         "in_c": true,
         "description": "该消息表明巴西电台收听关岛电台信号有衰落，效果不佳",
-        "memory_method": "关键词：夏威夷、效果不好"
+        "memory_method": "fading signal → 夏威夷、效果不好"
     },
     {
         "id": "MC1-0530",
@@ -7417,7 +7417,7 @@
         "in_b": true,
         "in_c": true,
         "description": "消息表明E51WWA在库克岛呼叫CQ但无人回应",
-        "memory_method": "关键词：E51WWA、CQ"
+        "memory_method": "Calling CQ → E51WWA、CQ"
     },
     {
         "id": "MC1-0531",
@@ -7431,7 +7431,7 @@
         "in_b": true,
         "in_c": true,
         "description": "20米波段的SSTV联络常见于14.230MHz",
-        "memory_method": "数字后缀：230"
+        "memory_method": "关键值：14.230"
     },
     {
         "id": "MC1-0532",
@@ -7445,7 +7445,7 @@
         "in_b": true,
         "in_c": true,
         "description": "20米波段的IOTA活动常见频段为SSB 14.260MHz、CW 14.040MHz",
-        "memory_method": "SSB选最高，CW选最低"
+        "memory_method": "SSB选最高，CW选最低。或关键值：260、040"
     },
     {
         "id": "MC1-0533",
@@ -7473,7 +7473,7 @@
         "in_b": true,
         "in_c": true,
         "description": "通常10米波段DX通信最佳时段是白天",
-        "memory_method": "传播规律：日间高频传播佳"
+        "memory_method": "【白天】的效果好"
     },
     {
         "id": "MC1-0535",
@@ -7487,7 +7487,7 @@
         "in_b": true,
         "in_c": true,
         "description": "申请WAS奖状时，VA3EJ呼号卡片不能作通联证明",
-        "memory_method": "选V开头的（非美国呼号）"
+        "memory_method": "选VA开头的（非美国呼号）"
     },
     {
         "id": "MC1-0536",
@@ -7501,7 +7501,7 @@
         "in_b": true,
         "in_c": true,
         "description": "申请五波段WAZ奖状至少要提交198个分区的卡片",
-        "memory_method": "数值：198"
+        "memory_method": "有25选25，否则选198"
     },
     {
         "id": "MC1-0537",
@@ -7515,7 +7515,7 @@
         "in_b": true,
         "in_c": true,
         "description": "我国爱好者通联该电台难度最大，因其最为稀有",
-        "memory_method": "KP5A。地理：孤岛+低活跃度"
+        "memory_method": "KP开头，联想记忆：可怕，所以不易通联"
     },
     {
         "id": "MC1-0538",
@@ -7529,7 +7529,7 @@
         "in_b": true,
         "in_c": true,
         "description": "申请卫星和6米WAZ奖状需提交的最少区的QSL卡片数量",
-        "memory_method": "分区要求：高频段≥25区"
+        "memory_method": "有25选25，否则选198"
     },
     {
         "id": "MC1-0539",
@@ -7543,7 +7543,7 @@
         "in_b": true,
         "in_c": true,
         "description": "申请160米WAZ奖状至少需提交的区QSL卡片数量为25个",
-        "memory_method": "分区要求：低频段≥25区"
+        "memory_method": "有25选25，否则选198"
     },
     {
         "id": "MC1-0540",
@@ -7557,7 +7557,7 @@
         "in_b": true,
         "in_c": true,
         "description": "联络发射频率14020kHz稀有台时，应守听14020kHz，在其结束联络或呼叫后于14022kHz快速发自己呼号",
-        "memory_method": "技巧：主频守听，副频抢答"
+        "memory_method": "20守听，22呼叫"
     },
     {
         "id": "MC1-0541",
@@ -7571,7 +7571,7 @@
         "in_b": true,
         "in_c": true,
         "description": "以北京为中心，DXCC实体3X、HZ、G、OE大圆距离由远及近为3X、G、OE、HZ",
-        "memory_method": "3X、G开头。地理：西非＞欧洲＞中东"
+        "memory_method": "3X、G、OE开头"
     },
     {
         "id": "MC1-0542",
@@ -7585,7 +7585,7 @@
         "in_b": true,
         "in_c": true,
         "description": "我们用天线指向300度联络欧洲电台，欧洲电台联络我们时天线大体指向60度",
-        "memory_method": "选60度。球面反向：300° → 60°（加减180°需修正）"
+        "memory_method": "60度"
     },
     {
         "id": "MC1-0543",
@@ -7612,8 +7612,8 @@
         "in_a": false,
         "in_b": true,
         "in_c": true,
-        "description": "CW信号‘B1CRA TEST UP5’表示该台呼号为B1CRA，正试验信号并盼前缀为UP5的电台回应",
-        "memory_method": "竞赛简语：UP=接收上移"
+        "description": "TEST表示比赛, UP5 表示频率上偏5kHz",
+        "memory_method": "关键词：比赛"
     },
     {
         "id": "MC1-0545",
@@ -7627,7 +7627,7 @@
         "in_b": true,
         "in_c": true,
         "description": "HF比赛时，应在参赛电台守听频率上发送本台完整呼号来回应",
-        "memory_method": "关键词：守听、本台，（不发送对方）。守听频率≠呼叫频率"
+        "memory_method": "关键词：守听、本台（不发送对方）"
     },
     {
         "id": "MC1-0546",
@@ -7641,7 +7641,7 @@
         "in_b": true,
         "in_c": true,
         "description": "CQWW比赛中，SOAB组别不能用CWSkimmer辅助找QSO机会",
-        "memory_method": "规则：单人组禁用自动化"
+        "memory_method": "A → Assistant，SOAB不能用"
     },
     {
         "id": "MC1-0547",
@@ -7654,8 +7654,8 @@
         "in_a": false,
         "in_b": true,
         "in_c": true,
-        "description": "IARU短波世界锦标赛期间，‘5NNJARL’对应的台呼号可能是JA1HQ",
-        "memory_method": "彩蛋：JARL=日本协会，总部呼号特殊"
+        "description": "IARU短波世界锦标赛期间，某台发送“5NNJARL”的呼号极可能是8N1HQ",
+        "memory_method": "8N开头"
     },
     {
         "id": "MC1-0548",
@@ -7669,7 +7669,7 @@
         "in_b": true,
         "in_c": true,
         "description": "IARU短波世界锦标赛SSB单人组比赛中，女大学生发的信号报告可为特定格式",
-        "memory_method": "组合：59+年龄+44"
+        "memory_method": "IARU比赛规则：信号报告+区域，所以5944"
     },
     {
         "id": "MC2-0549",
@@ -7683,7 +7683,7 @@
         "in_b": true,
         "in_c": true,
         "description": "ALL ASIAN DX CONTEST SSB单人组比赛里，女大学生发的信号报告有相应规范",
-        "memory_method": "组合：59+年龄+20"
+        "memory_method": "ALL ASIAN 规则：信号报告+年龄（不想公开可以给00），所以5900或者5920"
     },
     {
         "id": "MC1-0550",
@@ -7697,7 +7697,7 @@
         "in_b": true,
         "in_c": true,
         "description": "CQ WWCW竞赛时，女大学生发出的信号报告是特定形式",
-        "memory_method": "组合：599+年龄+分区"
+        "memory_method": "CQ规则：信号报告+分区，所以59924"
     },
     {
         "id": "MC1-0551",
@@ -7711,7 +7711,7 @@
         "in_b": true,
         "in_c": true,
         "description": "听到交换消息“599NJ”，该比赛可能是ARRL 160 - Meter Contest",
-        "memory_method": "特色：州缩写替代年龄/分区"
+        "memory_method": "599NJ → ARRL"
     },
     {
         "id": "MC1-0552",
@@ -7739,7 +7739,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余无线电通联中梅登海德网格定位系统编码格式有特定要求",
-        "memory_method": "2+2和2+2+2 4字符（粗）或6字符（精）"
+        "memory_method": "选最长的"
     },
     {
         "id": "MC1-0554",
@@ -7753,7 +7753,7 @@
         "in_b": true,
         "in_c": true,
         "description": "4字符和6字符梅登海德网格编码定位精度不同，前者为经度2度和纬度1度，后者更精细",
-        "memory_method": "坐标精度不同"
+        "memory_method": "选【2.5分】结尾的"
     },
     {
         "id": "MC1-0555",
@@ -7767,7 +7767,7 @@
         "in_b": true,
         "in_c": true,
         "description": "全球按经度划分24个理论时区，每个宽15度，本初子午线在0区中心",
-        "memory_method": "24/15/0。科学划分：360°÷24=15°/区"
+        "memory_method": "共【24】时区，过【0】区中心"
     },
     {
         "id": "MC1-0556",
@@ -7795,7 +7795,7 @@
         "in_b": true,
         "in_c": true,
         "description": "北京属东8区，因地球自西向东自转，其地方时比0时区早8小时",
-        "memory_method": "北京：UTC+8"
+        "memory_method": "关键词：东8区、早"
     },
     {
         "id": "MC1-0558",
@@ -7809,7 +7809,7 @@
         "in_b": true,
         "in_c": true,
         "description": "虽按经度北京、西安、乌鲁木齐分属东8、东7、东6区，但实际都用东8区法定时间",
-        "memory_method": "法定全国UTC+8"
+        "memory_method": "关键词：法定。全国都是东八区"
     },
     {
         "id": "MC1-0559",
@@ -7823,7 +7823,7 @@
         "in_b": true,
         "in_c": true,
         "description": "北京时间是东8区时间，比0时区早8小时，所以求UTC时间要减8并按需调整日期",
-        "memory_method": "算法：减8，跨日修正"
+        "memory_method": "北京到UTC：减八、前一天"
     },
     {
         "id": "MC1-0560",
@@ -7837,7 +7837,7 @@
         "in_b": true,
         "in_c": true,
         "description": "UTC是0时区时间，北京时间比其早8小时，所以求北京时间要加8并按需调整日期",
-        "memory_method": "算法：加8，跨日修正"
+        "memory_method": "UTC到北京：加八、后一天"
     },
     {
         "id": "MC1-0561",
@@ -7851,7 +7851,7 @@
         "in_b": true,
         "in_c": true,
         "description": "西N时区比东八区晚8+N小时",
-        "memory_method": "西区→晚、加；西区更晚"
+        "memory_method": "东西区都是晚，西区N+8"
     },
     {
         "id": "MC1-0562",
@@ -7865,7 +7865,7 @@
         "in_b": true,
         "in_c": true,
         "description": "东N时区比东八区早N-8小时，即晚8-N小时",
-        "memory_method": "东区→晚、减；东区可能更早"
+        "memory_method": "东西区都是晚，东区N-8"
     },
     {
         "id": "MC1-0563",
@@ -7879,7 +7879,7 @@
         "in_b": true,
         "in_c": true,
         "description": "抄到‘B4’或‘WKD’意味着之前已和该台联络过，要检查日志",
-        "memory_method": "术语：B4=before（已通联）"
+        "memory_method": "关键词：检查。B4=before"
     },
     {
         "id": "MC1-0564",
@@ -7893,7 +7893,7 @@
         "in_b": true,
         "in_c": true,
         "description": "竞赛主办方通过日志匹配通信联络来计算比赛得分，所以要及时提交",
-        "memory_method": "必要性：日志=成绩依据"
+        "memory_method": "关键词：比赛得分"
     },
     {
         "id": "MC1-0565",
@@ -7907,7 +7907,7 @@
         "in_b": false,
         "in_c": false,
         "description": "收发信机是集接收机和发射机功能于一体的无线电通信设备",
-        "memory_method": "关键词：组合。收/发一体"
+        "memory_method": "关键词：组合"
     },
     {
         "id": "MC2-0566",
@@ -7977,7 +7977,7 @@
         "in_b": false,
         "in_c": false,
         "description": "双工操作可在地面业余电台与业余卫星通信中实现双向同时传输",
-        "memory_method": "关键词：卫星"
+        "memory_method": "选最长的。或者关键词：卫星"
     },
     {
         "id": "MC1-0571",
@@ -8005,7 +8005,7 @@
         "in_b": false,
         "in_c": false,
         "description": "收发信机中PTT是按键发射信号，触发时发射机从等待转为发射",
-        "memory_method": "功能：发射使能"
+        "memory_method": "PTT：Press To Talk 按下说话 → 按键发射"
     },
     {
         "id": "MC1-0573",
@@ -8313,7 +8313,7 @@
         "in_b": true,
         "in_c": true,
         "description": "可能造成三阶互调干扰的频率可通过2fT -fR或 (fT + fR ) / 2计算",
-        "memory_method": "选仅一组括号的。数学：三阶组合频率"
+        "memory_method": "加、减、乘、除 都要有"
     },
     {
         "id": "MC1-0595",
@@ -8383,7 +8383,7 @@
         "in_b": true,
         "in_c": true,
         "description": "全功能小型收发信机中，“NB”是切除突发脉冲噪声的抑噪功能，“SQL”是不达信噪比自动关闭音频的静噪功能",
-        "memory_method": "选最长的。区别：抑脉冲噪 vs 降背景噪"
+        "memory_method": "选最长的。这俩不是一个意思"
     },
     {
         "id": "MC1-0600",
@@ -8411,7 +8411,7 @@
         "in_b": true,
         "in_c": true,
         "description": "全功能小型收发信机的“MODE”功能用于切换FM、LSB等工作方式",
-        "memory_method": "MODE：模式。核心：工作模式切换键"
+        "memory_method": "关键词：工作方式"
     },
     {
         "id": "MC1-0602",
@@ -8425,7 +8425,7 @@
         "in_b": true,
         "in_c": true,
         "description": "ATT代表收信机输入衰减器功能，可避免接收大信号时前级电路过载",
-        "memory_method": "ATT（Attenuator）：衰减器。作用：衰减强信号，防过载"
+        "memory_method": "ATT（【Att】enuator）：衰减器。作用：衰减强信号，防过载"
     },
     {
         "id": "MC1-0603",
@@ -8467,7 +8467,7 @@
         "in_b": true,
         "in_c": true,
         "description": "接收机过载指输入信号过强致电路饱和阻塞，启用ATT可缓解",
-        "memory_method": "关键词：过于强大、ATT。本质：强信号→阻塞，ATT→缓解"
+        "memory_method": "关键词：损坏、ATT。本质：强信号→阻塞，ATT→缓解"
     },
     {
         "id": "MC1-0606",
@@ -8481,7 +8481,7 @@
         "in_b": true,
         "in_c": true,
         "description": "有用微弱信号和强干扰同时出现时，应关闭接收机AGC功能",
-        "memory_method": "场景：弱有用+强干扰→关AGC"
+        "memory_method": "弱信号+强干扰→关AGC"
     },
     {
         "id": "MC1-0607",
@@ -8495,7 +8495,7 @@
         "in_b": true,
         "in_c": true,
         "description": "接收包络幅度恒定信号时应选较短AGC时间常数",
-        "memory_method": "匹配：恒定包络→快AGC"
+        "memory_method": "短AGC → 恒定包络"
     },
     {
         "id": "MC1-0608",
@@ -8509,7 +8509,7 @@
         "in_b": true,
         "in_c": true,
         "description": "接收包络幅度变化信号、遇快速衰落或应对干扰时应选较长AGC时间常数",
-        "memory_method": "匹配：变化包络→慢AGC"
+        "memory_method": "长AGC → 包络变化"
     },
     {
         "id": "MC1-0609",
@@ -8523,7 +8523,7 @@
         "in_b": true,
         "in_c": true,
         "description": "多数小型收发信机面板上PRE代表接收微弱信号时可接入的前置放大器功能",
-        "memory_method": "关键词：放大器。 PRE（Preamplifier）：前置放大器。功能：弱信号增益↑"
+        "memory_method": "PRE → previous → 前置"
     },
     {
         "id": "MC1-0610",
@@ -8593,7 +8593,7 @@
         "in_b": true,
         "in_c": true,
         "description": "使用单边带收发信机发送AFSK信号时关闭ALC，可防止信号失真和误码率升高",
-        "memory_method": "关键词：失真。原理：ALC波动→误码↑"
+        "memory_method": "关键词：误码率。原理：ALC波动→误码↑"
     },
     {
         "id": "MC1-0615",
@@ -8607,7 +8607,7 @@
         "in_b": true,
         "in_c": true,
         "description": "单边带发信机的语音压缩功能可改善较弱语音在接收端的信噪比",
-        "memory_method": "强信号→压低，弱信号→提升"
+        "memory_method": "关键词：信噪比。强信号→压低，弱信号→提升"
     },
     {
         "id": "MC1-0616",
@@ -8649,7 +8649,7 @@
         "in_b": true,
         "in_c": true,
         "description": "单边带收发信机发AFSK信号时关闭语音压缩，可防止信号畸变抬升误码率",
-        "memory_method": "关键词：畸变。原理：压缩畸变→基带破坏"
+        "memory_method": "关键词：畸变 或 误码率。原理：压缩畸变→基带破坏"
     },
     {
         "id": "MC1-0619",
@@ -8705,7 +8705,7 @@
         "in_b": true,
         "in_c": true,
         "description": "使用分开控制增益的通信接收机收听时，信号强弱不同应优先调整不同的增益",
-        "memory_method": "信号弱开射频增益，信号强开音频增益。策略：射频弱↑，音频强↑"
+        "memory_method": "开头一句：【射频/中频】增益开到最大"
     },
     {
         "id": "MC1-0623",
@@ -8747,7 +8747,7 @@
         "in_b": true,
         "in_c": true,
         "description": "接收增量调谐能在主调谐不变时对接收频率附加微调",
-        "memory_method": "关键词：接收增量调谐。RIT（Receiver Incremental Tuning）：接收增量调谐。功能：收频微调"
+        "memory_method": "RIT（【Receiver】 Incremental Tuning）：接收增量调谐。功能：收频微调"
     },
     {
         "id": "MC1-0626",
@@ -8761,7 +8761,7 @@
         "in_b": true,
         "in_c": true,
         "description": "发射增量调谐可在主调谐不变时对发射频率附加微调",
-        "memory_method": "关键词：发射增量调谐。XIT（Transmitter Incremental Tuning）：发射增量调谐。功能：发频微调"
+        "memory_method": "XIT（【Transmitter（X）】 Incremental Tuning）：发射增量调谐。功能：发频微调"
     },
     {
         "id": "MC1-0627",
@@ -8817,7 +8817,7 @@
         "in_b": true,
         "in_c": true,
         "description": "反转接收等幅电报边带功能可减少或消除其他信号干扰",
-        "memory_method": "关键词：减少或消除、干扰。作用：边带反转抗干扰"
+        "memory_method": "【减少或消除】干扰。作用：边带反转抗干扰"
     },
     {
         "id": "MC1-0631",
@@ -8845,7 +8845,7 @@
         "in_b": true,
         "in_c": true,
         "description": "接收机多种带宽选择能适配通联方式，提高收信信噪比",
-        "memory_method": "关键词：接收带宽。本质：带宽匹配模式"
+        "memory_method": "关键词：接收带宽，提高信噪比。本质：带宽匹配模式"
     },
     {
         "id": "MC3-0633",
@@ -8859,7 +8859,7 @@
         "in_b": true,
         "in_c": true,
         "description": "不同通信方式应选用合适的中频滤波器带宽以保证接收效果",
-        "memory_method": "排除：FT8。口诀：CW窄SSB中AM宽FT8窄"
+        "memory_method": "排除：FT8"
     },
     {
         "id": "MC1-0634",
@@ -8887,7 +8887,7 @@
         "in_b": true,
         "in_c": true,
         "description": "外置射频前置放大器安装在天线与接收机间可增强接收信号",
-        "memory_method": "前置放大器：天线后、接收机前。 放大器放大的是接收到的信号，所以放在天线和接收机之间"
+        "memory_method": "看题目是接收还是发射，然后选【天线】和XX之间"
     },
     {
         "id": "MC1-0636",
@@ -8901,7 +8901,7 @@
         "in_b": true,
         "in_c": true,
         "description": "外置低通滤波器装在发信机与天线间能增强滤除杂散发射效果",
-        "memory_method": "低通滤波器：发信机后→天线前。滤除杂散【发射】，所以放在发信机和天线之间"
+        "memory_method": "看题目是接收还是发射，然后选【天线】和XX之间"
     },
     {
         "id": "MC1-0637",
@@ -8915,7 +8915,7 @@
         "in_b": true,
         "in_c": true,
         "description": "开展多人多机HF竞赛时，滤波器阶数越高抑制倍频干扰效果越好",
-        "memory_method": "阶数↑→抑制↑"
+        "memory_method": "阶数高→抑制好"
     },
     {
         "id": "MC2-0638",
@@ -8929,7 +8929,7 @@
         "in_b": true,
         "in_c": true,
         "description": "短截线滤波器用馈线制作，不同长度和末端状态的同轴电缆对不同波段信号有不同的通过和短路效果",
-        "memory_method": "关键词：1/4波长。特性：λ/4短路=通基阻谐"
+        "memory_method": "关键词：1/4波长"
     },
     {
         "id": "MC1-0639",
@@ -8957,7 +8957,7 @@
         "in_b": true,
         "in_c": true,
         "description": "收发信机内置辅助接收机可实现独立调谐异频操作和同频分集接收",
-        "memory_method": "关键词：异频、分集"
+        "memory_method": "关键词：异频操作、分集接收"
     },
     {
         "id": "MC2-0641",
@@ -8971,7 +8971,7 @@
         "in_b": true,
         "in_c": true,
         "description": "为收发信机辅助接收机架设独立天线用于分集接收时，要与主天线保持距离且极化正交",
-        "memory_method": "关键词：天线远、正交。或者排除：安装XX器"
+        "memory_method": "关键词：1个工作波长、正交。或者排除：安装XX器"
     },
     {
         "id": "MC1-0642",
@@ -8999,7 +8999,7 @@
         "in_b": false,
         "in_c": true,
         "description": "收发信机与线性功率放大器连接会用到射频、PTT控制和ALC接口",
-        "memory_method": "必备：射频、PTT、ALC"
+        "memory_method": "必备：射频、PTT、ALC。或排除AGC"
     },
     {
         "id": "MC1-0644",
@@ -9083,7 +9083,7 @@
         "in_b": true,
         "in_c": true,
         "description": "发射天线能把发射机输出的射频信号转化为无线电波",
-        "memory_method": "发射：射频→无线电"
+        "memory_method": "发射：射频→无线电波"
     },
     {
         "id": "MC1-0650",
@@ -9097,7 +9097,7 @@
         "in_b": true,
         "in_c": true,
         "description": "接收天线可将空间的无线电波转化为接收机中的射频电信号",
-        "memory_method": "接收：无线电→射频"
+        "memory_method": "接收：无线电波→射频"
     },
     {
         "id": "MC2-0651",
@@ -9125,7 +9125,7 @@
         "in_b": true,
         "in_c": true,
         "description": "dBi单位天线增益指待测天线最大辐射方向辐射功率密度与理想点源天线对应值之比的dB值",
-        "memory_method": "单位是dBi，i→点源"
+        "memory_method": "单位是dBi，i → 有个点 → 点源"
     },
     {
         "id": "MC1-0653",
@@ -9153,7 +9153,7 @@
         "in_b": true,
         "in_c": true,
         "description": "dBd单位天线增益指待测天线最大辐射方向辐射功率密度与半波长偶极天线对应值之比的dB值",
-        "memory_method": "单位是dBd，d→偶极"
+        "memory_method": "单位是dBd，d → double → 偶极"
     },
     {
         "id": "MC1-0655",
@@ -9195,7 +9195,7 @@
         "in_b": true,
         "in_c": true,
         "description": "垂直接地天线被称为“全向天线”，是因其在水平方向无指向性",
-        "memory_method": "垂直接地→水平无指向性"
+        "memory_method": "全向天线→水平无指向性"
     },
     {
         "id": "MC1-0658",
@@ -9237,7 +9237,7 @@
         "in_b": true,
         "in_c": true,
         "description": "手持电台“橡胶天线”在一般持握时电波垂直极化分量强，且发射与接收增益比全尺寸天线低",
-        "memory_method": "垂直极化、低增益"
+        "memory_method": "关键词：握持方式、增益低"
     },
     {
         "id": "MC1-0661",
@@ -9251,7 +9251,7 @@
         "in_b": true,
         "in_c": true,
         "description": "车内用手持电台和“橡胶天线”通信，车体屏蔽作用会影响信号强度",
-        "memory_method": "关键词：屏蔽"
+        "memory_method": "关键词：车体屏蔽"
     },
     {
         "id": "MC1-0662",
@@ -9265,7 +9265,7 @@
         "in_b": true,
         "in_c": true,
         "description": "架设天线遇市电供电装置时，要保证天线部件掉落不进入安全距离",
-        "memory_method": "关键词：安全距离"
+        "memory_method": "关键词：安全距离 或 1米"
     },
     {
         "id": "MC1-0663",
@@ -9321,8 +9321,8 @@
         "in_a": true,
         "in_b": true,
         "in_c": true,
-        "description": "天线增益不同，甲天线增益更高，在同样条件下其信号功率是另一天线两倍",
-        "memory_method": "关键词：两倍。换算：dBi-dBi=差值→倍率"
+        "description": "先统一换成dBi，换算关系：dBd+2.15=dBi，差值每差3翻一倍。关键数值：2.15和3",
+        "memory_method": "乙：1dBd+2.15=3.15dBi，甲：6.15dBi，差3，所以两倍"
     },
     {
         "id": "MC1-0667",
@@ -9335,8 +9335,8 @@
         "in_a": true,
         "in_b": true,
         "in_c": true,
-        "description": "甲天线增益等效半波长偶极天线，乙天线增益略低，效果稍差",
-        "memory_method": "关键词：相当、略差。比较：dBd基准＞dBi"
+        "description": "先统一换成dBi，换算关系：dBd+2.15=dBi，差值每差3翻一倍。关键数值：2.15和3",
+        "memory_method": "甲：0dBd+2.15=2.15dBi，乙：2dBi，差0.15，甲略好"
     },
     {
         "id": "MC1-0668",
@@ -9349,8 +9349,8 @@
         "in_a": true,
         "in_b": true,
         "in_c": true,
-        "description": "两款天线增益不同，甲天线增益使信号比乙天线强0.8dB",
-        "memory_method": "记数字：0.8。计算：dBd→dBi减2.15"
+        "description": "先统一换成dBi，换算关系：dBd+2.15=dBi，差值每差3翻一倍。关键数值：2.15和3",
+        "memory_method": "甲：4.5dBd+2.15=6.65dBi，乙5.85dBi，差0.8"
     },
     {
         "id": "MC1-0669",
@@ -9363,8 +9363,8 @@
         "in_a": true,
         "in_b": true,
         "in_c": true,
-        "description": "因天线增益不同，乙天线在接收天线产生的信号比甲天线强",
-        "memory_method": "记数字：0.8。计算：dBd→dBi减2.15"
+        "description": "先统一换成dBi，换算关系：dBd+2.15=dBi，差值每差3翻一倍。关键数值：2.15和3",
+        "memory_method": "甲：2.9dBd+2.15=5.05dBi，乙5.85dBi，差0.8"
     },
     {
         "id": "MC3-0670",
@@ -9378,7 +9378,7 @@
         "in_b": true,
         "in_c": true,
         "description": "驻波比用于衡量负载阻抗与传输线特性阻抗的匹配程度及驻波情况",
-        "memory_method": "关键词：匹配程度"
+        "memory_method": "排除：归零"
     },
     {
         "id": "MC1-0671",
@@ -9686,7 +9686,7 @@
         "in_b": true,
         "in_c": true,
         "description": "双方天线极化方式统一为垂直，信号匹配度提高，通信效果变好",
-        "memory_method": "双方→匹配好"
+        "memory_method": "双方都改用→匹配好"
     },
     {
         "id": "MC1-0693",
@@ -9700,7 +9700,7 @@
         "in_b": true,
         "in_c": true,
         "description": "双方天线极化方式统一为水平，信号匹配增强，通信效果变好",
-        "memory_method": "双方→匹配好"
+        "memory_method": "双方都改用→匹配好"
     },
     {
         "id": "MC1-0694",
@@ -9714,7 +9714,7 @@
         "in_b": true,
         "in_c": true,
         "description": "双方天线极化方式统一为左旋圆极化，信号接收更有效，通信效果变好",
-        "memory_method": "双方→匹配好"
+        "memory_method": "双方都改用→匹配好"
     },
     {
         "id": "MC1-0695",
@@ -9728,7 +9728,7 @@
         "in_b": true,
         "in_c": true,
         "description": "双方天线极化方式统一为右旋圆极化，信号传输更适配，通信效果变好",
-        "memory_method": "双方→匹配好"
+        "memory_method": "双方都改用→匹配好"
     },
     {
         "id": "MC1-0696",
@@ -9756,7 +9756,7 @@
         "in_b": true,
         "in_c": true,
         "description": "甲台天线极化方式改变但整体通信信号适配情况未变，通信效果不变",
-        "memory_method": "原不一致，一方改→不变"
+        "memory_method": "原不一致，甲改→不变"
     },
     {
         "id": "MC1-0698",
@@ -9798,7 +9798,7 @@
         "in_b": true,
         "in_c": true,
         "description": "半波长水平偶极天线极化特性更匹配，双方改用后通信效果变好",
-        "memory_method": "双方→变好，线极匹配＞圆极失配"
+        "memory_method": "双方都改用→匹配好"
     },
     {
         "id": "MC1-0701",
@@ -9812,7 +9812,7 @@
         "in_b": true,
         "in_c": true,
         "description": "地面台站近距离通联中，半波长偶极天线接收和发射时极化一致且在垂直于连线平面内可获最佳效果",
-        "memory_method": "关键词：一致。极化一致防失配"
+        "memory_method": "近距离+最佳 → 保持一致"
     },
     {
         "id": "MC1-0702",
@@ -9825,8 +9825,8 @@
         "in_a": true,
         "in_b": true,
         "in_c": true,
-        "description": "地面观测卫星时电波电场顺时针旋转，对应信号为左旋椭圆或圆极化",
-        "memory_method": "顺收左旋，逆收右旋"
+        "description": "地面方向观测与电磁波传播方向正好相反，地面观测卫星时电波电场顺时针旋转，对应信号为左旋椭圆或圆极化",
+        "memory_method": "右旋、卫星 → 左旋"
     },
     {
         "id": "MC1-0703",
@@ -9840,7 +9840,7 @@
         "in_b": true,
         "in_c": true,
         "description": "视距通联中，发射为左旋圆极化天线时，接收用指向发射点的左旋圆极化天线最佳",
-        "memory_method": "同旋匹配，异旋衰减"
+        "memory_method": "视距、左旋 → 左旋"
     },
     {
         "id": "MC1-0704",
@@ -9854,7 +9854,7 @@
         "in_b": true,
         "in_c": true,
         "description": "卫星下行采用右旋圆极化天线飞行，地面跟踪天线在卫星过顶前后极化方式不同",
-        "memory_method": "过顶反转调极化"
+        "memory_method": "记忆：前右后左"
     },
     {
         "id": "MC1-0705",
@@ -9868,7 +9868,7 @@
         "in_b": true,
         "in_c": true,
         "description": "卫星偶极发射天线旋转致极化变化，地面用指向卫星的圆极化天线可避免接收中断",
-        "memory_method": "圆极抗旋转"
+        "memory_method": "卫星、旋转 → 左右旋"
     },
     {
         "id": "MC1-0706",
@@ -9881,8 +9881,8 @@
         "in_a": true,
         "in_b": true,
         "in_c": true,
-        "description": "天线增益增加使信号强度提升，对应收信机信号强度指示档位上升",
-        "memory_method": "单电台+8.15→S5"
+        "description": "先转换为dBd，dBd=dBi-2.15，然后看差值",
+        "memory_method": "单方，8.15-2.15=6，一档，所以选S5"
     },
     {
         "id": "MC1-0707",
@@ -9895,8 +9895,8 @@
         "in_a": true,
         "in_b": true,
         "in_c": true,
-        "description": "八木天线更高增益使信号强度提升，对应收信机信号强度指示上升",
-        "memory_method": "单电台+12→S6"
+        "description": "先转换为dBd，dBd=dBi-2.15，然后看差值",
+        "memory_method": "单方，12dBd，两档，所以选S6"
     },
     {
         "id": "MC1-0708",
@@ -9909,8 +9909,8 @@
         "in_a": true,
         "in_b": true,
         "in_c": true,
-        "description": "双方都换高增益天线，信号强度提升使收信机指示档位上升",
-        "memory_method": "双电台+8.15→S6"
+        "description": "先转换为dBd，dBd=dBi-2.15，然后看差值",
+        "memory_method": "双方，8.15-2.15=6，两档（因为双方），所以选S6"
     },
     {
         "id": "MC1-0709",
@@ -9980,7 +9980,7 @@
         "in_b": true,
         "in_c": true,
         "description": "超短波视距传播距离极限主要取决于发射和接收天线距地面的相对高度",
-        "memory_method": "关键词：相对"
+        "memory_method": "关键词：相对高度"
     },
     {
         "id": "MC1-0714",
@@ -10092,7 +10092,7 @@
         "in_b": true,
         "in_c": true,
         "description": "制作半波长偶极天线，每边振子长度与工作频率有特定比例关系",
-        "memory_method": "关键词：71.3"
+        "memory_method": "半波长 → 71.3"
     },
     {
         "id": "MC1-0722",
@@ -10106,7 +10106,7 @@
         "in_b": true,
         "in_c": true,
         "description": "聚乙烯介质同轴电缆常用，其速度因子是与光速比值的特定值",
-        "memory_method": "关键词：0.65。最小的"
+        "memory_method": "低于光速所以比值肯定小于1，选0.65"
     },
     {
         "id": "MC1-0723",
@@ -10120,7 +10120,7 @@
         "in_b": true,
         "in_c": true,
         "description": "制作某相控天线阵列所需1/4波长同轴电缆长度与工作频率有关",
-        "memory_method": "48.8。最小的"
+        "memory_method": "1/4波长 → 48.8"
     },
     {
         "id": "MC1-0724",
@@ -10134,7 +10134,7 @@
         "in_b": true,
         "in_c": true,
         "description": "偶极天线谐振于工作频率且有低输入阻抗时，振子总长度有特定要求",
-        "memory_method": "偶极→1/2、奇数"
+        "memory_method": "关键值：1/2， 然后：总长度 → 奇数"
     },
     {
         "id": "MC1-0725",
@@ -10148,7 +10148,7 @@
         "in_b": true,
         "in_c": true,
         "description": "偶极天线谐振于所需工作频率的充要条件是两臂总电气长度符合特定倍数",
-        "memory_method": "谐振→1/2、整数"
+        "memory_method": "关键值：1/2， 然后：充要条件 → 整数"
     },
     {
         "id": "MC1-0726",
@@ -10162,7 +10162,7 @@
         "in_b": true,
         "in_c": true,
         "description": "振子长度为特定值时，垂直于振子方向有峰值增益",
-        "memory_method": "谐振偶极→1/2"
+        "memory_method": "关键值：1/2"
     },
     {
         "id": "MC1-0727",
@@ -10204,7 +10204,7 @@
         "in_b": true,
         "in_c": true,
         "description": "巴伦可在平衡与不平衡电路间传递射频能量并阻断寄生耦合",
-        "memory_method": "关键词：寄生耦合"
+        "memory_method": "选最长。或者关键词：寄生耦合"
     },
     {
         "id": "MC1-0730",
@@ -10232,7 +10232,7 @@
         "in_b": true,
         "in_c": true,
         "description": "水平极化偶极天线振子两臂各为四分之一波长时通信效果最佳",
-        "memory_method": "水平→四分之一"
+        "memory_method": "水平 → 四分之一。或者记忆选项有汉字“四分之一”的选四分之一"
     },
     {
         "id": "MC1-0732",
@@ -10259,8 +10259,8 @@
         "in_a": false,
         "in_b": true,
         "in_c": true,
-        "description": "短波天线发射仰角选择要考虑通信距离远近",
-        "memory_method": "角度：远低近高"
+        "description": "低仰角反射一次能传播更远距离，才能远距离通信",
+        "memory_method": "角度：近高远低"
     },
     {
         "id": "MC1-0734",
@@ -10273,7 +10273,7 @@
         "in_a": false,
         "in_b": true,
         "in_c": true,
-        "description": "短波天线架设高度规划需结合通信距离",
+        "description": "架设越高反射一次能传播更远距离，才能远距离通信",
         "memory_method": "高度：远高近低"
     },
     {
@@ -10302,7 +10302,7 @@
         "in_b": true,
         "in_c": true,
         "description": "HF远距离通信中大地电导率越高天线效果越好",
-        "memory_method": "电导率高→效果越好"
+        "memory_method": "电导率高 → 效果越好"
     },
     {
         "id": "MC1-0737",
@@ -10316,7 +10316,7 @@
         "in_b": true,
         "in_c": true,
         "description": "水平偶极天线架高降至距地面1/10波长处，馈电点阻抗会下降",
-        "memory_method": "降低→下降"
+        "memory_method": "降低 → 下降"
     },
     {
         "id": "MC1-0738",
@@ -10330,7 +10330,7 @@
         "in_b": true,
         "in_c": true,
         "description": "导电良好地面上，短波天线辐射仰角主要受天线距地面高度与波长之比影响",
-        "memory_method": "关键词：高波比"
+        "memory_method": "高波比"
     },
     {
         "id": "MC1-0739",
@@ -10403,7 +10403,7 @@
         "in_b": true,
         "in_c": true,
         "description": "多频段天线工作在7、14、28MHz，不谐振振子高阻抗使并联总阻抗维持在50欧左右",
-        "memory_method": "3/2，50欧，没有17欧",
+        "memory_method": "先排除两个短的，然后选结尾是50欧的",
         "file": "LK0945.jpg"
     },
     {
@@ -10446,7 +10446,7 @@
         "in_b": true,
         "in_c": true,
         "description": "八木天线前后比指主瓣与反向辐射功率的比值",
-        "memory_method": "主瓣与反向之比"
+        "memory_method": "主瓣与【反向】之比"
     },
     {
         "id": "MC1-0747",
@@ -10474,7 +10474,7 @@
         "in_b": true,
         "in_c": true,
         "description": "行波天线终端无感电阻可避免反射驻波，让大部分能量辐射，少部分在电阻耗散",
-        "memory_method": "关键词：避免"
+        "memory_method": "关键词：避免、驻波"
     },
     {
         "id": "MC1-0749",
@@ -10488,7 +10488,7 @@
         "in_b": true,
         "in_c": true,
         "description": "这种类似“T”形天线，馈线芯线连垂直导线，屏蔽层连地网，极化方式为垂直",
-        "memory_method": "垂部主辐射，联想图标：T→⊥"
+        "memory_method": "小明捣鼓天线 → 垂直"
     },
     {
         "id": "MC1-0750",
@@ -10502,7 +10502,7 @@
         "in_b": true,
         "in_c": true,
         "description": "T2FD天线半边振子直立悬挂，馈电端连接方式决定其极化方式为垂直",
-        "memory_method": "直立必垂直，联想图标：T→⊥"
+        "memory_method": "小明捣鼓天线 → 垂直"
     },
     {
         "id": "MC1-0751",
@@ -10516,7 +10516,7 @@
         "in_b": true,
         "in_c": true,
         "description": "环形天线发射的电磁波，其磁场分量垂直于环所在平面",
-        "memory_method": "磁垂环面"
+        "memory_method": "关键词：垂直"
     },
     {
         "id": "MC3-0752",
@@ -10530,7 +10530,7 @@
         "in_b": true,
         "in_c": true,
         "description": "磁场耦合可调谐环形天线可调整尺寸获低输入SWR，选用耐压电容承载功率，尺寸影响效率和频率",
-        "memory_method": "调谐匹配，尺寸限频"
+        "memory_method": "排除：增益非常低"
     },
     {
         "id": "MC3-0753",
@@ -10558,7 +10558,7 @@
         "in_b": true,
         "in_c": true,
         "description": "天线调谐器作用是将天馈系统输入阻抗变换为发射机所需负载阻抗",
-        "memory_method": "天馈阻抗→负载阻抗"
+        "memory_method": "关键词：阻抗"
     },
     {
         "id": "MC1-0755",
@@ -10572,7 +10572,7 @@
         "in_b": true,
         "in_c": true,
         "description": "天调可补偿失配天线参数以让发射机输出规定射频功率来改善通联效果",
-        "memory_method": "关键词：补偿失配"
+        "memory_method": "关键词：功率"
     },
     {
         "id": "MC1-0756",
@@ -10628,8 +10628,8 @@
         "in_a": false,
         "in_b": true,
         "in_c": true,
-        "description": "天线的增益为3.85dBd且馈入功率为10W时，其等效全向辐射功率为40W。",
-        "memory_method": "40w"
+        "description": "先计算Gi（dBd+2.15），每差3则翻一倍，然后计算全向辐射功率",
+        "memory_method": "3.85dBd+2.15=6，两个三则2*2=4倍，所以10W*4=40W"
     },
     {
         "id": "MC1-0760",
@@ -10642,8 +10642,8 @@
         "in_a": false,
         "in_b": true,
         "in_c": true,
-        "description": "天线的增益为5.15dBi且馈入功率为10W时，其有效辐射功率为20W。",
-        "memory_method": "20W"
+        "description": "先计算Gi（dBi-2.15），每差3则翻一倍，然后计算全向辐射功率",
+        "memory_method": "5.15dBi-2.15=3，一个三则2倍，所以10W*2=20W"
     },
     {
         "id": "MC3-0761",
@@ -10685,7 +10685,7 @@
         "in_b": true,
         "in_c": true,
         "description": "特性阻抗为50欧的同轴电缆末端接50欧姆负载电阻时，无论电缆长度和工作频率如何，用天线阻抗分析仪测量其始端阻抗均为50欧。",
-        "memory_method": "电阻→无关"
+        "memory_method": "末端【电阻】→ 无关"
     },
     {
         "id": "MC1-0764",
@@ -10699,7 +10699,7 @@
         "in_b": true,
         "in_c": true,
         "description": "开路同轴电缆始端阻抗与电长度有关，特定电长度下有接近无穷大或零的情况",
-        "memory_method": "开路→偶大奇小"
+        "memory_method": "末端【开路】→ 偶大奇小。短奇偶，开相反"
     },
     {
         "id": "MC1-0765",
@@ -10713,7 +10713,7 @@
         "in_b": true,
         "in_c": true,
         "description": "短路同轴电缆始端阻抗受电长度影响，不同电长度下接近无穷大或零",
-        "memory_method": "短路→奇大偶小"
+        "memory_method": "末端【短路】→ 奇大偶小。短奇偶，开相反"
     },
     {
         "id": "MC1-0766",
@@ -10755,7 +10755,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电磁波由电场和磁场两个部分组成",
-        "memory_method": "电磁波→电磁场"
+        "memory_method": "电磁波→电场+磁场"
     },
     {
         "id": "MC1-0769",
@@ -10783,7 +10783,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电磁波各周期传播的相等距离叫波长",
-        "memory_method": "周期传播距"
+        "memory_method": "波长"
     },
     {
         "id": "MC1-0771",
@@ -10853,7 +10853,7 @@
         "in_b": true,
         "in_c": true,
         "description": "自由空间两电台距离从100km增至500km，接收方信号功率变为-129.6dBm",
-        "memory_method": "500km→-129.6"
+        "memory_method": "500km → -129.6"
     },
     {
         "id": "MC1-0776",
@@ -10867,7 +10867,7 @@
         "in_b": true,
         "in_c": true,
         "description": "距离从100km增至1000km，根据路径损耗公式，接收方信号功率会因距离增加而降低",
-        "memory_method": "1000km→-135.6"
+        "memory_method": "1000km → -135.6"
     },
     {
         "id": "MC1-0777",
@@ -10881,7 +10881,7 @@
         "in_b": true,
         "in_c": true,
         "description": "频率从145MHz变为435MHz，依据路径损耗公式，接收方信号功率会因频率升高而降低",
-        "memory_method": "435MHz→-125.1"
+        "memory_method": "435MHz → -125.1"
     },
     {
         "id": "MC1-0778",
@@ -10895,7 +10895,7 @@
         "in_b": true,
         "in_c": true,
         "description": "发射功率从1W降为0.25W，接收方信号功率会随发射功率降低而降低",
-        "memory_method": "0.25W→-121.6"
+        "memory_method": "0.25W → -121.6"
     },
     {
         "id": "MC1-0779",
@@ -10909,7 +10909,7 @@
         "in_b": true,
         "in_c": true,
         "description": "距离从100km增至500km，信号强度减弱，变为略低于S6",
-        "memory_method": "500km→略低S6"
+        "memory_method": "距离变化：略低， 500→降两档S6，1000→降三档S5"
     },
     {
         "id": "MC1-0780",
@@ -10923,7 +10923,7 @@
         "in_b": true,
         "in_c": true,
         "description": "距离从100km增至1000km，信号强度减弱，变为略低于S5",
-        "memory_method": "1000km→略低S5"
+        "memory_method": "距离变化：略低， 500→降两档S6，1000→降三档S5"
     },
     {
         "id": "MC1-0781",
@@ -10937,7 +10937,7 @@
         "in_b": true,
         "in_c": true,
         "description": "频率从145MHz改为435MHz，信号强度变化，变为略高于S6",
-        "memory_method": "435MHz→略高S6"
+        "memory_method": "改频率：略高，降两档S6"
     },
     {
         "id": "MC1-0782",
@@ -10951,7 +10951,7 @@
         "in_b": true,
         "in_c": true,
         "description": "发射功率减为原来1/4，信号强度降低6dB，信号报告下降一级",
-        "memory_method": "功率→S7"
+        "memory_method": "降功率：S7"
     },
     {
         "id": "MC1-0783",
@@ -10965,7 +10965,7 @@
         "in_b": true,
         "in_c": true,
         "description": "发射功率从100瓦降至25瓦，信号强度降低6dB，信号报告降一级",
-        "memory_method": "功率→S7"
+        "memory_method": "降功率：S7"
     },
     {
         "id": "MC1-0784",
@@ -10979,7 +10979,7 @@
         "in_b": true,
         "in_c": true,
         "description": "发射功率从80瓦降至5瓦，信号强度降低12dB，信号报告降两级",
-        "memory_method": "QRP→S6"
+        "memory_method": "QRP：S6"
     },
     {
         "id": "MC2-0785",
@@ -11035,7 +11035,7 @@
         "in_b": true,
         "in_c": true,
         "description": "待测天线增益dBd值由半波偶极天线与待测天线射频功率比值的对数关系确定",
-        "memory_method": "关键词：Po/P",
+        "memory_method": "关键词：Po/P，可以把图片看做分数，上面是分子下面是分母",
         "file": "LK0927.jpg"
     },
     {
@@ -11050,7 +11050,7 @@
         "in_b": true,
         "in_c": true,
         "description": "待测天线增益dBi值是在dBd值基础上加2.15",
-        "memory_method": "关键词：Po/P",
+        "memory_method": "关键词：Po/P，可以把图片看做分数，上面是分子下面是分母",
         "file": "LK0928.jpg"
     },
     {
@@ -11079,7 +11079,7 @@
         "in_b": true,
         "in_c": true,
         "description": "地面波衰减特性取决于电波频率、大地导电情况和传播距离",
-        "memory_method": "关键词：电导率"
+        "memory_method": "地面传播 → 大地电导率"
     },
     {
         "id": "MC1-0792",
@@ -11093,7 +11093,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电离层能使无线电波在全球范围传播",
-        "memory_method": "0"
+        "memory_method": "电离层当镜子反射"
     },
     {
         "id": "MC1-0793",
@@ -11135,7 +11135,7 @@
         "in_b": true,
         "in_c": true,
         "description": "无线电信号经地面和电离层反射后，极化特性和不同频率成分会随时间随机改变",
-        "memory_method": "关键词：随机改变"
+        "memory_method": "排除：边带反转、广播电台"
     },
     {
         "id": "MC1-0796",
@@ -11163,7 +11163,7 @@
         "in_b": true,
         "in_c": true,
         "description": "依靠电离层反射远距离通联时，天波反射特性使天线最佳极化方式不确定",
-        "memory_method": "关键词：随机改变"
+        "memory_method": "远距离通信：不确定"
     },
     {
         "id": "MC1-0798",
@@ -11177,7 +11177,7 @@
         "in_b": true,
         "in_c": true,
         "description": "2000千米HF通联中一方改变天线极化方式，通信效果因天波反射电波极化随机变化而不确定",
-        "memory_method": "关键词：随机变化"
+        "memory_method": "2000KM（远距离）：不确定"
     },
     {
         "id": "MC3-0799",
@@ -11205,7 +11205,7 @@
         "in_b": true,
         "in_c": true,
         "description": "最高可用频率指地球上两点间天波HF联络可用的最高频率，受昼夜影响，其变化会影响VHF/UHF传播及天线使用",
-        "memory_method": "关键词：最高频率、夜间"
+        "memory_method": "关键词：HF（不是VHF和UHF）、夜间白天"
     },
     {
         "id": "MC1-0801",
@@ -11261,7 +11261,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电离层对短波传播的影响主要是F2、F1和E层反射电波，D层吸收电波",
-        "memory_method": "口诀：21E反D不反"
+        "memory_method": "口诀：D不反其他反"
     },
     {
         "id": "MC1-0805",
@@ -11289,7 +11289,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余无线电在低频段利用‘灰线’联络，是因通信双方同时在灰线时利于天波多跳反射建联络",
-        "memory_method": "关键词：多跳"
+        "memory_method": "关键词：多跳 或者 同时位于灰线"
     },
     {
         "id": "MC1-0807",
@@ -11345,7 +11345,7 @@
         "in_b": true,
         "in_c": true,
         "description": "K指数作为反映地磁活动程度指标，有其特定取值范围",
-        "memory_method": "最小到最大"
+        "memory_method": "最小到最大，和信号报告类似"
     },
     {
         "id": "MC1-0811",
@@ -11373,7 +11373,7 @@
         "in_b": true,
         "in_c": true,
         "description": "太阳黑子平均数有其变化规律，会影响短波DX通信",
-        "memory_method": "SSN大→传播好"
+        "memory_method": "SSN大 → 传播好"
     },
     {
         "id": "MC1-0813",
@@ -11401,7 +11401,7 @@
         "in_b": true,
         "in_c": true,
         "description": "F107参数在业余无线电HF传播预测中有特定意义",
-        "memory_method": "关键词：通量指数"
+        "memory_method": "关键词：cm。不是频率"
     },
     {
         "id": "MC1-0815",
@@ -11415,7 +11415,7 @@
         "in_b": true,
         "in_c": true,
         "description": "F107数值增大时，安静太阳辐射增强、电离层密度变大，利于F层反射DX信号",
-        "memory_method": "F107大→传播好"
+        "memory_method": "关键词：有利。 F107大 → 传播好"
     },
     {
         "id": "MC1-0816",
@@ -11443,7 +11443,7 @@
         "in_b": true,
         "in_c": true,
         "description": "极高频EHF（毫米波）频段受降雨影响最为严重",
-        "memory_method": "雨滴尺寸→毫米。雨衰排序：毫米波 > 厘米波 > 米波"
+        "memory_method": "雨滴尺寸→毫米。雨衰排序：毫米波 > 厘米波 > 米波。"
     },
     {
         "id": "MC1-0818",
@@ -11792,7 +11792,7 @@
         "in_a": true,
         "in_b": true,
         "in_c": true,
-        "description": "超外差式收信机在145.00MHz接收信号时，镜频干扰可能来自235.10MHz或54.90MHz",
+        "description": "镜频干扰=频率±两倍中频",
         "memory_method": "全部数值里选最大的"
     },
     {
@@ -11806,7 +11806,7 @@
         "in_a": true,
         "in_b": true,
         "in_c": true,
-        "description": "超外差式收信机在145.00MHz接收信号时，镜频干扰可能来自239.50MHz或50.50MHz",
+        "description": "镜频干扰=频率±两倍中频",
         "memory_method": "全部数值里选最大的"
     },
     {
@@ -11820,7 +11820,7 @@
         "in_a": true,
         "in_b": true,
         "in_c": true,
-        "description": "镜频干扰可能来自与435.00MHz相差两倍第一中频47.25MHz的频率",
+        "description": "镜频干扰=频率±两倍中频",
         "memory_method": "全部数值里选最大的"
     },
     {
@@ -11834,7 +11834,7 @@
         "in_a": true,
         "in_b": true,
         "in_c": true,
-        "description": "镜频干扰频率可通过接收频率加减两倍中频得出，435.00MHz加减2×58.525MHz可得镜频干扰可能频率",
+        "description": "镜频干扰=频率±两倍中频",
         "memory_method": "全部数值里选最大的"
     },
     {
@@ -11877,7 +11877,7 @@
         "in_b": true,
         "in_c": true,
         "description": "根据功率、电压、效率关系，直流13.8伏下，工作电流约为射频输出功率除以（13.8×0.8）",
-        "memory_method": "0.091"
+        "memory_method": "选项中0最多的一项，一样多选值大的"
     },
     {
         "id": "MC1-0849",
@@ -11891,7 +11891,7 @@
         "in_b": true,
         "in_c": true,
         "description": "交流220伏下，考虑电源效率约80%，发射时工作电流约为射频输出功率除以（220×0.8）",
-        "memory_method": "0.0057"
+        "memory_method": "选项中0最多的一项，一样多选值大的"
     },
     {
         "id": "MC1-0850",
@@ -11905,7 +11905,7 @@
         "in_b": true,
         "in_c": true,
         "description": "按电源效率算，业余电台FM发射10秒消耗电能与射频输出功率成正比",
-        "memory_method": "3.5e-06"
+        "memory_method": "选项中0最多的一项，一样多选值大的"
     },
     {
         "id": "MC1-0851",
@@ -11947,7 +11947,7 @@
         "in_b": true,
         "in_c": true,
         "description": "业余电台不同通信方式所需保证信息传输质量的必要带宽各有不同",
-        "memory_method": "3000开头、5Mhz结尾"
+        "memory_method": "记：ATV → 5MHz"
     },
     {
         "id": "MC1-0854",
@@ -11975,7 +11975,7 @@
         "in_b": true,
         "in_c": true,
         "description": "单边带RTTY通信，50波特、170Hz频偏下必要带宽通常不超某值",
-        "memory_method": "RTTY+170：450"
+        "memory_method": "RTTY，不是话音通信：450"
     },
     {
         "id": "MC1-0856",
@@ -11989,7 +11989,7 @@
         "in_b": true,
         "in_c": true,
         "description": "单边带话音通信兼传50波特、70Hz频偏RTTY消息时必要带宽约为某值",
-        "memory_method": "RTTY+70：2700"
+        "memory_method": "RTTY，是话音通信：2700"
     },
     {
         "id": "MC1-0857",
@@ -12045,7 +12045,7 @@
         "in_b": true,
         "in_c": true,
         "description": "接收机抗拒工作频率附近干扰信号能力用信道带宽等指标表示",
-        "memory_method": "抗拒+近→矩形系数"
+        "memory_method": "抗拒+近 → 矩形系数"
     },
     {
         "id": "MC1-0861",
@@ -12059,7 +12059,7 @@
         "in_b": true,
         "in_c": true,
         "description": "接收机接收SSB话音信号时频响均匀程度的选择性指标包括频带内波动和信道宽度",
-        "memory_method": "SSB→波动"
+        "memory_method": "SSB → 带内波动"
     },
     {
         "id": "MC1-0862",
@@ -12073,7 +12073,7 @@
         "in_b": true,
         "in_c": true,
         "description": "接收机抗拒远距工作频率强干扰信号能力的选择性指标是前端带宽",
-        "memory_method": "抗拒+远：前端带宽"
+        "memory_method": "抗拒+远 → 前端带宽"
     },
     {
         "id": "MC1-0863",
@@ -12087,7 +12087,7 @@
         "in_b": true,
         "in_c": true,
         "description": "接收机抗拒特定强干扰信号能力的选择性指标涉及镜像抑制等方面",
-        "memory_method": "抗拒+两倍：抑制比"
+        "memory_method": "抗拒+两倍 → 抑制比"
     },
     {
         "id": "MC1-0864",
@@ -12101,7 +12101,7 @@
         "in_b": true,
         "in_c": true,
         "description": "接收机灵敏度指标数值越小代表接收微弱信号能力越强",
-        "memory_method": "灵敏度小→接收能力强"
+        "memory_method": "灵敏度 越小越强"
     },
     {
         "id": "MC1-0865",
@@ -12143,7 +12143,7 @@
         "in_b": true,
         "in_c": true,
         "description": "VHF/UHF频段最小刻度不同是因HF频段背景噪声高使可感知最小信号电平高出约20dB",
-        "memory_method": "HF噪高，灵敏度要求低"
+        "memory_method": "关键词：高、20dB"
     },
     {
         "id": "MC1-0868",
@@ -12171,7 +12171,7 @@
         "in_b": true,
         "in_c": true,
         "description": "输入端口测得最小电压为1μV，以电压电平μV表示灵敏度就是该最小电压值",
-        "memory_method": "0"
+        "memory_method": "算μV，翻一倍；算dBm:0.5→113，1→107；算dbμV:0.5→0，1→6"
     },
     {
         "id": "MC1-0870",
@@ -12185,7 +12185,7 @@
         "in_b": true,
         "in_c": true,
         "description": "根据输入电压、阻抗和功率电平转换公式，1μV在50欧阻抗下功率电平为 -107dBm",
-        "memory_method": "0"
+        "memory_method": "算μV，翻一倍；算dBm:0.5→113，1→107；算dbμV:0.5→0，1→6"
     },
     {
         "id": "MC1-0871",
@@ -12199,7 +12199,7 @@
         "in_b": true,
         "in_c": true,
         "description": "电压电平dBμV是基于1μV为参考，输入最小电压为1μV时电压电平dBμV为0",
-        "memory_method": "0"
+        "memory_method": "算μV，翻一倍；算dBm:0.5→113，1→107；算dbμV:0.5→0，1→6"
     },
     {
         "id": "MC1-0872",
@@ -12213,7 +12213,7 @@
         "in_b": true,
         "in_c": true,
         "description": "接收机灵敏度以电压电平μV表示时，就是天线输入端口处测得的输入信号最小电压",
-        "memory_method": "0"
+        "memory_method": "算μV，翻一倍；算dBm:0.5→113，1→107；算dbμV:0.5→0，1→6"
     },
     {
         "id": "MC1-0873",
@@ -12227,7 +12227,7 @@
         "in_b": true,
         "in_c": true,
         "description": "已知输入信号最小电压和阻抗，可据此算出以功率电平dBm表示的接收机灵敏度",
-        "memory_method": "0"
+        "memory_method": "算μV，翻一倍；算dBm:0.5→113，1→107；算dbμV:0.5→0，1→6"
     },
     {
         "id": "MC1-0874",
@@ -12241,7 +12241,7 @@
         "in_b": true,
         "in_c": true,
         "description": "以电压电平dBμV表示接收机灵敏度，可通过输入信号最小电压计算得出",
-        "memory_method": "0"
+        "memory_method": "算μV，翻一倍；算dBm:0.5→113，1→107；算dbμV:0.5→0，1→6"
     },
     {
         "id": "MC1-0875",
@@ -12255,7 +12255,7 @@
         "in_b": true,
         "in_c": true,
         "description": "依据接收机天线输入阻抗和灵敏度的电压值，能算出对应的功率电平",
-        "memory_method": "0"
+        "memory_method": "算μV，翻一倍；算dBm:0.5→113，1→107；算dbμV:0.5→0，1→6"
     },
     {
         "id": "MC1-0876",
@@ -12269,7 +12269,7 @@
         "in_b": true,
         "in_c": true,
         "description": "根据接收机天线输入阻抗和灵敏度指标的电压值，可换算出相应功率电平",
-        "memory_method": "0"
+        "memory_method": "算μV，翻一倍；算dBm:0.5→113，1→107；算dbμV:0.5→0，1→6"
     },
     {
         "id": "MC1-0877",
@@ -12339,7 +12339,7 @@
         "in_b": true,
         "in_c": true,
         "description": "接收微弱信号时，接收机噪声系数大于1，同样灵敏度下越接近1越好",
-        "memory_method": "Fn：大于1、接近1"
+        "memory_method": "关键词：大于、接近"
     },
     {
         "id": "MC1-0882",
@@ -12367,7 +12367,7 @@
         "in_b": true,
         "in_c": true,
         "description": "接收微弱信号时，接收机噪声指数大于0，同样灵敏度下越接近0越好",
-        "memory_method": "NF：大于0、接近0"
+        "memory_method": "关键词：大于、接近"
     },
     {
         "id": "MC1-0884",
@@ -12395,7 +12395,7 @@
         "in_b": true,
         "in_c": true,
         "description": "理想放大器或接收机无内部噪声，其噪声系数为1，噪声指数为0dB，噪声温度为0°K",
-        "memory_method": "理想情况：Fn=1, NF=0, Te=0。记忆：1 0 0"
+        "memory_method": "记温度：理想→0K，正常温度→290K"
     },
     {
         "id": "MC1-0886",
@@ -12409,7 +12409,7 @@
         "in_b": true,
         "in_c": true,
         "description": "天线放大器内部噪声与输入热噪声等效时，噪声系数为2，噪声指数为3dB，噪声温度为290°K",
-        "memory_method": "温度选290K（其他温度太低了）"
+        "memory_method": "记温度：理想→0K，正常温度→290K"
     },
     {
         "id": "MC3-0887",
@@ -12423,7 +12423,7 @@
         "in_b": true,
         "in_c": true,
         "description": "SDR设备基于软件实现功能，相比模拟收发信机，有噪声低、精度高、少受元器件老化影响的优势",
-        "memory_method": "排除：时延"
+        "memory_method": "排除：时延短"
     },
     {
         "id": "MC3-0888",
@@ -12451,7 +12451,7 @@
         "in_b": true,
         "in_c": true,
         "description": "SDR收发信机可对特定信号编解码，是因用软件实现了相应功能",
-        "memory_method": "关键词：PC"
+        "memory_method": "关键词：PC 或者 软件"
     },
     {
         "id": "MC1-0890",
@@ -12535,7 +12535,7 @@
         "in_b": true,
         "in_c": true,
         "description": "因近场波阻抗变化大，且信号变强会使接收机前级器件过载、鞭状天线进入非线性区，所以要重调鞭状天线长度",
-        "memory_method": "近场问题：阻抗变→方向乱"
+        "memory_method": "关键词：恒定"
     },
     {
         "id": "MC2-0896",
@@ -12549,7 +12549,7 @@
         "in_b": true,
         "in_c": true,
         "description": "磁棒天线接收特性与环形天线相似且设备小巧，接近发射机时磁棒饱和有自动增益控制和类似衰减器作用",
-        "memory_method": "关键词：并且、小巧"
+        "memory_method": "关键词：小巧、熟练应对"
     },
     {
         "id": "MC2-0897",
@@ -12563,7 +12563,7 @@
         "in_b": true,
         "in_c": true,
         "description": "二单元天线有单向性且轻便实用，近场区定位时单元数非关键因素",
-        "memory_method": "关键词：轻便、零点"
+        "memory_method": "排除：方向、方位"
     },
     {
         "id": "MC2-0898",
@@ -12577,7 +12577,7 @@
         "in_b": true,
         "in_c": true,
         "description": "HB9CV天线是双驱动单元八木天线，带宽宽、单向特性好且便携，虽需电容耦合抵消感抗，但仍是业余无线电测向的实用天线",
-        "memory_method": "关键词：双驱、便携"
+        "memory_method": "关键词：225、携带"
     },
     {
         "id": "MC1-0899",
@@ -12591,7 +12591,7 @@
         "in_b": true,
         "in_c": true,
         "description": "在HF业余频段数据通信段SSB方式下，含两音调交替变化信号的通信方式可能是RTTY",
-        "memory_method": "双音跳变→RTTY"
+        "memory_method": "双音跳变 → RTTY"
     },
     {
         "id": "MC2-0900",
@@ -12605,7 +12605,7 @@
         "in_b": true,
         "in_c": true,
         "description": "在HF业余频段数据通信段SSB方式下，音调不变且颤动的信号通信方式可能是BPSK31或QPSK31",
-        "memory_method": "单音相抖→PSK"
+        "memory_method": "单音相抖 → PSK"
     },
     {
         "id": "MC1-0901",
@@ -12619,7 +12619,7 @@
         "in_b": true,
         "in_c": true,
         "description": "在HF业余频段SSB方式下，音调周期性变化且有“笃、笃”或“咯、咯”声的信号通信方式可能是SSTV或FAX",
-        "memory_method": "周期嘟嘟声→SSTV"
+        "memory_method": "周期嘟嘟声 → SSTV"
     },
     {
         "id": "MC1-0902",
@@ -12633,7 +12633,7 @@
         "in_b": true,
         "in_c": true,
         "description": "CW信号的频谱表现为一条闪动的垂直线",
-        "memory_method": "CW→单闪动垂线"
+        "memory_method": "CW → 单闪动垂线"
     },
     {
         "id": "MC1-0903",
@@ -12647,7 +12647,7 @@
         "in_b": true,
         "in_c": true,
         "description": "RTTY信号的频谱表现为两条闪动的垂直线",
-        "memory_method": "RTTY→双闪动垂线"
+        "memory_method": "RTTY → 双闪动垂线"
     },
     {
         "id": "MC1-0904",
@@ -12661,7 +12661,7 @@
         "in_b": true,
         "in_c": true,
         "description": "SSB话音信号的频谱表现为一组随语音出现和变化的非对称垂直线",
-        "memory_method": "SSB→非对称垂线"
+        "memory_method": "话音 → 随语音"
     },
     {
         "id": "MC1-0905",
@@ -12675,7 +12675,7 @@
         "in_b": true,
         "in_c": true,
         "description": "AM话音信号的频谱表现为一条固定垂直线左右对称伴随一组随语音变化的垂直线",
-        "memory_method": "AM→固定垂线+左右对称垂线"
+        "memory_method": "话音 → 随语音"
     },
     {
         "id": "MC1-0906",
@@ -12689,7 +12689,7 @@
         "in_b": true,
         "in_c": true,
         "description": "FM话音信号频谱有随语音变化高度的垂直线，左右对称且伴有随语音变化的垂直线",
-        "memory_method": "FM→变化垂线+左右对称垂线"
+        "memory_method": "话音 → 随语音"
     },
     {
         "id": "MC1-0907",
@@ -12703,7 +12703,7 @@
         "in_b": true,
         "in_c": true,
         "description": "PSK31信号频谱呈现为宽度很窄的单峰",
-        "memory_method": "PSK→单窄峰"
+        "memory_method": "PSK → 单窄峰"
     },
     {
         "id": "MC1-0908",
@@ -12899,7 +12899,7 @@
         "in_b": true,
         "in_c": false,
         "description": "绝缘体物理性质改变后，可能意外产生介质损耗。",
-        "memory_method": "积灰受潮→介质损耗"
+        "memory_method": "积灰受潮 → 介质损耗"
     },
     {
         "id": "MC4-0922",
@@ -12927,7 +12927,7 @@
         "in_b": true,
         "in_c": false,
         "description": "双极型、氮化镓、LDMOS三极管属于由半导体材料制成的器件",
-        "memory_method": "排除：真空管。它不是半导体"
+        "memory_method": "排除：真空管。它不是半导体材料"
     },
     {
         "id": "MC3-0924",
@@ -12955,7 +12955,7 @@
         "in_b": true,
         "in_c": true,
         "description": "导体在静电场中静电平衡成等势体且内部场强为零、外表面有电荷，外表面曲率小可能尖端放电",
-        "memory_method": "等势内场零，曲小电荷聚"
+        "memory_method": "场强零、曲率小"
     },
     {
         "id": "MC2-0926",
@@ -13599,7 +13599,7 @@
         "in_b": true,
         "in_c": true,
         "description": "用电池标称安时数与收发信机平均工作电流的关系可估算电池供电时长",
-        "memory_method": "时长=安时÷电流"
+        "memory_method": "关键词：安时"
     },
     {
         "id": "MC1-0972",
@@ -13669,7 +13669,7 @@
         "in_b": true,
         "in_c": true,
         "description": "用交流电压档测简单正弦交流电压，读数为电压有效值",
-        "memory_method": "交流读有效值"
+        "memory_method": "正弦波：交流档→有效值，直流档→零值"
     },
     {
         "id": "MC1-0977",
@@ -13683,7 +13683,7 @@
         "in_b": true,
         "in_c": true,
         "description": "用直流电压档测简单正弦交流电压，读数视为零值",
-        "memory_method": "直流档无视交流"
+        "memory_method": "正弦波：交流档→有效值，直流档→零值"
     },
     {
         "id": "MC1-0978",
@@ -13739,7 +13739,7 @@
         "in_b": true,
         "in_c": true,
         "description": "判断干电池是否失效，可测端电压，显著低于标称值则失效",
-        "memory_method": "电压骤降即失效"
+        "memory_method": "电压过低说明失效"
     },
     {
         "id": "MC1-0982",
@@ -13753,7 +13753,7 @@
         "in_b": true,
         "in_c": true,
         "description": "测50欧姆接地天线电阻为0欧，可能天线与地有电感直流通路",
-        "memory_method": "电感通直流"
+        "memory_method": "关键词：电感"
     },
     {
         "id": "MC1-0983",
@@ -13767,7 +13767,7 @@
         "in_b": true,
         "in_c": true,
         "description": "测50欧姆接地天线电阻为无穷大，可能天线与地无电感直流通路",
-        "memory_method": "无直流通路"
+        "memory_method": "关键词：电感"
     },
     {
         "id": "MC1-0984",
@@ -13781,7 +13781,7 @@
         "in_b": true,
         "in_c": true,
         "description": "测自制偶极天线中心馈电点阻抗，可能读数为无穷大",
-        "memory_method": "偶极直流开"
+        "memory_method": "偶极 → 无穷大"
     },
     {
         "id": "MC1-0985",
@@ -13795,7 +13795,7 @@
         "in_b": true,
         "in_c": true,
         "description": "测终端开路的50欧同轴电缆电阻，可能读数为无穷大",
-        "memory_method": "开路阻无穷"
+        "memory_method": "开路 → 无穷大"
     },
     {
         "id": "MC1-0986",
@@ -13809,7 +13809,7 @@
         "in_b": true,
         "in_c": true,
         "description": "终端短路的理想同轴电缆中心导体和屏蔽层间电阻为0欧姆",
-        "memory_method": "短路阻零"
+        "memory_method": "短路 → 0欧姆"
     },
     {
         "id": "MC1-0987",
