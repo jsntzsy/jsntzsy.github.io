@@ -3557,7 +3557,7 @@
     },
     {
         "id": "MC1-0255",
-        "question": "业余无线电爱好者有时会在通联中使用广为流传的另类字母解释法来拼读呼号、名字和文字。这些常见于 DX通联。Japan America Two Italy GermanyYokohama为：",
+        "question": "业余无线电爱好者有时会在通联中使用广为流传的另类字母解释法来拼读呼号、名字和文字。这些常见于 DX通联。Japan America Two Italy Germany Yokohama为：",
         "answer": "A",
         "A": "JA2IGY",
         "B": "F5EQU",
@@ -3571,7 +3571,7 @@
     },
     {
         "id": "MC1-0256",
-        "question": "业余无线电爱好者有时会在通联中使用广为流传的另类字母解释法来拼读呼号、名字和文字。这些常见于 DX通联。Florida Five England QueenUnited为：",
+        "question": "业余无线电爱好者有时会在通联中使用广为流传的另类字母解释法来拼读呼号、名字和文字。这些常见于 DX通联。Florida Five England Queen United为：",
         "answer": "A",
         "A": "F5EQU",
         "B": "WH8ZDP",
@@ -3585,7 +3585,7 @@
     },
     {
         "id": "MC1-0257",
-        "question": "业余无线电爱好者有时会在通联中使用广为流传的另类字母解释法来拼读呼号、名字和文字。这些常见于 DX通联。Washington Honolulu Eight Zanzibar DenmarkPortugal为：",
+        "question": "业余无线电爱好者有时会在通联中使用广为流传的另类字母解释法来拼读呼号、名字和文字。这些常见于 DX通联。Washington Honolulu Eight Zanzibar Denmark Portugal为：",
         "answer": "A",
         "A": "WH8ZDP",
         "B": "F5EQU",
@@ -3599,7 +3599,7 @@
     },
     {
         "id": "MC1-0258",
-        "question": "业余无线电爱好者有时会在通联中使用广为流传的另类字母解释法来拼读呼号、名字和文字。这些常见于 DX通联。Sugar Five Three Mexico NorwayOntario为：",
+        "question": "业余无线电爱好者有时会在通联中使用广为流传的另类字母解释法来拼读呼号、名字和文字。这些常见于 DX通联。Sugar Five Three Mexico Norway Ontario为：",
         "answer": "A",
         "A": "S53MNO",
         "B": "F5EQU",
@@ -4666,9 +4666,9 @@
         "question": "进行 CW通联，如果对方完美抄收了我们发出的消息，他们会在回复时用缩语“R”或 Q简语“QSL”告知。但是，对方有时会用“CPI”替代“R”或“QSL”。这是因为：",
         "answer": "A",
         "A": "这里的“CPI”对应英语“copied”，也是“抄收”之意。这可以用来减少用词重复",
-        "B": "这里的“CPI对应英语“code perfectlyinterpreted”，表示消息完美抄收了",
-        "C": "这里的“CPI”对应英语“code printedimmediately”，表示消息打印出来了",
-        "D": "那是谦辞：Cool，prettyinteresting。那表示我们双方沟通顺畅",
+        "B": "这里的“CPI对应英语“code perfectly interpreted”，表示消息完美抄收了",
+        "C": "这里的“CPI”对应英语“code printe dimmediately”，表示消息打印出来了",
+        "D": "那是谦辞：Cool，pretty interesting。那表示我们双方沟通顺畅",
         "in_a": false,
         "in_b": true,
         "in_c": true,
