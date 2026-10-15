@@ -3473,7 +3473,7 @@
     },
     {
         "id": "MC1-0249",
-        "question": "需要拼出呼号、术语和必要的文字时，业余无线电爱好者普遍使用 ITU语音字母表中规定",
+        "question": "需要拼出呼号、术语和必要的文字时，业余无线电爱好者普遍使用 ITU语音字母表中规定的字母拼读法。呼号4U1UN可以拼读为：",
         "answer": "A",
         "A": "Four Uniform One Uniform November",
         "B": "Bravo Hotel One Xray Yankee Zulu",
@@ -3529,7 +3529,7 @@
     },
     {
         "id": "MC1-0253",
-        "question": "需要拼出呼号、术语和必要的文字时，业余无线电爱好者普遍使用 ITU语音字母表中规定",
+        "question": "需要拼出呼号、术语和必要的文字时，业余无线电爱好者普遍使用 ITU语音字母表中规定的字母拼读法。呼号 K3TRX/VE6可以拼读为：",
         "answer": "A",
         "A": "Kilo Three Tango Romeo Xray Portable Victor Echo Six",
         "B": "Three Delta Alfa Zero Foxtrot Zulu Portable Delta Lima Five Charlie Mike Papa",
@@ -14122,7 +14122,8 @@
     {
         "id": "MC1-1009",
         "question": "对于最小值为 0伏、峰-峰值为 100伏的三角波信号，其有效值电压为：",
-        "answer": "A A]57.7伏",
+        "answer": "A",
+        "A": "57.7伏",
         "B": "50.0伏",
         "C": "100伏",
         "D": "70.7伏",
